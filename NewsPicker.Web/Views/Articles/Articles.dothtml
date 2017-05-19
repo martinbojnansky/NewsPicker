@@ -1,0 +1,47 @@
+﻿@viewModel NewsPicker.Web.ViewModels.Articles.ArticlesViewModel, NewsPicker.Web
+@masterPage Views/Layout.dotmaster
+
+<dot:Content ContentPlaceHolderID="Styles">
+    <link rel="stylesheet" href="~/Resources/Stylesheets/swiper.min.css">
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Content">
+    <!--articles-->
+    <dot:Repeater class="articles"
+                  DataSource="{value: Articles}"
+                  RenderSettings.Mode="Server">
+        <div class="article">
+            <a href="{value: Url}"
+               target="_blank"
+               Visible="{value: Image != null}">
+                <div class="thumbnail"
+                     style="{value: "background-image: url(" + Image + ");"}" />
+            </a>
+            <h2>{{value: Source.Url}} - {{value: CreatedDate}}</h2>
+            <a href="{value: Url}" target="_blank"><h1>{{value: Title}}</h1></a>
+            <hr />
+            <p>{{value: Description}}</p>
+            <a href="{value: Url}" target="_blank" class="btn">Read More</a>
+        </div>
+    </dot:Repeater>
+    <!--filter-->
+    <div class="filter">
+        <a class="btn">Filter</a>
+    </div>
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Scripts">
+    <script src="~/Resources/Scripts/swiper.min.js" />
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            mousewheelControl: true,
+            keyboardControl: true
+        });
+    </script>
+</dot:Content>
