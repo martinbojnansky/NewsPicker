@@ -121,10 +121,6 @@
     <None Include="Properties\webjob-publish-settings.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XamarinToolkit\XamarinToolkit\XamarinToolkit.csproj">
-      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
-      <Name>XamarinToolkit</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NewsPicker.Database\NewsPicker.Database.csproj">
       <Project>{10de9cbb-67b2-4441-b67b-8377a4537bd0}</Project>
       <Name>NewsPicker.Database</Name>

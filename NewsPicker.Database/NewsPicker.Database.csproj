@@ -93,10 +93,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XamarinToolkit\XamarinToolkit\XamarinToolkit.csproj">
-      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
-      <Name>XamarinToolkit</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NewsPicker.Shared\NewsPicker.Shared.csproj">
       <Project>{266c1e17-7cbe-46a4-b378-9fd0b79fe851}</Project>
       <Name>NewsPicker.Shared</Name>
