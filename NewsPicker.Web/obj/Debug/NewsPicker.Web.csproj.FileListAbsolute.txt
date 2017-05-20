@@ -1,0 +1,136 @@
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\ApplicationInsights.config
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.dll.config
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\AutoMapper.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Core.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.Hosting.Owin.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Web.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.FileSystems.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.StaticFiles.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Database.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Shared.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Newtonsoft.Json.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Owin.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\System.Collections.Immutable.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\System.Reflection.Metadata.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\XamarinToolkit.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Core.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Autofac.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Platform.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Database.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Shared.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\AutoMapper.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Core.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.Hosting.Owin.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Web.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.CSharp.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.FileSystems.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.StaticFiles.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Newtonsoft.Json.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\System.Collections.Immutable.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\System.Reflection.Metadata.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\XamarinToolkit.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Core.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\bin\Autofac.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.csprojResolveAssemblyReference.cache
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\ApplicationInsights.config
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.dll.config
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Web.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\AutoMapper.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Core.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.Hosting.Owin.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.SqlServer.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Web.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.FileSystems.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Security.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.StaticFiles.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Database.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Shared.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Newtonsoft.Json.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Owin.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\System.Collections.Immutable.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\System.Reflection.Metadata.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\XamarinToolkit.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Core.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Autofac.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Platform.dll
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Database.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\NewsPicker.Shared.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\AutoMapper.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Core.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\DotVVM.Framework.Hosting.Owin.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\EntityFramework.SqlServer.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.Web.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.CodeAnalysis.CSharp.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.FileSystems.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.Security.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Microsoft.Owin.StaticFiles.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Newtonsoft.Json.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\System.Collections.Immutable.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\System.Reflection.Metadata.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\XamarinToolkit.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Core.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Core.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Autofac.xml
+D:\Projects\NewsPicker\NewsPicker.Web\bin\Xamarin.Forms.Platform.pdb
+D:\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.csprojResolveAssemblyReference.cache
+D:\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.dll
+D:\Projects\NewsPicker\NewsPicker.Web\obj\Debug\NewsPicker.Web.pdb

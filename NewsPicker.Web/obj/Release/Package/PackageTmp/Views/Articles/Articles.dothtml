@@ -1,0 +1,38 @@
+﻿@viewModel NewsPicker.Web.ViewModels.Articles.ArticlesViewModel, NewsPicker.Web
+@masterPage Views/Layout.dotmaster
+
+<dot:Content ContentPlaceHolderID="Styles">
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Content">
+    <!--articles-->
+    <dot:Repeater class="articles"
+                  DataSource="{value: Articles}"
+                  RenderSettings.Mode="Server">
+        <div class="article">
+            <a href="{value: Url}"
+               target="_blank"
+               Visible="{value: Image != null}">
+                <div class="thumbnail"
+                     style="{value: "background-image: url(" + Image + ");"}" />
+            </a>
+            <h2>{{value: Source.Url}} - {{value: CreatedDate}}</h2>
+            <a href="{value: Url}" target="_blank"><h1>{{value: Title}}</h1></a>
+            <hr />
+            <p>{{value: Description}}</p>
+            <a href="{value: Url}" target="_blank" class="btn">Read More</a>
+        </div>
+    </dot:Repeater>
+    <!--filter-->
+    <div class="filter-command-wrapper">
+        <a class="btn" Events.Click="{staticCommand:  IsFilterVisible = true}">Filter</a>
+    </div>
+    <div class="{value: "filter-popup " + (IsFilterVisible ? "" : "collapsed")}">
+        <div class="filter-command-wrapper">
+            <a class="btn" Events.Click="{staticCommand:  IsFilterVisible = false}">Apply</a>
+        </div>
+    </div>
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Scripts">
+</dot:Content>

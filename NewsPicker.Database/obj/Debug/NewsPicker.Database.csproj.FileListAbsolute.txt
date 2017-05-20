@@ -1,0 +1,54 @@
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.dll.config
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\AutoMapper.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Shared.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\XamarinToolkit.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Autofac.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\XamarinToolkit.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Shared.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\AutoMapper.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Autofac.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.csprojResolveAssemblyReference.cache
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Initial.resources
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Errors.resources
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Infrastructure.resources
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Infrastructure2.resources
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.csproj.GenerateResource.Cache
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.dll.config
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Database.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\AutoMapper.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Shared.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\XamarinToolkit.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Core.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Autofac.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\XamarinToolkit.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\NewsPicker.Shared.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\AutoMapper.xml
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.xml
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Core.xml
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Autofac.xml
+D:\Projects\NewsPicker\NewsPicker.Database\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.csprojResolveAssemblyReference.cache
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Initial.resources
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Errors.resources
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Infrastructure.resources
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.Migrations.Infrastructure2.resources
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.csproj.GenerateResource.Cache
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.dll
+D:\Projects\NewsPicker\NewsPicker.Database\obj\Debug\NewsPicker.Database.pdb

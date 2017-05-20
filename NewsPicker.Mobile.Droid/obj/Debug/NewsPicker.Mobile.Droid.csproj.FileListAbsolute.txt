@@ -1,0 +1,109 @@
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.apk
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid-Signed.apk
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\XamarinToolkit.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Shared.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Autofac.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\XamarinToolkit.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Shared.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Autofac.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.csprojResolveAssemblyReference.cache
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.dll
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.pdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\bin\NewsPicker.Mobile.Droid.apk
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\layout\tabbar.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\layout\toolbar.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\values\styles.xml
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\R.cs.flag
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\uploadflags.txt
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Mono.Android.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\mscorlib.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Shared.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Core.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Xml.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\XamarinToolkit.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\NewsPicker.Mobile.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\NewsPicker.Mobile.Droid.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\NewsPicker.Shared.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\assets\XamarinToolkit.dll.mdb
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.dll.mdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.pdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.apk
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid-Signed.apk
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\FormsViewGroup.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\XamarinToolkit.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Shared.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Autofac.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.pdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\XamarinToolkit.pdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Shared.pdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\Autofac.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.csprojResolveAssemblyReference.cache
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.dll
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.pdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\android\bin\NewsPicker.Mobile.Droid.apk
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable\icon.png
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\layout\tabbar.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\layout\toolbar.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\res\values\styles.xml
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\R.cs.flag
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\uploadflags.txt
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\obj\Debug\NewsPicker.Mobile.Droid.dll.mdb
+D:\Projects\NewsPicker\NewsPicker.Mobile.Droid\bin\Debug\NewsPicker.Mobile.Droid.dll.mdb

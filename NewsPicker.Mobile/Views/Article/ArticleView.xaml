@@ -1,0 +1,9 @@
+﻿<viewModel:ViewModelPage
+    x:Class="NewsPicker.Mobile.Views.Article.ArticleView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:XamarinToolkit.ViewModel;assembly=XamarinToolkit"
+    Title="NewsPicker">
+    <!--  webview  -->
+    <WebView Source="{Binding Url}" />
+</viewModel:ViewModelPage>

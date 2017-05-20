@@ -1,0 +1,2 @@
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile.UWP\NewsPicker.Mobile.UWP.csproj;x64
+C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Mobile\NewsPicker.Mobile.csproj;neutral
