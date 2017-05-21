@@ -1,5 +1,0 @@
-c:\users\marti\documents\visual studio 2015\Projects\NewsPicker\NewsPicker.Shared\bin\Release\NewsPicker.Shared.dll
-c:\users\marti\documents\visual studio 2015\Projects\NewsPicker\NewsPicker.Shared\bin\Release\NewsPicker.Shared.pdb
-c:\users\marti\documents\visual studio 2015\Projects\NewsPicker\NewsPicker.Shared\obj\Release\NewsPicker.Shared.dll
-c:\users\marti\documents\visual studio 2015\Projects\NewsPicker\NewsPicker.Shared\obj\Release\NewsPicker.Shared.pdb
-C:\Users\marti\Documents\Visual Studio 2015\Projects\NewsPicker\NewsPicker.Shared\obj\Release\NewsPicker.Shared.csprojResolveAssemblyReference.cache
