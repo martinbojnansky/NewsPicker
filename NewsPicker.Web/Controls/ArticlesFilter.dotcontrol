@@ -2,21 +2,33 @@
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
 <!--filter button-->
 <div class="filter-command-wrapper">
-    <a class="btn" Events.Click="{controlCommand: Show()}">Filter</a>
+    <a class="button" Events.Click="{controlCommand: Show()}">Filter</a>
 </div>
 <!--filter popup-->
 <div class="{controlProperty: "filter-popup " + (IsVisible ? "" : "collapsed")}">
-    <!--countries-->
-    <dot:Repeater DataSource="{controlProperty: Countries}">
-        <p>{{value: Name}}</p>
-    </dot:Repeater>
-    <!--categories-->
-    <dot:Repeater DataSource="{controlProperty: Categories}">
-        <p>{{value: Name}}</p>
-    </dot:Repeater>
-    <!--apply button-->
-    <div class="filter-command-wrapper">
-        <a class="btn" Events.Click="{controlCommand: Hide()}">Apply</a>
+    <div class="filter">
+        <!--countries-->
+        <h2>Country</h2>
+        <dot:Repeater DataSource="{controlProperty: Countries}">
+            <dot:RadioButton GroupName="countries"
+                             CheckedItem="{controlProperty: SelectedCountry}"
+                             CheckedValue="{value: _this}"
+                             Text="{value: Name}"
+                             class="toggle-button button" />
+        </dot:Repeater>
+        <!--categories-->
+        <h2>Category</h2>
+        <dot:Repeater DataSource="{controlProperty: Categories}">
+            <dot:RadioButton GroupName="categories"
+                             CheckedItem="{controlProperty: SelectedCategory}"
+                             CheckedValue="{value: _this}"
+                             Text="{value: Name}"
+                             class="toggle-button button" />
+        </dot:Repeater>
+        <!--apply button-->
+        <div class="filter-command-wrapper">
+            <a class="button" Events.Click="{controlCommand: Hide()}">Apply</a>
+        </div>
+        <!--close button-->
     </div>
-    <!--close button-->
 </div>

@@ -20,7 +20,7 @@
             <a href="{value: Url}" target="_blank"><h1>{{value: Title}}</h1></a>
             <hr />
             <p>{{value: Description}}</p>
-            <a href="{value: Url}" target="_blank" class="btn">Read More</a>
+            <a href="{value: Url}" target="_blank" class="button">Read More</a>
         </div>
     </dot:Repeater>
     <!--filter-->

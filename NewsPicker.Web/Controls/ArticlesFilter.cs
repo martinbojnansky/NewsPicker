@@ -39,7 +39,23 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty CategoriesProperty
             = DotvvmProperty.Register<List<CategoryDTO>, ArticlesFilter>(c => c.Categories, null);
 
-        public CountryDTO SelectedCountry { get; set; }
+        public CountryDTO SelectedCountry
+        {
+            get { return (CountryDTO)GetValue(SelectedCountryProperty); }
+            set { SetValue(SelectedCountryProperty, value); }
+        }
+
+        public static readonly DotvvmProperty SelectedCountryProperty
+            = DotvvmProperty.Register<CountryDTO, ArticlesFilter>(c => c.SelectedCountry, null);
+
+        public CategoryDTO SelectedCategory
+        {
+            get { return (CategoryDTO)GetValue(SelectedCategoryProperty); }
+            set { SetValue(SelectedCategoryProperty, value); }
+        }
+
+        public static readonly DotvvmProperty SelectedCategoryProperty
+            = DotvvmProperty.Register<CategoryDTO, ArticlesFilter>(c => c.SelectedCategory, null);
 
         public string SelectedQuery
         {
