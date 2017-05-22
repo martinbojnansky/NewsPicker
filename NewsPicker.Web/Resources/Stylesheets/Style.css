@@ -97,19 +97,29 @@ a, a:visited {
         border-radius: 100%;
     }
 
-h1 {
+h1,h2,h3 {
     margin: 20px 10%;
     font-family: "Playfair Display", serif;
+}
+
+h1 {
     font-size: 1.6rem;
 }
 
-h2 {
+h4,h5,h6 {
     margin-bottom: 10px;
     color: #888;
     font-family: "Open Sans", sans-serif;
-    font-size: .5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+h5 {
+    font-size: 0.7rem;
+}
+
+h6 {
+    font-size: .5rem;
 }
 
 hr {
@@ -203,8 +213,15 @@ a.button {
     display: none;
 }
 
-.toggle-button {
+toggle-button {
     margin: 0 0 4px 0;
+}
+
+.toggle-button span {
     background: #e2e2e2;
     color: #666;
+}
+
+.toggle-button input[type=radio]:checked + span {
+    background: #664EF7;
 }

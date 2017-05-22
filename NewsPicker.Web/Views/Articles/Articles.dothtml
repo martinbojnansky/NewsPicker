@@ -16,7 +16,7 @@
                 <div class="thumbnail"
                      style="{value: "background-image: url(" + Image + ");"}" />
             </a>
-            <h2>{{value: Source.Url}} - {{value: CreatedDate}}</h2>
+            <h6>{{value: Source.Url}} - {{value: CreatedDate}}</h6>
             <a href="{value: Url}" target="_blank"><h1>{{value: Title}}</h1></a>
             <hr />
             <p>{{value: Description}}</p>
