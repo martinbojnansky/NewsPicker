@@ -13,28 +13,64 @@ namespace NewsPicker.Web.ViewModels.Articles
 {
     public class ArticlesViewModel : NewsPicker.Web.ViewModels.LayoutViewModel
     {
-        private CountriesController _countriesApi = new CountriesController();
-        private CategoriesController _categoriesApi = new CategoriesController();
-        private ArticlesController _articlesApi = new ArticlesController();
+        private readonly CountriesController _countriesApi = new CountriesController();
+        private readonly CategoriesController _categoriesApi = new CategoriesController();
+        private readonly ArticlesController _articlesApi = new ArticlesController();
 
         public List<CountryDTO> Countries { get; set; }
         public List<CategoryDTO> Categories { get; set; }
         public List<ArticleDTO> Articles { get; set; } = new List<ArticleDTO>();
 
+        public CountryDTO SelectedCountry { get; set; }
+        public CategoryDTO SelectedCategory { get; set; }
+
         public bool IsFilterVisible { get; set; } = false;
 
         public override Task PreRender()
         {
-            Countries = _countriesApi.GetCountries();
-            Categories = _categoriesApi.GetCategoriesByCountryId(1);
-            Articles = _articlesApi.GetTopArticlesByCountryId(1);
-
+            LoadData();
             return base.PreRender();
         }
 
-        public void RedirectToUrl(string url)
+        public void LoadData()
         {
-            Context.RedirectToUrl(url);
+            LoadCountries();
+            LoadCategories();
+            LoadArticles();
+        }
+
+        private void LoadCountries()
+        {
+            Countries = _countriesApi.GetCountries();
+        }
+
+        private void LoadCategories()
+        {
+            if (SelectedCountry != null)
+            {
+                Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountry.Id);
+            }
+            else
+            {
+                SelectedCountry = Countries[0];
+            }
+        }
+
+        private void LoadArticles()
+        {
+            if (SelectedCategory != null)
+            {
+                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategory.Id);
+            }
+            else
+            {
+                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountry.Id);
+            }
+        }
+
+        public void ApplyFilter()
+        {
+            LoadArticles();
         }
     }
 }

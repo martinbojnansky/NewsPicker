@@ -27,7 +27,7 @@
         </dot:Repeater>
         <!--apply button-->
         <div class="filter-command-wrapper">
-            <a class="button" Events.Click="{controlCommand: Hide()}">Apply</a>
+            <a class="button" Events.Click="{controlCommand: Apply()}">Apply</a>
         </div>
         <!--close button-->
     </div>

@@ -26,7 +26,10 @@
     <!--filter-->
     <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
                              Countries="{value: Countries}"
-                             Categories="{value: Categories}" />
+                             Categories="{value: Categories}"
+                             SelectedCountry="{value: SelectedCountry}"
+                             SelectedCategory="{value: SelectedCategory}"
+                             ApplyCommand="{command: ApplyFilter()}"/>
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

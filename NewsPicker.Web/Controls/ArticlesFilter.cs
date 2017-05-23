@@ -7,6 +7,7 @@ using DotVVM.Framework.Binding;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using DotVVM.Framework.ViewModel;
+using DotVVM.Framework.Binding.Expressions;
 
 namespace NewsPicker.Web.Controls
 {
@@ -57,14 +58,21 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty SelectedCategoryProperty
             = DotvvmProperty.Register<CategoryDTO, ArticlesFilter>(c => c.SelectedCategory, null);
 
-        public string SelectedQuery
+        public Command ApplyCommand
         {
-            get { return (string)GetValue(SelectedQueryProperty); }
-            set { SetValue(SelectedQueryProperty, value); }
+            get { return (Command)GetValue(ApplyCommandProperty); }
+            set { SetValue(ApplyCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty SelectedQueryProperty
-            = DotvvmProperty.Register<string, ArticlesFilter>(c => c.SelectedQuery, null);
+        public static readonly DotvvmProperty ApplyCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand, null);
+
+        [AllowStaticCommand]
+        public async void Apply()
+        {
+            Hide();
+            await ApplyCommand.Invoke();
+        }
 
         [AllowStaticCommand]
         public void Show() => IsVisible = true;
