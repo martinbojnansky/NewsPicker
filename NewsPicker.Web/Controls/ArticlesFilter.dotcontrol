@@ -8,14 +8,14 @@
 <div class="{controlProperty: "filter-popup " + (IsVisible ? "" : "collapsed")}">
     <div class="filter">
         <!--countries-->
-        <h5>Country</h5>
+        <%--<h5>Country</h5>
         <dot:Repeater DataSource="{controlProperty: Countries}">
             <dot:RadioButton GroupName="countries"
                              CheckedItem="{controlProperty: SelectedCountry}"
                              CheckedValue="{value: _this}"
                              Text="{value: Name}"
                              class="toggle-button" />
-        </dot:Repeater>
+        </dot:Repeater>--%>
         <!--categories-->
         <h5>Category</h5>
         <dot:Repeater DataSource="{controlProperty: Categories}">

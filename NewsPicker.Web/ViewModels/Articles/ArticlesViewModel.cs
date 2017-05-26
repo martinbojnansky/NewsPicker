@@ -8,6 +8,7 @@ using NewsPicker.Shared.DTO.Article;
 using NewsPicker.Web.Controllers;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
+using System.Globalization;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
@@ -42,18 +43,16 @@ namespace NewsPicker.Web.ViewModels.Articles
         private void LoadCountries()
         {
             Countries = _countriesApi.GetCountries();
+
+            if (SelectedCountry == null)
+            {
+                SelectedCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+            }
         }
 
         private void LoadCategories()
         {
-            if (SelectedCountry != null)
-            {
-                Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountry.Id);
-            }
-            else
-            {
-                SelectedCountry = Countries[0];
-            }
+            Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountry.Id);
         }
 
         private void LoadArticles()
