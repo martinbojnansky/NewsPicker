@@ -7,8 +7,7 @@
 <dot:Content ContentPlaceHolderID="Content">
     <!--articles-->
     <dot:Repeater class="articles"
-                  DataSource="{value: Articles}"
-                  RenderSettings.Mode="Server">
+                  DataSource="{value: Articles}">
         <div class="article">
             <a href="{value: Url}"
                target="_blank"

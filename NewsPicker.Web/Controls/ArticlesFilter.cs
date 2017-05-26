@@ -40,6 +40,7 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty CategoriesProperty
             = DotvvmProperty.Register<List<CategoryDTO>, ArticlesFilter>(c => c.Categories, null);
 
+        [Bind(Direction.Both)]
         public CountryDTO SelectedCountry
         {
             get { return (CountryDTO)GetValue(SelectedCountryProperty); }
@@ -47,7 +48,7 @@ namespace NewsPicker.Web.Controls
         }
 
         public static readonly DotvvmProperty SelectedCountryProperty
-            = DotvvmProperty.Register<CountryDTO, ArticlesFilter>(c => c.SelectedCountry, null);
+            = DotvvmProperty.Register<CountryDTO, ArticlesFilter>(c => c.SelectedCountry, null, true);
 
         public CategoryDTO SelectedCategory
         {
@@ -56,7 +57,7 @@ namespace NewsPicker.Web.Controls
         }
 
         public static readonly DotvvmProperty SelectedCategoryProperty
-            = DotvvmProperty.Register<CategoryDTO, ArticlesFilter>(c => c.SelectedCategory, null);
+            = DotvvmProperty.Register<CategoryDTO, ArticlesFilter>(c => c.SelectedCategory, null, true);
 
         public Command ApplyCommand
         {
@@ -67,7 +68,6 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty ApplyCommandProperty
             = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand, null);
 
-        [AllowStaticCommand]
         public async void Apply()
         {
             Hide();
