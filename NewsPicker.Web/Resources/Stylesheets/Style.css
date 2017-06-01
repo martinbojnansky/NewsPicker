@@ -23,81 +23,7 @@ img {
     max-height: 100%;
 }
 
-a, a:visited {
-    color: #222;
-    text-decoration: none;
-}
-
-    a:hover {
-        color: #222;
-    }
-
-    a:active {
-        transform: translateY(1px);
-    }
-
-    a:hover h1 {
-        transform: translateY(-1px);
-        color: #111;
-    }
-
-    a:active h1 {
-        transform: translateY(1px);
-    }
-
-    a:hover .thumbnail {
-        transform: translateY(-1px);
-        opacity: 1;
-    }
-
-    a:active .thumbnail {
-        transform: translateY(1px);
-    }
-
-.articles, .filter {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.articles {
-    padding: 0 0 60px 0;
-}
-
-.article {
-    padding: 40px 0;
-    text-align: center;
-    border-bottom: 1px dashed #ccc;
-}
-
-.thumbnail {
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 28px auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e2e2e2;
-    border: 2px dashed #222;
-    border-radius: 100%;
-    opacity: 0.92;
-}
-
-    .thumbnail:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: url(../Images/WhiteNoise.png);
-        background-repeat: repeat;
-        border-radius: 100%;
-    }
-
-h1,h2,h3 {
+h1, h2, h3 {
     margin: 20px 10%;
     font-family: "Playfair Display", serif;
 }
@@ -106,7 +32,7 @@ h1 {
     font-size: 1.6rem;
 }
 
-h4,h5,h6 {
+h4, h5, h6 {
     margin-bottom: 10px;
     color: #888;
     font-family: "Open Sans", sans-serif;
@@ -138,12 +64,88 @@ p {
     text-align: center;
 }
 
+a, a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #222;
+    }
+
+    a:active {
+        transform: translateY(1px);
+    }
+
+    a:hover h1 {
+        transform: translateY(-1px);
+        color: #111;
+    }
+
+    a:active h1 {
+        transform: translateY(1px);
+    }
+
+    a:hover .thumbnail {
+        transform: translateY(-1px);
+        opacity: 1;
+    }
+
+    a:active .thumbnail {
+        transform: translateY(1px);
+    }
+
+/**/
+
+.articles, .filter {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.articles {
+    padding: 0 0 60px 0;
+}
+
+.article {
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+}
+
+.thumbnail {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 28px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e2e2e2;
+    border: 1px solid #222;
+    border-radius: 100%;
+    opacity: 0.92;
+}
+
+    .thumbnail:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../Images/WhiteNoise.png);
+        background-repeat: repeat;
+        border-radius: 100%;
+    }
+
 .button,
 a.button {
     display: inline-block;
     padding: 12px 20px;
     cursor: pointer;
-    background: #664EF7;
+    background: #00AECC;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: .8rem;
@@ -157,7 +159,7 @@ a.button {
 
     .button,
     a.button:hover {
-        background: #7C66FF;
+        background: #00AECC;
         box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
         transform: translateY(-1px);
     }
@@ -167,6 +169,46 @@ a.button {
         box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
         transform: translateY(1px);
     }
+
+.toggle-button input[type=radio] {
+    display: none;
+}
+
+.toggle-button {
+    margin: 0 2px 6px 0;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.toggle-button span {
+    display: block;
+    background: #e2e2e2;
+    color: #666;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+    .toggle-button input[type=radio]:checked + span {
+        background: #00AECC;
+        color: #fff;
+    }
+
+    .toggle-button:hover span {
+        background: #00AECC;
+        box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        color: #fff;
+    }
+
+
+.toggle-button:active span {
+    box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+    color: #fff;
+}
 
 .filter-command-wrapper {
     position: fixed;
@@ -207,21 +249,4 @@ a.button {
 
 .filter {
     padding: 20px 10px;
-}
-
-.toggle-button input[type=radio] {
-    display: none;
-}
-
-toggle-button {
-    margin: 0 0 4px 0;
-}
-
-.toggle-button span {
-    background: #e2e2e2;
-    color: #666;
-}
-
-.toggle-button input[type=radio]:checked + span {
-    background: #664EF7;
 }
