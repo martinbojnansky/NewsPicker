@@ -34,13 +34,13 @@ namespace NewsPicker.Web
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)
         {
             // register code-only controls and markup controls
+            config.AddBusinessPackConfiguration();
             config.Markup.AutoDiscoverControls(new DefaultControlRegistrationStrategy(config, "controls", "Controls"));
         }
 
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath)
         {
             // register custom resources and adjust paths to the built-in resources
-            // config.Resources.Register("style.less", new StylesheetResource(new FileResourceLocation("~/Resources/Stylesheets/style.less")));
         }
 
         private void ConfigureAutoMapper()

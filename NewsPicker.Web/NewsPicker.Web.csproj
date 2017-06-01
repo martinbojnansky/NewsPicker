@@ -43,16 +43,24 @@
       <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotVVM.Core, Version=1.1.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotVVM.Core.1.1.0.1\lib\net451\DotVVM.Core.dll</HintPath>
+    <Reference Include="DotVVM.BusinessPack, Version=0.2.9.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotVVM.BusinessPack.0.2.9-test\lib\net451\DotVVM.BusinessPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DotVVM.Framework, Version=1.1.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotVVM.1.1.0.1\lib\net451\DotVVM.Framework.dll</HintPath>
+    <Reference Include="DotVVM.Core, Version=1.1.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotVVM.Core.1.1.1\lib\net451\DotVVM.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotVVM.Framework, Version=1.1.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotVVM.1.1.1\lib\net451\DotVVM.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DotVVM.Framework.Hosting.Owin, Version=1.1.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
       <HintPath>..\packages\DotVVM.Owin.1.1.0.1\lib\net451\DotVVM.Framework.Hosting.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotVVM.Utils.HtmlElements, Version=0.2.9.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotVVM.Utils.HtmlElements.0.2.9-test\lib\net451\DotVVM.Utils.HtmlElements.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -203,6 +211,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

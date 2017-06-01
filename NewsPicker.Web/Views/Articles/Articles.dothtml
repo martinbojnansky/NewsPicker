@@ -23,12 +23,18 @@
         </div>
     </dot:Repeater>
     <!--filter-->
-    <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
+    <%--<controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
                              Countries="{value: Countries}"
                              Categories="{value: Categories}"
                              SelectedCountry="{value: SelectedCountry}"
                              SelectedCategory="{value: SelectedCategory}"
-                             ApplyCommand="{command: ApplyFilter()}"/>
+                             ApplyCommand="{command: ApplyFilter()}"/>--%>
+    <bp:RadioButtonList DataSource="{value:  Countries}"
+                        GroupName="countries"
+                        SelectedValue="{value: SelectedCountry}"
+                        ItemTextBinding="{value: Name}"
+                        ItemKeyBinding="{value: Name}"
+                        ItemValueBinding="{value: _this}" />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">
