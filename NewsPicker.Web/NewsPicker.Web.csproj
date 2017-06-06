@@ -177,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Images\WhiteNoise.png" />
+    <Content Include="Resources\Stylesheets\Style.css">
+      <DependentUpon>Style.less</DependentUpon>
+    </Content>
+    <Content Include="Resources\Stylesheets\Style.min.css">
+      <DependentUpon>Style.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -185,10 +191,17 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Layout.dotmaster" />
     <Content Include="Views\Articles\Articles.dothtml" />
-    <Content Include="Resources\Stylesheets\Style.css" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Resources\Stylesheets\Articles.less" />
+    <Content Include="Resources\Stylesheets\ArticlesFilter.less" />
+    <None Include="Resources\Stylesheets\Style.less" />
     <Content Include="Controls\ArticlesFilter.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
+    <Content Include="Resources\Stylesheets\Variables.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

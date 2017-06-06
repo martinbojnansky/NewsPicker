@@ -1,0 +1,33 @@
+﻿// Colors
+@primary-color: #07B0C5;
+@primary-color-darken: darken(@primary-color, 5%);
+@secondary-color: #F8AC1B;
+@background-color: #FFF;
+@background-color-darken: #F2F2F2;
+@text-color: #222;
+@text-color-lighten: #888;
+@text-color-darken: #111;
+@text-color-white: #FFF;
+@separator-color: #CCC;
+@button-shadow-color: rgba(0,0,0,0.1);
+@button-shadow: @button-shadow-size @button-shadow-color;
+@hover-button-shadow: @button-shadow-size darken(@button-shadow-color, 5%);
+@active-button-shadow: @button-shadow-size darken(@button-shadow-color, 10%);
+
+// Sizes
+@max-content-width: 800px;
+@base-padding: 10px;
+@container-padding: 2*@base-padding @base-padding;
+@button-padding: @base-padding+2px 2*@base-padding;
+@button-radius: 4px;
+@button-shadow-size: 0 0 10px;
+@inline-button-margin: 0 2px 6px 0;
+
+// Fonts
+@primary-font: "Playfair Display", serif;
+@secondary-font: "Open Sans", sans-serif;
+
+// Transitions
+@base-transition: .3s ease;
+@hover-transform: translateY(-1px);
+@active-transform: translateY(1px);

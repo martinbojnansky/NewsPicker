@@ -1,0 +1,170 @@
+﻿@import "Variables.less";
+
+@import "Articles.less";
+@import "ArticlesFilter.less";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&subset=latin-ext");
+
+* {
+    transition: @base-transition;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @text-color;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    font-family: @primary-font;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: @primary-font, serif;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h4, h5, h6 {
+    color: @text-color-lighten;
+    font-family: @secondary-font;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 0.7rem;
+}
+
+h6 {
+    font-size: .5rem;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid @separator-color;
+}
+
+a, a:visited {
+    color: @text-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: @text-color;
+}
+
+a:active {
+    transform: @active-transform;
+}
+
+a:hover h1 {
+    transform: @hover-transform;
+    color: @text-color-darken;
+}
+
+a:active h1 {
+    transform: @active-transform;
+}
+
+a:hover .thumbnail {
+    transform: @hover-transform;
+    opacity: 1;
+}
+
+a:active .thumbnail {
+    transform: @active-transform;
+}
+
+.button,
+a.button {
+    display: inline-block;
+    padding: @button-padding;
+    cursor: pointer;
+    background: @primary-color;
+    color: @text-color-white;
+    font-family: @secondary-font;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: @button-radius;
+    box-shadow: @button-shadow;
+}
+
+.button,
+a.button:hover {
+    background: @primary-color-darken;
+    box-shadow: @hover-button-shadow;
+    transform: @hover-transform;
+}
+
+.button,
+a.button:active {
+    box-shadow: @active-button-shadow;
+    transform: @active-transform;
+}
+
+.toggle-button input[type=radio] {
+    display: none;
+}
+
+.toggle-button {
+    margin: @inline-button-margin;
+    display: inline-block;
+    cursor: pointer;
+    font-family: @secondary-font;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.toggle-button span {
+    display: block;
+    background: @background-color-darken;
+    color: @text-color-lighten;
+    padding: @button-padding;
+    border-radius: @button-radius;
+}
+
+.toggle-button input[type=radio]:checked + span {
+    background: @secondary-color;
+    color: @text-color-white;
+}
+
+.toggle-button:hover span {
+    background: @secondary-color;
+    box-shadow: @hover-button-shadow;
+    color: @text-color-white;
+}
+
+.toggle-button:active span {
+    box-shadow: @active-button-shadow;
+    color: @text-color-white;
+}
+
+.collapsed {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}
