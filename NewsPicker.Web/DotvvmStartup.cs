@@ -34,7 +34,6 @@ namespace NewsPicker.Web
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)
         {
             // register code-only controls and markup controls
-            config.AddBusinessPackConfiguration();
             config.Markup.AutoDiscoverControls(new DefaultControlRegistrationStrategy(config, "controls", "Controls"));
         }
 

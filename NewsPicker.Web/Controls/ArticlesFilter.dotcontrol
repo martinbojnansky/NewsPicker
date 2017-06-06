@@ -9,20 +9,22 @@
     <div class="filter">
         <!--countries-->
         <h5>Country</h5>
-        <bp:RadioButtonList DataSource="{controlProperty: Countries}"
-                            GroupName="countries"
-                            SelectedValue="{controlProperty: SelectedCountry}"
-                            ItemTextBinding="{value: Name}"
-                            ItemKeyBinding="{value: Name}"
-                            ItemValueBinding="{value: _this}" />
+        <dot:Repeater DataSource="{controlProperty: Countries}">
+            <dot:RadioButton GroupName="countries"
+                             CheckedItem="{controlProperty: SelectedCountry}"
+                             CheckedValue="{value: _this}"
+                             Text="{value: Name}"
+                             class="toggle-button" />
+        </dot:Repeater>
         <!--categories-->
         <h5>Category</h5>
-        <bp:RadioButtonList DataSource="{controlProperty: Categories}"
-                            GroupName="categories"
-                            SelectedValue="{controlProperty: SelectedCategory}"
-                            ItemTextBinding="{value: Name}"
-                            ItemKeyBinding="{value: Name}"
-                            ItemValueBinding="{value: _this}" />
+        <dot:Repeater DataSource="{controlProperty: Categories}">
+            <dot:RadioButton GroupName="categories"
+                             CheckedItem="{controlProperty: SelectedCategory}"
+                             CheckedValue="{value: _this}"
+                             Text="{value: Name}"
+                             class="toggle-button" />
+        </dot:Repeater>
         <!--apply button-->
         <div class="filter-command-wrapper">
             <a class="button" Events.Click="{controlCommand: Apply()}">Apply</a>
