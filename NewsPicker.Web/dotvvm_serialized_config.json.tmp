@@ -9,7 +9,7 @@
       {
         "tagPrefix": "controls",
         "tagName": "ArticlesFilter",
-        "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\ArticlesFilter.dotcontrol"
+        "src": "C:\\Users\\Riganti\\Source\\Repos\\NewsPicker\\NewsPicker.Web\\Controls\\ArticlesFilter.dotcontrol"
       }
     ],
     "assemblies": [],
@@ -30,20 +30,17 @@
   },
   "resources": {
     "scripts": {
-      "dotvvm.debug": {
+      "knockout": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
           "Assembly": "DotVVM.Framework, Version=1.1.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
-          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js",
+          "Name": "DotVVM.Framework.Resources.Scripts.knockout-latest.js",
           "DebugFilePath": null
         },
         "LocationFallback": null,
         "MimeType": "text/javascript",
         "VerifyResourceIntegrity": false,
-        "Dependencies": [
-          "dotvvm",
-          "jquery"
-        ],
+        "Dependencies": [],
         "RenderPosition": 1
       },
       "jquery": {
@@ -82,19 +79,6 @@
         ],
         "RenderPosition": 1
       },
-      "knockout": {
-        "Location": {
-          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=1.1.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
-          "Name": "DotVVM.Framework.Resources.Scripts.knockout-latest.js",
-          "DebugFilePath": null
-        },
-        "LocationFallback": null,
-        "MimeType": "text/javascript",
-        "VerifyResourceIntegrity": false,
-        "Dependencies": [],
-        "RenderPosition": 1
-      },
       "globalize": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
@@ -107,13 +91,20 @@
         "VerifyResourceIntegrity": false,
         "Dependencies": [],
         "RenderPosition": 1
-      }
-    },
-    "DotVVM.Framework.ResourceManagement.InlineScriptResource": {
-      "dotvvm": {
-        "Code": "if (window.dotvvm) { throw 'DotVVM is already loaded!'; } window.dotvvm = new DotVVM();",
+      },
+      "dotvvm.debug": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=1.1.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
         "Dependencies": [
-          "dotvvm.internal"
+          "dotvvm",
+          "jquery"
         ],
         "RenderPosition": 1
       }
@@ -132,6 +123,15 @@
         "Dependencies": [],
         "RenderPosition": 0
       }
+    },
+    "DotVVM.Framework.ResourceManagement.InlineScriptResource": {
+      "dotvvm": {
+        "Code": "if (window.dotvvm) { throw 'DotVVM is already loaded!'; } window.dotvvm = new DotVVM();",
+        "Dependencies": [
+          "dotvvm.internal"
+        ],
+        "RenderPosition": 1
+      }
     }
   },
   "security": {
@@ -140,7 +140,7 @@
     "sessionIdCookieName": "dotvvm_sid_{0}"
   },
   "runtime": {},
-  "defaultCulture": "sk-SK",
+  "defaultCulture": "en-US",
   "clientSideValidation": true,
   "debug": true,
   "AllowBindingDebugging": false,
