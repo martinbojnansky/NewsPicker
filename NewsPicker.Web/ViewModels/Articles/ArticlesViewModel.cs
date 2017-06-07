@@ -9,6 +9,7 @@ using NewsPicker.Web.Controllers;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using System.Globalization;
+using NewsPicker.Shared.Extensions;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
@@ -72,5 +73,7 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             LoadArticles();
         }
+
+        public string GetElapsedTimeString(DateTime? date) => date?.ToElapsedTimeString();
     }
 }

@@ -43,6 +43,8 @@
     <Compile Include="DTO\Country\CountryDTO.cs" />
     <Compile Include="DTO\Source\SourceDTO.cs" />
     <Compile Include="Enums\TimePeriod.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\UrlExtensions.cs" />
     <Compile Include="NewsPickerShared.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

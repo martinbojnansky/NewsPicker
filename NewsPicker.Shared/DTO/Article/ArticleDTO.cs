@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NewsPicker.Shared.DTO.Source;
+using NewsPicker.Shared.Extensions;
 
 namespace NewsPicker.Shared.DTO.Article
 {
@@ -17,5 +18,7 @@ namespace NewsPicker.Shared.DTO.Article
         public DateTime? CreatedDate { get; set; }
         public int ShareCount { get; set; }
         public virtual SourceDTO Source { get; set; }
+
+        public string ElapseTimeString => CreatedDate?.ToElapsedTimeString();
     }
 }
