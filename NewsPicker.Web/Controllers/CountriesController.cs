@@ -15,7 +15,9 @@ namespace NewsPicker.Web.Controllers
 
         public List<CountryDTO> GetCountries()
         {
-            return db.Countries.ProjectTo<CountryDTO>().ToList();
+            return db.Countries
+                .OrderBy(c => c.Name)
+                .ProjectTo<CountryDTO>().ToList();
         }
     }
 }
