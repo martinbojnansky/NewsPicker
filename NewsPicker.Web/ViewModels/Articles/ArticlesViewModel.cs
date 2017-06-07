@@ -73,7 +73,5 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             LoadArticles();
         }
-
-        public string GetElapsedTimeString(DateTime? date) => date?.ToElapsedTimeString();
     }
 }
