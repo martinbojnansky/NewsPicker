@@ -100,7 +100,7 @@ a.button {
     display: inline-block;
     padding: @button-padding;
     cursor: pointer;
-    background: @primary-color;
+    background: @background-color-darken;
     color: @text-color-white;
     font-family: @secondary-font;
     font-size: .8rem;
@@ -111,17 +111,33 @@ a.button {
     box-shadow: @button-shadow;
 }
 
-.button,
+.button:hover,
 a.button:hover {
-    background: @primary-color-darken;
+    background: darken(@background-color-darken, 5%);
     box-shadow: @hover-button-shadow;
     transform: @hover-transform;
 }
 
-.button,
+.button:active,
 a.button:active {
     box-shadow: @active-button-shadow;
     transform: @active-transform;
+}
+
+.primary-button {
+    background: @primary-color;
+}
+
+.primary-button:hover {
+    background: @primary-color-darken;
+}
+
+.secondary-button {
+     background: @secondary-color;
+} 
+
+.secondary-button:hover {
+    background: @secondary-color-darken;
 }
 
 .toggle-button input[type=radio] {
