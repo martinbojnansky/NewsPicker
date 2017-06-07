@@ -8,21 +8,17 @@
 }
 
 .article {
-    padding: 40px 0;
+    padding: 4*@base-padding 0;
     text-align: center;
     border-bottom: 1px dashed @separator-color;
 }
 
 .article p {
-    margin: 20px 20%;
+    margin: 2*@base-padding 20%;
 }
 
 .article h1, .article h2, .article h3 {
-    margin: 20px 10%;
-}
-
-.article a:hover h1 {
-    color: @primary-color-darken;
+    margin: 2*@base-padding 10%;
 }
 
 .article h4, .article h5, .article h6 {
@@ -31,21 +27,21 @@
 
 .article hr {
     width: 20%;
-    margin: 20px auto;
+    margin: 2*@base-padding auto;
 }
 
 .article .thumbnail {
     position: relative;
     width: 160px;
     height: 160px;
-    margin: 0 auto 28px auto;
+    margin: 0 auto -2*@base-padding auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: @background-color-darken;
     border: 1px solid @text-color;
     border-radius: 100%;
-    opacity: 0.92;
+    opacity: 0.95;
 }
 
 .article .thumbnail:before {
@@ -59,4 +55,26 @@
     background-image: url(../Images/WhiteNoise.png);
     background-repeat: repeat;
     border-radius: 100%;
+}
+
+.article h5.popularity-info {
+    position: relative;
+    display: block; 
+    margin: 0 auto;
+}
+
+.article h5.popularity-info span {
+    display: inline-block;
+    color: @text-color-white;
+    padding: @base-padding;
+    border-radius: @button-radius;
+    margin: 0 2px;
+}
+
+.article h5.popularity-info span.order {
+    background: @secondary-color;
+}
+
+.article h5.popularity-info span.share-count {
+    background: @likes-color; 
 }
