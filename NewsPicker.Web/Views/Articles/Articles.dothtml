@@ -6,7 +6,7 @@
 
 <dot:Content ContentPlaceHolderID="Content">
     <!--articles-->
-    <dot:Repeater class="articles" 
+    <dot:Repeater class="articles"
                   DataSource="{value: Articles}">
         <div class="article">
             <a href="{value: Url}"
@@ -15,8 +15,11 @@
                 <div class="thumbnail"
                      style="{value: "background-image: url(" + Image + ");"}"></div>
             </a>
-            <h5 class="popularity-info"><span class="order">#</span><span class="share-count">♥ {{value: ShareCount}}</span></h5>
-            <h5>{{value: Source.Name}} - {{value: ElapseTimeString}}</h5>
+            <h5 class="popularity-info">
+                <span class="order" data-bind="text: '#' + ($index() + 1)">#</span>
+                <span class="share-count">♥ {{value: ShareCount}}</span>
+            </h5>
+            <h5>{{value: Source.Name}} - {{value: ElapsedTimeString}}</h5>
             <a href="{value: Url}" target="_blank"><h1>{{value: Title}}</h1></a>
             <hr />
             <p>{{value: Description}}</p>

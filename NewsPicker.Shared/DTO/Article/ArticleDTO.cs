@@ -19,6 +19,6 @@ namespace NewsPicker.Shared.DTO.Article
         public int ShareCount { get; set; }
         public virtual SourceDTO Source { get; set; }
 
-        public string ElapseTimeString => CreatedDate?.ToElapsedTimeString();
+        public string ElapsedTimeString => CreatedDate?.ToElapsedTimeString();
     }
 }

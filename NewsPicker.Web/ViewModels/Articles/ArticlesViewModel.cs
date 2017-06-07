@@ -45,11 +45,10 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             Countries = _countriesApi.GetCountries();
 
-            SelectedCountry = Countries.FirstOrDefault(c => c.Code == "sk");
-            //if (SelectedCountry == null)
-            //{
-            //    SelectedCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
-            //}
+            if (SelectedCountry == null)
+            {
+                SelectedCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+            }
         }
 
         private void LoadCategories()
