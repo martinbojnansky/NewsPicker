@@ -30,7 +30,11 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public override Task PreRender()
         {
-            LoadData();
+            if (!Context.IsPostBack)
+            {
+                LoadData();
+            }
+
             return base.PreRender();
         }
 
