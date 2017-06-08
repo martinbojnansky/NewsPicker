@@ -168,6 +168,7 @@
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Images\NewsPicker.png" />
     <Content Include="Resources\Images\WhiteNoise.png" />
     <Content Include="Resources\Stylesheets\Style.css">
       <DependentUpon>Style.less</DependentUpon>

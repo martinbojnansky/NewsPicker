@@ -12,6 +12,10 @@
     <dot:ContentPlaceHolder ID="Styles" />
 </head>
 <body>
+    <!--header-->
+    <header>
+        <img src="~/Resources/Images/NewsPicker.png" class="logo"/>
+    </header>
     <!--content-->
     <main>
         <dot:ContentPlaceHolder ID="Content" />
