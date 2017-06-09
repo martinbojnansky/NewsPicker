@@ -58,8 +58,8 @@ img {
 p {
     font-family: @primary-font;
     font-weight: 400;
-    font-size: .9rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.35rem;
     text-align: center;
 }
 
@@ -76,6 +76,7 @@ h4, h5, h6 {
     font-family: @secondary-font;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 h5 {
@@ -134,7 +135,7 @@ a.button {
     letter-spacing: .02rem;
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: @button-radius;
+    border-radius: @base-border-radius;
     box-shadow: @button-shadow;
 }
 
@@ -187,7 +188,7 @@ a.button:active {
     background: @button-background-color;
     color: @text-color-lighten;
     padding: @button-padding;
-    border-radius: @button-radius;
+    border-radius: @base-border-radius;
 }
 
 .toggle-button input[type=radio]:checked + span {

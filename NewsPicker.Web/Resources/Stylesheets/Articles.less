@@ -22,7 +22,6 @@
 }
 
 .article h4, .article h5, .article h6 {
-    margin-bottom: 10px;
 }
 
 .article hr {
@@ -31,15 +30,14 @@
 }
 
 .article .thumbnail {
-    position: relative;
     height: 40vh;
-    margin: 0 auto -2*@base-padding auto;
+    margin: 0 2*@base-padding 3*@base-padding 2*@base-padding;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: @background-color-darken;
     border: 1px solid @text-color;
-    border-radius: @button-radius;
+    border-radius: @base-border-radius;
     opacity: 0.95;
 }
 
@@ -53,27 +51,5 @@
     left: 0;
     background-image: url(../Images/WhiteNoise.png);
     background-repeat: repeat;
-    border-radius: @button-radius;
+    border-radius: @base-border-radius;
 }*/
-
-.article h5.popularity-info {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-
-.article h5.popularity-info span {
-    display: inline-block;
-    color: @text-color-white;
-    padding: @base-padding;
-    border-radius: @button-radius;
-    margin: 0 2px;
-}
-
-.article h5.popularity-info span.order {
-    background: @primary-color;
-}
-
-.article h5.popularity-info span.share-count {
-    background: @likes-color;
-}

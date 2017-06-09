@@ -7,20 +7,20 @@
     <meta charset="utf-8" />
     <title>NewsPicker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <!--styles-->
+    <%-- styles --%>
     <link rel="stylesheet" href="~/Resources/Stylesheets/Style.css">
     <dot:ContentPlaceHolder ID="Styles" />
 </head>
 <body>
-    <!--header-->
+    <%-- header --%>
     <header>
-        <img src="~/Resources/Images/NewsPicker.png" class="logo"/>
+        <img src="~/Resources/Images/NewsPicker.png" class="logo" />
     </header>
-    <!--content-->
+    <%-- content --%>
     <main>
         <dot:ContentPlaceHolder ID="Content" />
     </main>
-    <!--scripts-->
+    <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
 </body>
 </html>
