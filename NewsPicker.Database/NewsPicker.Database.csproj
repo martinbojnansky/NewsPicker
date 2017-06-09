@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201705111030324_Infrastructure2.Designer.cs">
       <DependentUpon>201705111030324_Infrastructure2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706092206013_Optimalization.cs" />
+    <Compile Include="Migrations\201706092206013_Optimalization.Designer.cs">
+      <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Category.cs" />
@@ -114,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705111030324_Infrastructure2.resx">
       <DependentUpon>201705111030324_Infrastructure2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706092206013_Optimalization.resx">
+      <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
