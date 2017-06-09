@@ -29,29 +29,28 @@
 }
 .article .thumbnail {
   position: relative;
-  width: 160px;
-  height: 160px;
+  height: 40vh;
   margin: 0 auto -20px auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #F2F2F2;
   border: 1px solid #222;
-  border-radius: 100%;
+  border-radius: 4px;
   opacity: 0.95;
 }
-.article .thumbnail:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(../Images/WhiteNoise.png);
-  background-repeat: repeat;
-  border-radius: 100%;
-}
+/*.article .thumbnail:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../Images/WhiteNoise.png);
+    background-repeat: repeat;
+    border-radius: @button-radius;
+}*/
 .article h5.popularity-info {
   position: relative;
   display: block;

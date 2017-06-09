@@ -32,19 +32,18 @@
 
 .article .thumbnail {
     position: relative;
-    width: 160px;
-    height: 160px;
+    height: 40vh;
     margin: 0 auto -2*@base-padding auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: @background-color-darken;
     border: 1px solid @text-color;
-    border-radius: 100%;
+    border-radius: @button-radius;
     opacity: 0.95;
 }
 
-.article .thumbnail:before {
+/*.article .thumbnail:before {
     content: '';
     display: block;
     position: absolute;
@@ -54,12 +53,12 @@
     left: 0;
     background-image: url(../Images/WhiteNoise.png);
     background-repeat: repeat;
-    border-radius: 100%;
-}
+    border-radius: @button-radius;
+}*/
 
 .article h5.popularity-info {
     position: relative;
-    display: block; 
+    display: block;
     margin: 0 auto;
 }
 
@@ -76,5 +75,5 @@
 }
 
 .article h5.popularity-info span.share-count {
-    background: @likes-color; 
+    background: @likes-color;
 }
