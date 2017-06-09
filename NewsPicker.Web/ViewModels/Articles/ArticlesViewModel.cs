@@ -23,8 +23,8 @@ namespace NewsPicker.Web.ViewModels.Articles
         public List<CategoryDTO> Categories { get; set; }
         public List<ArticleDTO> Articles { get; set; } = new List<ArticleDTO>();
 
-        public CountryDTO SelectedCountry { get; set; }
-        public CategoryDTO SelectedCategory { get; set; }
+        public int SelectedCountryId { get; set; }
+        public int SelectedCategoryId { get; set; }
 
         public bool IsFilterVisible { get; set; } = false;
 
@@ -49,26 +49,31 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             Countries = _countriesApi.GetCountries();
 
-            if (SelectedCountry == null)
+            if (SelectedCountryId == 0)
             {
-                SelectedCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+                SelectedCountryId = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant()).Id;
             }
         }
 
         private void LoadCategories()
         {
-            Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountry.Id);
+            Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountryId);
+
+            if (SelectedCategoryId == 0)
+            {
+                SelectedCategoryId = Categories.FirstOrDefault().Id;
+            }
         }
 
         private void LoadArticles()
         {
-            if (SelectedCategory != null)
+            if (SelectedCategoryId != 0)
             {
-                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategory.Id);
+                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategoryId);
             }
             else
             {
-                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountry.Id);
+                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountryId);
             }
         }
 

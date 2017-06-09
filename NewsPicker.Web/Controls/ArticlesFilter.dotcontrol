@@ -11,8 +11,8 @@
         <h5>Country</h5>
         <dot:Repeater DataSource="{controlProperty: Countries}">
             <dot:RadioButton GroupName="countries"
-                             CheckedItem="{controlProperty: SelectedCountry}"
-                             CheckedValue="{value: _this}"
+                             CheckedItem="{controlProperty: SelectedCountryId}"
+                             CheckedValue="{value: Id}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
@@ -20,8 +20,8 @@
         <h5>Category</h5>
         <dot:Repeater DataSource="{controlProperty: Categories}">
             <dot:RadioButton GroupName="categories"
-                             CheckedItem="{controlProperty: SelectedCategory}"
-                             CheckedValue="{value: _this}"
+                             CheckedItem="{controlProperty: SelectedCategoryId}"
+                             CheckedValue="{value: Id}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>

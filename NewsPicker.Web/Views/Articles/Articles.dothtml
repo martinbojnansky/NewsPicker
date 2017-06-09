@@ -30,8 +30,8 @@
     <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
                              Countries="{value: Countries}"
                              Categories="{value: Categories}"
-                             SelectedCountry="{value: SelectedCountry}"
-                             SelectedCategory="{value: SelectedCategory}"
+                             SelectedCountryId="{value: SelectedCountryId}"
+                             SelectedCategoryId="{value: SelectedCategoryId}"
                              ApplyCommand="{command: ApplyFilter()}" />
 </dot:Content>
 

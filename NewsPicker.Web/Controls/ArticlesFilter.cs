@@ -44,24 +44,24 @@ namespace NewsPicker.Web.Controls
             = DotvvmProperty.Register<List<CategoryDTO>, ArticlesFilter>(c => c.Categories, null);
 
         [MarkupOptions(Required = true)]
-        public CountryDTO SelectedCountry
+        public int SelectedCountryId
         {
-            get { return (CountryDTO)GetValue(SelectedCountryProperty); }
-            set { SetValue(SelectedCountryProperty, value); }
+            get { return (int)GetValue(SelectedCountryIdProperty); }
+            set { SetValue(SelectedCountryIdProperty, value); }
         }
 
-        public static readonly DotvvmProperty SelectedCountryProperty
-            = DotvvmProperty.Register<CountryDTO, ArticlesFilter>(c => c.SelectedCountry, null, true);
+        public static readonly DotvvmProperty SelectedCountryIdProperty
+            = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedCountryId);
 
         [MarkupOptions(Required = true)]
-        public CategoryDTO SelectedCategory
+        public int SelectedCategoryId
         {
-            get { return (CategoryDTO)GetValue(SelectedCategoryProperty); }
-            set { SetValue(SelectedCategoryProperty, value); }
+            get { return (int)GetValue(SelectedCategoryIdProperty); }
+            set { SetValue(SelectedCategoryIdProperty, value); }
         }
 
-        public static readonly DotvvmProperty SelectedCategoryProperty
-            = DotvvmProperty.Register<CategoryDTO, ArticlesFilter>(c => c.SelectedCategory, null, true);
+        public static readonly DotvvmProperty SelectedCategoryIdProperty
+            = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedCategoryId);
 
         [MarkupOptions(Required = true)]
         public Command ApplyCommand
