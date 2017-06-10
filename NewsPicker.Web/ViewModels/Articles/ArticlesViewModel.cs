@@ -58,11 +58,9 @@ namespace NewsPicker.Web.ViewModels.Articles
         private void LoadCategories()
         {
             Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountryId);
+            Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All" });
 
-            if (SelectedCategoryId == 0)
-            {
-                SelectedCategoryId = Categories.FirstOrDefault().Id;
-            }
+            SelectedCategoryId = 0;
         }
 
         private void LoadArticles()
@@ -77,8 +75,13 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
         }
 
-        public void ApplyFilter()
+        public void ApplyFilter(bool loadCategories = false)
         {
+            if (loadCategories)
+            {
+                LoadCategories();
+            }
+
             LoadArticles();
         }
     }

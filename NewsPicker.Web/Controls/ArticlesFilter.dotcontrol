@@ -13,6 +13,7 @@
             <dot:RadioButton GroupName="countries"
                              CheckedItem="{controlProperty: SelectedCountryId}"
                              CheckedValue="{value: Id}"
+                             Changed="{controlCommand: CountryChangedCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
@@ -22,13 +23,13 @@
             <dot:RadioButton GroupName="categories"
                              CheckedItem="{controlProperty: SelectedCategoryId}"
                              CheckedValue="{value: Id}"
+                             Changed="{controlCommand: CategoryChangedCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
-        <!--apply button-->
+        <!--hide button-->
         <div class="filter-command-wrapper">
-            <a class="button primary-button" Events.Click="{controlCommand: Apply()}">Apply</a>
+            <a class="button primary-button" Events.Click="{controlCommand: Hide()}">Hide</a>
         </div>
-        <!--close button-->
     </div>
 </div>

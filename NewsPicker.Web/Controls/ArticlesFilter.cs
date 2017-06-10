@@ -63,22 +63,33 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty SelectedCategoryIdProperty
             = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedCategoryId);
 
+        public Command CountryChangedCommand
+        {
+            get { return (Command)GetValue(CountryChangedCommandProperty); }
+            set { SetValue(CountryChangedCommandProperty, value); }
+        }
+
+        public static readonly DotvvmProperty CountryChangedCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.CountryChangedCommand);
+
         [MarkupOptions(Required = true)]
-        public Command ApplyCommand
+        public Command CategoryChangedCommand
         {
-            get { return (Command)GetValue(ApplyCommandProperty); }
-            set { SetValue(ApplyCommandProperty, value); }
+            get { return (Command)GetValue(CategoryChangedCommandProperty); }
+            set { SetValue(CategoryChangedCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty ApplyCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand, null);
+        public static readonly DotvvmProperty CategoryChangedCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.CategoryChangedCommand);
 
-        [AllowStaticCommand]
-        public async void Apply()
+        public Command TimePeriodChangedCommand
         {
-            Hide();
-            await ApplyCommand.Invoke();
+            get { return (Command)GetValue(TimePeriodChangedCommandProperty); }
+            set { SetValue(TimePeriodChangedCommandProperty, value); }
         }
+
+        public static readonly DotvvmProperty TimePeriodChangedCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.TimePeriodChangedCommand);
 
         [AllowStaticCommand]
         public void Show() => IsVisible = true;
