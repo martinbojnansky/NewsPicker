@@ -10,6 +10,7 @@ using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using System.Globalization;
 using NewsPicker.Shared.Extensions;
+using NewsPicker.Shared.Models;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
@@ -25,6 +26,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public int SelectedCountryId { get; set; }
         public int SelectedCategoryId { get; set; }
+        public int SelectedTimePeriodId { get; set; } = (int)TimePeriodValue.DAY;
 
         public bool IsFilterVisible { get; set; } = false;
 
@@ -67,21 +69,22 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             if (SelectedCategoryId != 0)
             {
-                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategoryId);
+                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);
             }
             else
             {
-                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountryId);
+                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountryId, SelectedTimePeriodId);
             }
         }
 
-        public void ApplyFilter(bool loadCategories = false)
+        public void UpdateFilter()
         {
-            if (loadCategories)
-            {
-                LoadCategories();
-            }
+            LoadCategories();
+            ApplyFilter();
+        }
 
+        public void ApplyFilter()
+        {
             LoadArticles();
         }
     }

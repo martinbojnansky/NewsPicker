@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NewsPicker.Shared.Enums;
+using NewsPicker.Shared.Models;
 
 namespace NewsPicker.Database.Controllers
 {
@@ -43,7 +43,7 @@ namespace NewsPicker.Database.Controllers
 
         public void DeleteOld()
         {
-            DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriod.WEEK);
+            DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriodValue.WEEK);
             IQueryable<Article> articles = _db.Articles.Where(a => startDate > a.CreatedDate);
 
             if (articles.Count() > 0)

@@ -33,9 +33,9 @@
                              Categories="{value: Categories}"
                              SelectedCountryId="{value: SelectedCountryId}"
                              SelectedCategoryId="{value: SelectedCategoryId}"
-                             CountryChangedCommand="{command: ApplyFilter(true)}"
-                             CategoryChangedCommand="{command: ApplyFilter()}"
-                             TimePeriodChangedCommand="{command: ApplyFilter()}" />
+                             SelectedTimePeriodId="{value: SelectedTimePeriodId}"
+                             UpdateCommand="{command: UpdateFilter()}"
+                             ApplyCommand="{command: ApplyFilter()}" />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

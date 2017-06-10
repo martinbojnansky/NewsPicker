@@ -1,33 +1,43 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
-<!--filter button-->
+<%-- filter button --%>
 <div class="filter-command-wrapper">
     <a class="button primary-button" Events.Click="{controlCommand: Show()}">Filter</a>
 </div>
-<!--filter popup-->
+<%-- filter popup --%>
 <div class="{controlProperty: "filter-popup " + (IsVisible ? "" : "collapsed")}">
     <div class="filter">
-        <!--countries-->
+        <%-- countries --%>
         <h5>Country</h5>
         <dot:Repeater DataSource="{controlProperty: Countries}">
             <dot:RadioButton GroupName="countries"
                              CheckedItem="{controlProperty: SelectedCountryId}"
                              CheckedValue="{value: Id}"
-                             Changed="{controlCommand: CountryChangedCommand}"
+                             Changed="{controlCommand: UpdateCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
-        <!--categories-->
+        <%-- categories --%>
         <h5>Category</h5>
         <dot:Repeater DataSource="{controlProperty: Categories}">
             <dot:RadioButton GroupName="categories"
                              CheckedItem="{controlProperty: SelectedCategoryId}"
                              CheckedValue="{value: Id}"
-                             Changed="{controlCommand: CategoryChangedCommand}"
+                             Changed="{controlCommand: ApplyCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
-        <!--hide button-->
+        <%-- time periods --%>
+        <h5>Time Period</h5>
+        <dot:Repeater DataSource="{controlProperty: TimePeriods}">
+            <dot:RadioButton GroupName="time-periods"
+                             CheckedItem="{controlProperty: SelectedTimePeriodId}"
+                             CheckedValue="{value: Id}"
+                             Changed="{controlCommand: ApplyCommand}"
+                             Text="{value: Name}"
+                             class="toggle-button" />
+        </dot:Repeater>
+        <%-- hide button --%>
         <div class="filter-command-wrapper">
             <a class="button primary-button" Events.Click="{controlCommand: Hide()}">Hide</a>
         </div>

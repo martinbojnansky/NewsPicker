@@ -161,6 +161,8 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\CountriesController.cs" />
     <Compile Include="Controls\ArticlesFilter.cs" />
+    <Compile Include="Models\ArticlesFilter\TimePeriod.cs" />
+    <Compile Include="Models\ArticlesFilter\TimePeriods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="DotvvmStartup.cs" />
@@ -216,7 +218,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Resources\Scripts\" />
   </ItemGroup>
   <ItemGroup>
