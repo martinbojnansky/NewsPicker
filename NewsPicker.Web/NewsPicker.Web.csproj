@@ -167,6 +167,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="DotvvmStartup.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModel.cs" />
+    <Compile Include="ViewModels\Articles\ArticlesViewModelBase.cs" />
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
