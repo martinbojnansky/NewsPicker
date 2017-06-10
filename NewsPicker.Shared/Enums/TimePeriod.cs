@@ -8,7 +8,7 @@ namespace NewsPicker.Shared.Enums
 {
     public enum TimePeriod
     {
-        HOUR = 1, FOUR_HOURS = 4, TWELVE_HOURS = 12, DAY = 24,
-        TWO_DAYS = 48, WEEK = 168, TWO_WEEKS = 336, MONTH = 720
+        SIX_HOURS = 6, TWELVE_HOURS = 12, DAY = 24,
+        THREE_DAYS = 72, WEEK = 168
     }
 }

@@ -43,7 +43,7 @@ namespace NewsPicker.Database.Controllers
 
         public void DeleteOld()
         {
-            DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriod.MONTH);
+            DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriod.WEEK);
             IQueryable<Article> articles = _db.Articles.Where(a => startDate > a.CreatedDate);
 
             if (articles.Count() > 0)
