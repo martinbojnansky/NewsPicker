@@ -30,7 +30,7 @@ namespace NewsPicker.Database.Controllers
             _db.SaveChanges();
         }
 
-        public void UpdateEngagementCount(int articleId, int engagementCount)
+        public void UpdateEngagementCount(long articleId, int engagementCount)
         {
             var article = _db.Articles.Find(articleId);
 

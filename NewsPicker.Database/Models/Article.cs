@@ -10,7 +10,7 @@ namespace NewsPicker.Database.Models
 {
     public class Article
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [Required]
         public string Title { get; set; }

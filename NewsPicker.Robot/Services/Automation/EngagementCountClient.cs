@@ -56,7 +56,7 @@ namespace NewsPicker.Robot.Services.Automation
             }
         }
 
-        private void SaveEngagementCount(int articleId, int engagementCount)
+        private void SaveEngagementCount(long articleId, int engagementCount)
         {
             if (engagementCount > 0)
             {
