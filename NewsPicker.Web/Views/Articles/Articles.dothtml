@@ -35,7 +35,8 @@
                              SelectedCategoryId="{value: SelectedCategoryId}"
                              SelectedTimePeriodId="{value: SelectedTimePeriodId}"
                              UpdateCommand="{command: UpdateFilter()}"
-                             ApplyCommand="{command: ApplyFilter()}" />
+                             ApplyCommand="{command: ApplyFilter()}"
+                             class="articles-filter-control" />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

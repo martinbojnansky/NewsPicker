@@ -1,13 +1,12 @@
 ﻿@import "Variables.less";
 
 .articles {
-    width: 100%;
-    max-width: @max-content-width;
-    margin: 0 auto;
-    padding: 0;
 }
 
 .article {
+    width: 100%;
+    max-width: @max-content-width;
+    margin: 0 auto;
     padding: 4*@base-padding 0;
     text-align: center;
     border-bottom: 1px dashed @separator-color;
@@ -52,4 +51,15 @@
     background-image: url(../Images/WhiteNoise.png);
     background-repeat: repeat;
     border-radius: @base-border-radius;
+}*/
+
+/*@media only screen and (min-width: @desktop-break-point-width) {
+    .articles {
+        position: fixed;
+        top: @bar-height;
+        bottom: 0;
+        left: @desktop-articles-filter-width;
+        right: 0;
+        overflow-y: auto;
+    }
 }*/

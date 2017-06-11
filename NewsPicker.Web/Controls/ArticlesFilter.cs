@@ -6,7 +6,6 @@ using DotVVM.Framework.Controls;
 using DotVVM.Framework.Binding;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
-using DotVVM.Framework.ViewModel;
 using DotVVM.Framework.Binding.Expressions;
 using NewsPicker.Web.Models.ArticlesFilter;
 

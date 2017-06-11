@@ -74,9 +74,13 @@ namespace NewsPicker.Web.ViewModels.Articles
             {
                 Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);
             }
-            else
+            else if (SelectedCountryId != 0)
             {
                 Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountryId, SelectedTimePeriodId);
+            }
+            else
+            {
+                Articles = new List<ArticleDTO>();
             }
         }
 
