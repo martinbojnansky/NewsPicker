@@ -101,11 +101,5 @@ namespace NewsPicker.Web.Controls
 
         public static readonly DotvvmProperty ApplyCommandProperty
             = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand);
-
-        [AllowStaticCommand]
-        public void Show() => IsVisible = true;
-
-        [AllowStaticCommand]
-        public void Hide() => IsVisible = false;
     }
 }

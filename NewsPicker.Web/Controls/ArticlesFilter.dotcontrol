@@ -1,9 +1,5 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
-<%-- filter button --%>
-<div class="filter-command-wrapper">
-    <a class="button primary-button" Events.Click="{controlCommand: Show()}">Filter</a>
-</div>
 <%-- filter popup --%>
 <div class="{controlProperty: "filter-popup " + (IsVisible ? "" : "collapsed")}">
     <div class="filter">
@@ -37,9 +33,12 @@
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
-        <%-- hide button --%>
-        <div class="filter-command-wrapper">
-            <a class="button primary-button" Events.Click="{controlCommand: Hide()}">Hide</a>
-        </div>
     </div>
+</div>
+<%-- filter button --%>
+<div class="filter-command-wrapper">
+    <a class="button primary-button"
+       Events.Click="{controlCommand: IsVisible = !IsVisible}">
+        {{controlProperty:  !IsVisible ? "Filter" : "Apply"}}
+    </a>
 </div>
