@@ -11,6 +11,7 @@ namespace NewsPicker.Web.Models.ArticlesFilter
         private const string HOURS_SUFFIX = "Hours";
         private const string DAY_SUFFIX = "Day";
         private const string DAYS_SUFFIX = "Days";
+        private const string WEEK_SUFFIX = "Week";
 
         public static List<TimePeriod> GetDefault()
         {
@@ -19,8 +20,8 @@ namespace NewsPicker.Web.Models.ArticlesFilter
                 new TimePeriod(TimePeriodValue.SIX_HOURS, $"6 {HOURS_SUFFIX}"),
                 new TimePeriod(TimePeriodValue.TWELVE_HOURS, $"12 {HOURS_SUFFIX}"),
                 new TimePeriod(TimePeriodValue.DAY, $"1 {DAY_SUFFIX}"),
-                new TimePeriod(TimePeriodValue.THREE_DAYS, $"3 {DAY_SUFFIX}"),
-                new TimePeriod(TimePeriodValue.WEEK, $"7 {DAYS_SUFFIX}")
+                new TimePeriod(TimePeriodValue.THREE_DAYS, $"3 {DAYS_SUFFIX}"),
+                new TimePeriod(TimePeriodValue.WEEK, $"1 {WEEK_SUFFIX}")
             };
         }
     }

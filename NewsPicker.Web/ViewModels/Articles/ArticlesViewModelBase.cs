@@ -51,7 +51,12 @@ namespace NewsPicker.Web.ViewModels.Articles
 
             if (SelectedCountryId == 0)
             {
-                SelectedCountryId = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant()).Id;
+                var currentRegionCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+
+                if (currentRegionCountry != null)
+                {
+                    SelectedCountryId = currentRegionCountry.Id;
+                }
             }
         }
 
