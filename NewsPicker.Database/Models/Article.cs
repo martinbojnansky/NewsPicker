@@ -27,7 +27,7 @@ namespace NewsPicker.Database.Models
         [Required]
         public DateTime? CreatedDate { get; set; }
 
-        public int ShareCount { get; set; }
+        public int EngagementCount { get; set; }
 
         [Index]
         public int SourceId { get; set; }

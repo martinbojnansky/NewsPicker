@@ -44,8 +44,8 @@ namespace NewsPicker.Web.Controllers
 
             // Filter by date period
             articles = articles.Where(a => startDate <= a.CreatedDate);
-            // Order by share count
-            articles = articles.OrderByDescending(a => a.ShareCount);
+            // Order by engagement count
+            articles = articles.OrderByDescending(a => a.EngagementCount);
             // Take top 10
             articles = articles.Take(10);
 

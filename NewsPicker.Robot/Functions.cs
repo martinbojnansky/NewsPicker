@@ -26,10 +26,10 @@ namespace NewsPicker.Robot
         }
 
         [NoAutomaticTrigger]
-        public static void UpdateShareCount()
+        public static void UpdateEngagementCount()
         {
-            ShareCountClient shares = new ShareCountClient();
-            shares.UpdateAsync().Wait();
+            EngagementCountClient engagements = new EngagementCountClient();
+            engagements.UpdateAsync().Wait();
         }
     }
 }

@@ -14,13 +14,13 @@ namespace NewsPicker.Robot.Services.Facebook
     {
         public FacebookClient() : base()
         {
-            Init("https://graph.facebook.com/v2.8/", $"OAuth {ApiConstants.FACEBOOK_KEY}");
+            Init("https://graph.facebook.com/v2.9/", $"OAuth {ApiConstants.FACEBOOK_KEY}");
         }
 
-        public async Task<OpenGraphShare> GetShareAsync(string url)
+        public async Task<OpenGraphEngagement> GetEngagementAsync(string url)
         {
-            OpenGraphShare share = (await GetAsync<OpenGraphUrl>($"?id={url}")).Share;
-            return share;
+            OpenGraphEngagement engagement = (await GetAsync<OpenGraphUrl>($"?id={url}&fields=engagement")).Engagement;
+            return engagement;
         }
     }
 }

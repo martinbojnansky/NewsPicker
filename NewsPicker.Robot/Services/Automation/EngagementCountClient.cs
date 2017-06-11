@@ -9,10 +9,9 @@ using NewsPicker.Robot.Services.Analytics;
 using NewsPicker.Database.Controllers;
 using NewsPicker.Database.Models;
 
-
 namespace NewsPicker.Robot.Services.Automation
 {
-    public class ShareCountClient
+    public class EngagementCountClient
     {
         private ErrorsClient _errors = new ErrorsClient();
         private FacebookClient _facebook = new FacebookClient();
@@ -23,7 +22,7 @@ namespace NewsPicker.Robot.Services.Automation
         {
             IEnumerable<Article> articles = null;
 
-            _errors.Log($"{nameof(ShareCountClient)}.{nameof(UpdateAsync)}()", () =>
+            _errors.Log($"{nameof(EngagementCountClient)}.{nameof(UpdateAsync)}()", () =>
             {
                 articles = _articles.GetAll();
             });
@@ -32,24 +31,24 @@ namespace NewsPicker.Robot.Services.Automation
             {
                 foreach (var article in articles)
                 {
-                    int shareCount = await GetShareCountAsync(article.Url);
-                    SaveShareCount(article.Id, shareCount);
+                    int engagementCount = await GetEngagementCountAsync(article.Url);
+                    SaveEngagementCount(article.Id, engagementCount);
                 }
             }
         }
 
-        private async Task<int> GetShareCountAsync(string url)
+        private async Task<int> GetEngagementCountAsync(string url)
         {
-            OpenGraphShare share = null;
+            OpenGraphEngagement engagement = null;
 
-            await _errors.LogAsync($"{nameof(ShareCountClient)}.{nameof(GetShareCountAsync)}({nameof(url)} = {url})", async () =>
+            await _errors.LogAsync($"{nameof(EngagementCountClient)}.{nameof(GetEngagementCountAsync)}({nameof(url)} = {url})", async () =>
             {
-                share = await _facebook.GetShareAsync(url);
+                engagement = await _facebook.GetEngagementAsync(url);
             });
 
-            if (share != null && share.ShareCount.HasValue)
+            if (engagement != null)
             {
-                return share.ShareCount.Value;
+                return engagement.TotalEngagementCount;
             }
             else
             {
@@ -57,13 +56,13 @@ namespace NewsPicker.Robot.Services.Automation
             }
         }
 
-        private void SaveShareCount(int articleId, int shareCount)
+        private void SaveEngagementCount(int articleId, int engagementCount)
         {
-            if (shareCount > 0)
+            if (engagementCount > 0)
             {
-                _errors.Log($"{nameof(ShareCountClient)}.{nameof(SaveShareCount)}({nameof(articleId)} = {articleId}, {nameof(shareCount)} = {shareCount})", () =>
+                _errors.Log($"{nameof(EngagementCountClient)}.{nameof(SaveEngagementCount)}({nameof(articleId)} = {articleId}, {nameof(engagementCount)} = {engagementCount})", () =>
                 {
-                    _articles.UpdateShareCount(articleId, shareCount);
+                    _articles.UpdateEngagementCount(articleId, engagementCount);
                 });
             }
         }

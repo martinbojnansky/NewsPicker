@@ -83,6 +83,10 @@
     <Compile Include="Migrations\201706092206013_Optimalization.Designer.cs">
       <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706111007397_FacebookApiUpdate.cs" />
+    <Compile Include="Migrations\201706111007397_FacebookApiUpdate.Designer.cs">
+      <DependentUpon>201706111007397_FacebookApiUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Category.cs" />
@@ -121,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706092206013_Optimalization.resx">
       <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706111007397_FacebookApiUpdate.resx">
+      <DependentUpon>201706111007397_FacebookApiUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

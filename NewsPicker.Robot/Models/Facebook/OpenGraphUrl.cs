@@ -10,7 +10,7 @@ namespace NewsPicker.Robot.Models.Facebook
     [DataContract]
     public class OpenGraphUrl
     {
-        [DataMember(Name = "share")]
-        public OpenGraphShare Share { get; set; }
+        [DataMember(Name = "engagement")]
+        public OpenGraphEngagement Engagement { get; set; }
     }
 }

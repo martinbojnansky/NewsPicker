@@ -101,7 +101,7 @@
   <ItemGroup>
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
-    <Compile Include="Models\Facebook\OpenGraphShare.cs" />
+    <Compile Include="Models\Facebook\OpenGraphEngagement.cs" />
     <Compile Include="Models\Facebook\OpenGraphUrl.cs" />
     <Compile Include="Models\Rss\RssItem.cs" />
     <Compile Include="Program.cs" />
@@ -109,7 +109,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Analytics\ErrorsClient.cs" />
     <Compile Include="Services\Automation\ArticlesClient.cs" />
-    <Compile Include="Services\Automation\ShareCountClient.cs" />
+    <Compile Include="Services\Automation\EngagementCountClient.cs" />
     <Compile Include="Services\Facebook\FacebookClient.cs" />
     <Compile Include="Services\Rss\RssClient.cs" />
     <Compile Include="Services\Rss\SyndicationClient.cs" />

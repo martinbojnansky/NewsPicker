@@ -30,13 +30,13 @@ namespace NewsPicker.Database.Controllers
             _db.SaveChanges();
         }
 
-        public void UpdateShareCount(int articleId, int shareCount)
+        public void UpdateEngagementCount(int articleId, int engagementCount)
         {
             var article = _db.Articles.Find(articleId);
 
             if (article != null)
             {
-                article.ShareCount = shareCount;
+                article.EngagementCount = engagementCount;
                 _db.SaveChanges();
             }
         }
