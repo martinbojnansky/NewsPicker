@@ -8,24 +8,29 @@
     <%-- articles --%>
     <dot:Repeater class="articles"
                   DataSource="{value: Articles}">
-        <div class="article">
-            <%-- thumbnail --%>
-            <a href="{value: Url}"
-               target="_blank"
-               Visible="{value: Image != null}">
-                <div class="thumbnail"
-                     style="{value: "background-image: url(" + Image + ");"}"></div>
-            </a>
-            <%-- source & date --%>
-            <h5>{{value: Source.Name}} - {{value: ElapsedTimeString}} - ♥ {{value: EngagementCount}}</h5>
-            <%-- title --%>
-            <a href="{value: Url}" target="_blank"><h1><span data-bind="text: '#' + ($index() + 1)">#</span> {{value: Title}}</h1></a>
-            <hr />
-            <%-- description --%>
-            <p>{{value: Description}}</p>
-            <%-- link --%>
-            <a href="{value: Url}" target="_blank" class="button primary-button">Read More</a>
-        </div>
+        <ItemTemplate>
+            <div class="article">
+                <%-- thumbnail --%>
+                <a href="{value: Url}"
+                   target="_blank"
+                   Visible="{value: Image != null}">
+                    <div class="thumbnail"
+                         style="{value: "background-image: url(" + Image + ");"}"></div>
+                </a>
+                <%-- source & date --%>
+                <h5>{{value: Source.Name}} - {{value: ElapsedTimeString}} - ♥ {{value: EngagementCount}}</h5>
+                <%-- title --%>
+                <a href="{value: Url}" target="_blank"><h1><span data-bind="text: '#' + ($index() + 1)">#</span> {{value: Title}}</h1></a>
+                <hr />
+                <%-- description --%>
+                <p>{{value: Description}}</p>
+                <%-- link --%>
+                <a href="{value: Url}" target="_blank" class="button primary-button">Read More</a>
+            </div>
+        </ItemTemplate>
+        <EmptyDataTemplate>
+            <p>No Data :(</p>
+        </EmptyDataTemplate>
     </dot:Repeater>
     <%-- filter --%>
     <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"

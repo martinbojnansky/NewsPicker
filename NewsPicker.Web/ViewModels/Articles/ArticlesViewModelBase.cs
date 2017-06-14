@@ -9,24 +9,33 @@ using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using System.Globalization;
 using NewsPicker.Shared.Models;
+using System.Web;
+using NewsPicker.Web.Controls;
+using NewsPicker.Web.Services.Http;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
     public class ArticlesViewModelBase : NewsPicker.Web.ViewModels.LayoutViewModel
     {
         private readonly CountriesController _countriesApi = new CountriesController();
+
         private readonly CategoriesController _categoriesApi = new CategoriesController();
+
         private readonly ArticlesController _articlesApi = new ArticlesController();
 
-        public List<CountryDTO> Countries { get; set; }
-        public List<CategoryDTO> Categories { get; set; }
-        public List<ArticleDTO> Articles { get; set; }
-
         public int SelectedCountryId { get; set; }
+
         public int SelectedCategoryId { get; set; }
+
         public int SelectedTimePeriodId { get; set; } = (int)TimePeriodValue.DAY;
 
         public bool IsFilterVisible { get; set; } = false;
+
+        public List<CountryDTO> Countries { get; set; }
+
+        public List<CategoryDTO> Categories { get; set; }
+
+        public List<ArticleDTO> Articles { get; set; }
 
         public override Task PreRender()
         {
@@ -48,22 +57,39 @@ namespace NewsPicker.Web.ViewModels.Articles
         private void LoadCountries()
         {
             Countries = _countriesApi.GetCountries();
+            PreSelectCountry();
+        }
 
-            if (SelectedCountryId == 0)
+        private void PreSelectCountry()
+        {
+            // Cookie value
+            var selectedCountryId = Convert.ToInt32(Cookies.Get(nameof(ArticlesFilter), nameof(SelectedCountryId)));
+            if (selectedCountryId != 0)
             {
-                var currentRegionCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+                SelectedCountryId = selectedCountryId;
+                return;
+            }
 
-                if (currentRegionCountry != null)
-                {
-                    SelectedCountryId = currentRegionCountry.Id;
-                }
+            // Region info
+            var currentRegionCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
+            if (currentRegionCountry != null)
+            {
+                SelectedCountryId = currentRegionCountry.Id;
+                return;
             }
         }
 
         private void LoadCategories()
         {
-            Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountryId);
-            Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All" });
+            if (SelectedCountryId != 0)
+            {
+                Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountryId);
+                Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All" });
+            }
+            else
+            {
+                Categories = null;
+            }
 
             SelectedCategoryId = 0;
         }
@@ -80,19 +106,25 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
             else
             {
-                Articles = new List<ArticleDTO>();
+                Articles = null;
             }
+        }
+
+        public void ApplyFilter()
+        {
+            LoadArticles();
+            SaveFilter();
+        }
+
+        private void SaveFilter()
+        {
+            Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
         }
 
         public void UpdateFilter()
         {
             LoadCategories();
             ApplyFilter();
-        }
-
-        public void ApplyFilter()
-        {
-            LoadArticles();
         }
     }
 }
