@@ -8,6 +8,7 @@ using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using DotVVM.Framework.Binding.Expressions;
 using NewsPicker.Web.Models.ArticlesFilter;
+using DotVVM.Framework.ViewModel;
 
 namespace NewsPicker.Web.Controls
 {
@@ -100,5 +101,16 @@ namespace NewsPicker.Web.Controls
 
         public static readonly DotvvmProperty ApplyCommandProperty
             = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand);
+
+        [AllowStaticCommand]
+        public async void Toggle()
+        {
+            IsVisible = !IsVisible;
+
+            if (!IsVisible)
+            {
+                await ApplyCommand.Invoke();
+            }
+        }
     }
 }

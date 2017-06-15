@@ -19,7 +19,6 @@
             <dot:RadioButton GroupName="categories"
                              CheckedItem="{controlProperty: SelectedCategoryId}"
                              CheckedValue="{value: Id}"
-                             Changed="{controlCommand: ApplyCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
@@ -29,7 +28,6 @@
             <dot:RadioButton GroupName="time-periods"
                              CheckedItem="{controlProperty: SelectedTimePeriodId}"
                              CheckedValue="{value: Id}"
-                             Changed="{controlCommand: ApplyCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </dot:Repeater>
@@ -38,7 +36,7 @@
 <%-- filter button --%>
 <div class="articles-filter-control-command-wrapper">
     <a class="button primary-button"
-       Events.Click="{controlCommand: IsVisible = !IsVisible}">
-        {{controlProperty:  !IsVisible ? "Filter" : "Ok"}}
+       Events.Click="{controlCommand: Toggle()}">
+        {{controlProperty:  !IsVisible ? "Filter" : "Apply"}}
     </a>
 </div>
