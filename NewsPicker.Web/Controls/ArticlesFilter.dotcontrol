@@ -1,5 +1,7 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
+<%-- filter background --%>
+<div class="{controlProperty: "articles-filter-control-background " + (IsVisible ? "" : "collapsed")}"></div>
 <%-- filter content --%>
 <div class="{controlProperty: "articles-filter-control-content-wrapper " + (IsVisible ? "" : "collapsed")}">
     <div class="articles-filter-control-content">

@@ -70,6 +70,9 @@ namespace NewsPicker.Web.Controls
             set { SetValue(SelectedCategoryIdProperty, value); }
         }
 
+        public static readonly DotvvmProperty SelectedCategoryIdProperty
+            = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedCategoryId);
+
         public int SelectedTimePeriodId
         {
             get { return (int)GetValue(SelectedTimePeriodIdProperty); }
@@ -78,9 +81,6 @@ namespace NewsPicker.Web.Controls
 
         public static readonly DotvvmProperty SelectedTimePeriodIdProperty
             = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedTimePeriodId);
-
-        public static readonly DotvvmProperty SelectedCategoryIdProperty
-            = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedCategoryId);
 
         [MarkupOptions(Required = true)]
         public Command UpdateCommand

@@ -42,13 +42,26 @@
     background-repeat: repeat;
     border-radius: @base-border-radius;
 }*/
-.articles-filter-control-content-wrapper {
+.articles-filter-control {
   position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+.articles-filter-control-background {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+.articles-filter-control-content-wrapper {
+  position: absolute;
   bottom: 60px;
   left: 0;
   right: 0;
   display: block;
-  max-height: calc(100% -  120px);
+  max-height: calc(100% -  60px);
   background: #FFF;
   overflow-y: auto;
 }
@@ -60,7 +73,7 @@
   padding: 20px 10px;
 }
 .articles-filter-control-command-wrapper {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -77,7 +90,7 @@
   text-align: center;
 }
 * {
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
