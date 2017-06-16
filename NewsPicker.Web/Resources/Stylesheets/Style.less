@@ -24,7 +24,6 @@ body {
 }
 
 header {
-    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,6 +36,7 @@ header {
 
 header img.logo {
     margin: 3px auto;
+    height: 34px;
 }
 
 main {
@@ -211,6 +211,24 @@ a.button:active {
 
 .collapsed {
     opacity: 0;
-    height: 0;
     visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }

@@ -29,7 +29,8 @@
             </div>
         </ItemTemplate>
         <EmptyDataTemplate>
-            <p>No Data :(</p>
+            <p><strong>Nothing here yet...</strong></p>
+            <p>Please change filter values or try again later.</p>
         </EmptyDataTemplate>
     </dot:Repeater>
     <%-- filter --%>
@@ -39,8 +40,8 @@
                              SelectedCountryId="{value: SelectedCountryId}"
                              SelectedCategoryId="{value: SelectedCategoryId}"
                              SelectedTimePeriodId="{value: SelectedTimePeriodId}"
-                             UpdateCommand="{command: UpdateFilter()}"
-                             ApplyCommand="{command: ApplyFilter()}"
+                             FilterButtonCommand="{command: Filter()}"
+                             LoadCategoriesCommand="{command: LoadCategories()}"
                              class="articles-filter-control" />
 </dot:Content>
 

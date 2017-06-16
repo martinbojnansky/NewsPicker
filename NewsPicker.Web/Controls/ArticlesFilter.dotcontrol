@@ -1,44 +1,56 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
 <%-- filter background --%>
-<div class="{controlProperty: "articles-filter-control-background " + (IsVisible ? "" : "collapsed")}"></div>
+<div class="articles-filter-control-background"
+     Visible="{controlProperty: IsVisible}"></div>
 <%-- filter content --%>
-<div class="{controlProperty: "articles-filter-control-content-wrapper " + (IsVisible ? "" : "collapsed")}">
+<div class="articles-filter-control-content-wrapper"
+     Visible="{controlProperty: IsVisible}">
     <div class="articles-filter-control-content">
         <%-- countries --%>
         <h5>Country</h5>
         <dot:Repeater DataSource="{controlProperty: Countries}">
-            <dot:RadioButton GroupName="countries"
-                             CheckedItem="{controlProperty: SelectedCountryId}"
-                             CheckedValue="{value: Id}"
-                             Changed="{controlCommand: UpdateCommand}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
+            <ItemTemplate>
+                <dot:RadioButton GroupName="countries"
+                                 CheckedItem="{controlProperty: SelectedCountryId}"
+                                 CheckedValue="{value: Id}"
+                                 Changed="{controlCommand: LoadCategoriesCommand}"
+                                 Text="{value: Name}"
+                                 class="toggle-button" />
+            </ItemTemplate>
         </dot:Repeater>
         <%-- categories --%>
         <h5>Category</h5>
         <dot:Repeater DataSource="{controlProperty: Categories}">
-            <dot:RadioButton GroupName="categories"
-                             CheckedItem="{controlProperty: SelectedCategoryId}"
-                             CheckedValue="{value: Id}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
+            <ItemTemplate>
+                <dot:RadioButton GroupName="categories"
+                                 CheckedItem="{controlProperty: SelectedCategoryId}"
+                                 CheckedValue="{value: Id}"
+                                 Text="{value: Name}"
+                                 class="toggle-button" />
+            </ItemTemplate>
+            <EmptyDataTemplate>
+                <p>No country selected.</p>
+            </EmptyDataTemplate>
         </dot:Repeater>
         <%-- time periods --%>
         <h5>Time Period</h5>
         <dot:Repeater DataSource="{controlProperty: TimePeriods}">
-            <dot:RadioButton GroupName="time-periods"
-                             CheckedItem="{controlProperty: SelectedTimePeriodId}"
-                             CheckedValue="{value: Id}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
+            <ItemTemplate>
+                <dot:RadioButton GroupName="time-periods"
+                                 CheckedItem="{controlProperty: SelectedTimePeriodId}"
+                                 CheckedValue="{value: Id}"
+                                 Text="{value: Name}"
+                                 class="toggle-button" />
+            </ItemTemplate>
         </dot:Repeater>
     </div>
 </div>
 <%-- filter button --%>
 <div class="articles-filter-control-command-wrapper">
     <a class="button primary-button"
-       Events.Click="{controlCommand: Toggle()}">
-        {{controlProperty:  !IsVisible ? "Filter" : "Apply"}}
+       Events.Click="{controlCommand: FilterButtonCommand}"
+       InnerText="{controlProperty: !IsVisible ? "Filter" : "Apply"}">
+        Filter
     </a>
 </div>

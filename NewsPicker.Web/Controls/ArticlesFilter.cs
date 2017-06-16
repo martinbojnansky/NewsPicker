@@ -83,34 +83,23 @@ namespace NewsPicker.Web.Controls
             = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedTimePeriodId);
 
         [MarkupOptions(Required = true)]
-        public Command UpdateCommand
+        public Command LoadCategoriesCommand
         {
-            get { return (Command)GetValue(UpdateCommandProperty); }
-            set { SetValue(UpdateCommandProperty, value); }
+            get { return (Command)GetValue(LoadCategoriesCommandProperty); }
+            set { SetValue(LoadCategoriesCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty UpdateCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.UpdateCommand);
+        public static readonly DotvvmProperty LoadCategoriesCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.LoadCategoriesCommand);
 
         [MarkupOptions(Required = true)]
-        public Command ApplyCommand
+        public Command FilterButtonCommand
         {
-            get { return (Command)GetValue(ApplyCommandProperty); }
-            set { SetValue(ApplyCommandProperty, value); }
+            get { return (Command)GetValue(FilterButtonCommandProperty); }
+            set { SetValue(FilterButtonCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty ApplyCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyCommand);
-
-        [AllowStaticCommand]
-        public async void Toggle()
-        {
-            IsVisible = !IsVisible;
-
-            if (!IsVisible)
-            {
-                await ApplyCommand.Invoke();
-            }
-        }
+        public static readonly DotvvmProperty FilterButtonCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.FilterButtonCommand);
     }
 }
