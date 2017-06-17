@@ -12,14 +12,14 @@
     <dot:ContentPlaceHolder ID="Styles" />
 </head>
 <body>
-    <%-- header --%>
-    <header class="center">
-        <img src="~/Resources/Images/NewsPicker.png" class="logo" />
-    </header>
     <%-- content --%>
     <main>
         <dot:ContentPlaceHolder ID="Content" />
     </main>
+    <%-- header --%>
+    <header class="center">
+        <img src="~/Resources/Images/NewsPicker.png" class="logo" />
+    </header>
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
     <script>

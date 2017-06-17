@@ -115,13 +115,9 @@ header img.logo {
   height: 34px;
 }
 main {
-  position: fixed;
-  top: 60px;
-  bottom: 60px;
-  left: 0;
-  right: 0;
+  position: relative;
+  padding: 60px 0;
   display: block;
-  overflow-y: auto;
 }
 img {
   max-width: 100%;
