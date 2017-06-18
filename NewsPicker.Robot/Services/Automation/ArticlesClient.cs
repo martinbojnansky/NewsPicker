@@ -25,7 +25,7 @@ namespace NewsPicker.Robot.Services.Automation
 
             _errors.Log($"{nameof(ArticlesClient)}.{nameof(UpdateAsync)}()", () =>
             {
-                sources = _sources.GetAll();
+                sources = _sources.GetActive();
             });
 
             foreach (var source in sources)
@@ -85,35 +85,16 @@ namespace NewsPicker.Robot.Services.Automation
                     Url = item.Link,
                     CreatedDate = item.PubDate,
                     Image = item.Image,
-                    SourceId = source.Id                  
+                    SourceId = source.Id
                 };
-
-                //var image = GetArticleImage(item);
-                //if (!string.IsNullOrWhiteSpace(image))
-                //{
-                //    article.Image = image;
-                //}
             });
 
             return article;
         }
 
-        //private string GetArticleImage(SyndicationItem item)
-        //{
-        //    string image = null;
-
-        //    _errors.Log($"{nameof(ArticlesClient)}.{nameof(GetArticleImage)}({nameof(item)} = {item.Links.FirstOrDefault().Uri.AbsoluteUri})", () =>
-        //    {
-        //        image = item.Links.Where(l => l.Uri.AbsoluteUri.Contains(".png") || l.Uri.AbsoluteUri.Contains(".jpg"))
-        //                .FirstOrDefault()?.Uri.AbsoluteUri;
-        //    });
-
-        //    return image;
-        //}
-
         private void SaveArticles(IEnumerable<Article> articles)
         {
-            if(articles == null)
+            if (articles == null)
             {
                 return;
             }
@@ -123,7 +104,6 @@ namespace NewsPicker.Robot.Services.Automation
                 _articles.AddRange(articles);
             });
         }
-
 
         public void UpdateDate(int sourceId)
         {

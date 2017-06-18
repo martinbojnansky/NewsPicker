@@ -16,6 +16,11 @@ namespace NewsPicker.Database.Controllers
             return _db.Sources.ToList();
         }
 
+        public IList<Source> GetActive()
+        {
+            return _db.Sources.Where(s => s.IsActive).ToList();
+        }
+
         public void UpdateDate(int sourceId)
         {
             var source = _db.Sources.Find(sourceId);

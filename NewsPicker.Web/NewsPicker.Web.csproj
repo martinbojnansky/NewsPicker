@@ -157,9 +157,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ArticlesController.cs" />
-    <Compile Include="Controllers\CategoriesController.cs" />
-    <Compile Include="Controllers\CountriesController.cs" />
+    <Compile Include="Facades\ArticlesFacade.cs" />
+    <Compile Include="Facades\CategoriesFacade.cs" />
+    <Compile Include="Facades\CountriesFacade.cs" />
     <Compile Include="Controls\ArticlesFilter.cs" />
     <Compile Include="Models\ArticlesFilter\TimePeriod.cs" />
     <Compile Include="Models\ArticlesFilter\TimePeriods.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NewsPicker.Shared.DTO.Article;
-using NewsPicker.Web.Controllers;
+using NewsPicker.Web.Facades;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
 using System.Globalization;
@@ -21,11 +21,11 @@ namespace NewsPicker.Web.ViewModels.Articles
         private const string CATEGORY_QUERY_KEY = "ca";
         private const string TIME_PERIOD_QUERY_KEY = "tp";
 
-        private readonly CountriesController _countriesApi = new CountriesController();
+        private readonly CountriesFacade _countriesFacade = new CountriesFacade();
 
-        private readonly CategoriesController _categoriesApi = new CategoriesController();
+        private readonly CategoriesFacade _categoriesFacade = new CategoriesFacade();
 
-        private readonly ArticlesController _articlesApi = new ArticlesController();
+        private readonly ArticlesFacade _articlesFacade = new ArticlesFacade();
 
         public int SelectedCountryId { get; set; }
 
@@ -111,7 +111,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public void LoadCountries()
         {
-            Countries = _countriesApi.GetCountries();
+            Countries = _countriesFacade.GetCountries();
             LoadSelectedCountry();
         }
 
@@ -119,7 +119,7 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             if (SelectedCountryId != 0)
             {
-                Categories = _categoriesApi.GetCategoriesByCountryId(SelectedCountryId);
+                Categories = _categoriesFacade.GetCategoriesByCountryId(SelectedCountryId);
                 Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All" });
             }
             else
@@ -132,11 +132,11 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             if (SelectedCategoryId != 0)
             {
-                Articles = _articlesApi.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);
+                Articles = _articlesFacade.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);
             }
             else if (SelectedCountryId != 0)
             {
-                Articles = _articlesApi.GetTopArticlesByCountryId(SelectedCountryId, SelectedTimePeriodId);
+                Articles = _articlesFacade.GetTopArticlesByCountryId(SelectedCountryId, SelectedTimePeriodId);
             }
             else
             {

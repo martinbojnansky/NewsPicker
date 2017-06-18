@@ -91,11 +91,16 @@
     <Compile Include="Migrations\201706111028458_LongArticleId.Designer.cs">
       <DependentUpon>201706111028458_LongArticleId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706181248545_ActivableFlag.cs" />
+    <Compile Include="Migrations\201706181248545_ActivableFlag.Designer.cs">
+      <DependentUpon>201706181248545_ActivableFlag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Error.cs" />
+    <Compile Include="Models\IActivable.cs" />
     <Compile Include="Models\Source.cs" />
     <Compile Include="NewsPickerDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706111028458_LongArticleId.resx">
       <DependentUpon>201706111028458_LongArticleId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706181248545_ActivableFlag.resx">
+      <DependentUpon>201706181248545_ActivableFlag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

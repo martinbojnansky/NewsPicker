@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace NewsPicker.Database.Models
 {
-    public class Category
+    public class Category : IActivable
     {
         public int Id { get; set; }
+
         [Required]
         public string Name { get; set; }
+
         public int CountryId { get; set; }
         public virtual Country Country { get; set; }
         public virtual ICollection<Source> Sources { get; set; }
         public int? Order { get; set; }
+        public bool IsActive { get; set; }
     }
 }

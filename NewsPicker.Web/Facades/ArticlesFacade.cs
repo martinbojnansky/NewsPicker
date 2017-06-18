@@ -10,9 +10,9 @@ using NewsPicker.Shared.DTO.Article;
 using NewsPicker.Database.Models;
 using NewsPicker.Database;
 
-namespace NewsPicker.Web.Controllers
+namespace NewsPicker.Web.Facades
 {
-    public class ArticlesController
+    public class ArticlesFacade
     {
         private NewsPickerDatabase db = new NewsPickerDatabase();
 
