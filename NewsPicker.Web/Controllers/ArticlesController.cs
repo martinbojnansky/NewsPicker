@@ -42,8 +42,8 @@ namespace NewsPicker.Web.Controllers
         {
             DateTime? startDate = DateTime.UtcNow.AddHours(-timePeriodId);
 
-            // Filter by date period
-            articles = articles.Where(a => startDate <= a.CreatedDate);
+            // Filter by date period and minimum engagement
+            articles = articles.Where(a => startDate <= a.CreatedDate && a.EngagementCount >= 10);
             // Order by engagement count
             articles = articles.OrderByDescending(a => a.EngagementCount);
             // Take top 10
