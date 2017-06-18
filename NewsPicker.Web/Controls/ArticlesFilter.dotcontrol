@@ -1,10 +1,10 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
 <%-- filter background --%>
-<div class="articles-filter-control-background"
+<div class="{controlProperty: "articles-filter-control-background " + (IsVisible ? "" : "collapsed")}"
      Visible="{controlProperty: IsVisible}"></div>
 <%-- filter content --%>
-<div class="articles-filter-control-content-wrapper"
+<div class="{controlProperty: "articles-filter-control-content-wrapper " + (IsVisible ? "" : "collapsed")}"
      Visible="{controlProperty: IsVisible}">
     <div class="articles-filter-control-content">
         <%-- countries --%>
