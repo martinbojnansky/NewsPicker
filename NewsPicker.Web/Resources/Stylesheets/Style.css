@@ -1,89 +1,4 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&subset=latin-ext");
-.article {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 40px 0;
-  text-align: center;
-  border-bottom: 1px dashed #CCC;
-}
-.article p {
-  margin: 20px 20%;
-}
-.article h1,
-.article h2,
-.article h3 {
-  margin: 20px 10%;
-}
-.article hr {
-  width: 20%;
-  margin: 20px auto;
-}
-.article .thumbnail {
-  height: 40vh;
-  margin: 0 20px 30px 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #F2F2F2;
-  border: 1px solid #222;
-  border-radius: 4px;
-  opacity: 0.95;
-}
-/*.article .thumbnail:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../Images/WhiteNoise.png);
-    background-repeat: repeat;
-    border-radius: @base-border-radius;
-}*/
-.articles-filter-control-content-wrapper,
-.articles-filter-control-background {
-  position: fixed;
-  bottom: 60px;
-  left: 0;
-  right: 0;
-  display: block;
-}
-.articles-filter-control-background {
-  height: calc(100% -  120px);
-  background: rgba(255, 255, 255, 0.8);
-}
-.articles-filter-control-content-wrapper {
-  border-top: 1px solid #F2F2F2;
-  max-height: calc(100% -  119px);
-  background: #FFF;
-  overflow-y: auto;
-}
-.articles-filter-control-content {
-  position: relative;
-  bottom: 0;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 10px 10px 20px 10px;
-}
-.articles-filter-control-command-wrapper {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  padding: 10px;
-  background: #F2F2F2;
-}
-.articles-filter-control-command-wrapper .button {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 750px;
-  text-align: center;
-}
 * {
   transition: 0.4s ease;
   -webkit-font-smoothing: antialiased;
@@ -107,8 +22,8 @@ header {
   right: 0;
   height: 60px;
   padding: 10px 20px;
-  border-bottom: 1px solid #F2F2F2;
   background: #FFF;
+  border-bottom: 1px solid #F2F2F2;
 }
 header img.logo {
   margin: 3px auto;
@@ -116,12 +31,25 @@ header img.logo {
 }
 main {
   position: relative;
-  padding: 60px 0;
   display: block;
+  padding: 60px 0;
 }
 img {
   max-width: 100%;
   max-height: 100%;
+}
+.collapsed {
+  opacity: 0;
+  visibility: hidden;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 p {
   font-family: "Playfair Display", serif;
@@ -135,9 +63,6 @@ h2,
 h3 {
   font-family: "Playfair Display", serif, serif;
 }
-h1 {
-  font-size: 1.3rem;
-}
 h4,
 h5,
 h6 {
@@ -146,6 +71,9 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 300;
+}
+h1 {
+  font-size: 1.3rem;
 }
 h5 {
   font-size: 0.7rem;
@@ -157,7 +85,10 @@ hr {
   border: 0;
   border-bottom: 1px solid #CCC;
 }
-a,
+a {
+  color: #222;
+  text-decoration: none;
+}
 a:visited {
   color: #222;
   text-decoration: none;
@@ -166,20 +97,6 @@ a:hover {
   color: #222;
 }
 a:active {
-  transform: translateY(2px);
-}
-a:hover h1 {
-  transform: translateY(-2px);
-  color: #000;
-}
-a:active h1 {
-  transform: translateY(2px);
-}
-a:hover .thumbnail {
-  transform: translateY(-2px);
-  opacity: 1;
-}
-a:active .thumbnail {
   transform: translateY(2px);
 }
 .button,
@@ -224,9 +141,6 @@ a.secondary-button {
 a.secondary-button:hover {
   background: #f2a107;
 }
-.toggle-button input[type=radio] {
-  display: none;
-}
 .toggle-button {
   margin: 0 2px 6px 0;
   display: inline-block;
@@ -237,12 +151,8 @@ a.secondary-button:hover {
   text-transform: uppercase;
   text-decoration: none;
 }
-.toggle-button span {
-  display: block;
-  background: #F2F2F2;
-  color: #888;
-  padding: 12px 20px;
-  border-radius: 4px;
+.toggle-button input[type=radio] {
+  display: none;
 }
 .toggle-button input[type=radio]:checked + span {
   background: #F8AC1B;
@@ -251,30 +161,105 @@ a.secondary-button:hover {
 .toggle-button input[type=radio]:checked + span:hover {
   background: #f2a107;
 }
-.toggle-button:hover span {
+.toggle-button span {
+  display: block;
+  background: #F2F2F2;
+  color: #888;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+.toggle-button span:hover {
   background: #e5e5e5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.toggle-button:active span {
+.toggle-button span:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #FFF;
 }
-.collapsed {
-  opacity: 0;
-  visibility: hidden;
+.articles .article {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px dashed #CCC;
 }
-.visible {
+.articles .article p {
+  margin: 20px 20%;
+}
+.articles .article h1,
+.articles .article h2,
+.articles .article h3 {
+  margin: 20px 10%;
+}
+.articles .article a h1:hover {
+  transform: translateY(-2px);
+  color: #000;
+}
+.articles .article a h1:active {
+  transform: translateY(2px);
+}
+.articles .article hr {
+  width: 20%;
+  margin: 20px auto;
+}
+.articles .article .thumbnail {
+  height: 40vh;
+  margin: 0 20px 30px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F2F2F2;
+  border: 1px solid #222;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+.articles .article .thumbnail:hover {
+  transform: translateY(-2px);
   opacity: 1;
-  visibility: visible;
 }
-.fixed {
+.articles .article .thumbnail:active {
+  transform: translateY(2px);
+}
+.articles-filter-control-content-wrapper,
+.articles-filter-control-background {
   position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  display: block;
 }
-.absolute {
-  position: absolute;
+.articles-filter-control-background {
+  height: calc(100% -  120px);
+  background: rgba(255, 255, 255, 0.8);
 }
-.center {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+.articles-filter-control-content-wrapper {
+  border-top: 1px solid #F2F2F2;
+  max-height: calc(100% -  119px);
+  background: #FFF;
+  overflow-y: auto;
+}
+.articles-filter-control-content {
+  position: relative;
+  bottom: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px 10px 20px 10px;
+}
+.articles-filter-control-command-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 10px;
+  background: #F2F2F2;
+}
+.articles-filter-control-command-wrapper .button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
 }

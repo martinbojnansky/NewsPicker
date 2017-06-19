@@ -173,13 +173,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Images\NewsPicker.png" />
-    <Content Include="Resources\Images\WhiteNoise.png" />
+    <Content Include="Resources\Stylesheets\Articles.less" />
+    <Content Include="Resources\Stylesheets\ArticlesFilter.less" />
+    <Content Include="Resources\Stylesheets\Buttons.less" />
+    <Content Include="Resources\Stylesheets\Layout.less" />
+    <Content Include="Resources\Stylesheets\Mixins.less" />
     <Content Include="Resources\Stylesheets\Style.css">
       <DependentUpon>Style.less</DependentUpon>
     </Content>
     <Content Include="Resources\Stylesheets\Style.min.css">
       <DependentUpon>Style.css</DependentUpon>
     </Content>
+    <Content Include="Resources\Stylesheets\Variables.less" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -192,13 +197,11 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="Resources\Stylesheets\Articles.less" />
-    <Content Include="Resources\Stylesheets\ArticlesFilter.less" />
-    <None Include="Resources\Stylesheets\Style.less" />
     <Content Include="Controls\ArticlesFilter.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
-    <Content Include="Resources\Stylesheets\Variables.less" />
+    <Content Include="Resources\Stylesheets\Style.less" />
+    <Content Include="Resources\Stylesheets\Fonts.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

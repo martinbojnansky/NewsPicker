@@ -1,54 +1,59 @@
 ﻿@import "Variables.less";
 
 .articles {
-}
+    .article {
+        width: 100%;
+        max-width: @max-content-width;
+        margin: 0 auto;
+        padding: 4*@base-padding 0;
+        text-align: center;
+        border-bottom: 1px dashed @separator-color;
 
-.article {
-    width: 100%;
-    max-width: @max-content-width;
-    margin: 0 auto;
-    padding: 4*@base-padding 0;
-    text-align: center;
-    border-bottom: 1px dashed @separator-color;
-}
+        p {
+            margin: 2*@base-padding 20%;
+        }
 
-.article p {
-    margin: 2*@base-padding 20%;
-}
+        h1, h2, h3 {
+            margin: 2*@base-padding 10%;
+        }
 
-.article h1, .article h2, .article h3 {
-    margin: 2*@base-padding 10%;
-}
+        a {
+            h1 {
+                &:hover {
+                    transform: @hover-transform;
+                    color: @text-color-darken;
+                }
 
-.article h4, .article h5, .article h6 {
-}
+                &:active {
+                    transform: @active-transform;
+                }
+            }
+        }
 
-.article hr {
-    width: 20%;
-    margin: 2*@base-padding auto;
-}
+        hr {
+            width: 20%;
+            margin: 2*@base-padding auto;
+        }
 
-.article .thumbnail {
-    height: 40vh;
-    margin: 0 2*@base-padding 3*@base-padding 2*@base-padding;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: @background-color-darken;
-    border: 1px solid @text-color;
-    border-radius: @base-border-radius;
-    opacity: 0.95;
-}
+        .thumbnail {
+            height: 40vh;
+            margin: 0 2*@base-padding 3*@base-padding 2*@base-padding;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: @background-color-darken;
+            border: 1px solid @text-color;
+            border-radius: @base-border-radius;
+            opacity: 0.95;
 
-/*.article .thumbnail:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../Images/WhiteNoise.png);
-    background-repeat: repeat;
-    border-radius: @base-border-radius;
-}*/
+            &:hover {
+                transform: @hover-transform;
+                opacity: 1;
+            }
+
+            &:active {
+                transform: @active-transform;
+            }
+        }
+    }
+}

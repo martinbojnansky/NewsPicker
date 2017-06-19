@@ -1,0 +1,85 @@
+﻿@import "Variables.less";
+
+.button, a.button {
+    display: inline-block;
+    padding: @button-padding;
+    cursor: pointer;
+    background: @button-background-color;
+    color: @text-color-white;
+    font-family: @secondary-font;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: @base-border-radius;
+    box-shadow: @button-shadow;
+
+    &:hover {
+        background: @hover-button-background-color;
+        box-shadow: @hover-button-shadow;
+        transform: @hover-transform;
+    }
+
+    &:active {
+        box-shadow: @active-button-shadow;
+        transform: @active-transform;
+    }
+}
+
+.primary-button, a.primary-button {
+    background: @primary-color;
+
+    &:hover {
+        background: @primary-color-darken;
+    }
+}
+
+.secondary-button, a.secondary-button {
+    background: @secondary-color;
+
+    &:hover {
+        background: @secondary-color-darken;
+    }
+}
+
+.toggle-button {
+    margin: @inline-button-margin;
+    display: inline-block;
+    cursor: pointer;
+    font-family: @secondary-font;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    input[type=radio] {
+        display: none;
+
+        &:checked + span {
+            background: @secondary-color;
+            color: @text-color-white;
+
+            &:hover {
+                background: @secondary-color-darken;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        background: @button-background-color;
+        color: @text-color-lighten;
+        padding: @button-padding;
+        border-radius: @base-border-radius;
+
+        &:hover {
+            background: @hover-button-background-color;
+            box-shadow: @hover-button-shadow;
+        }
+
+        &:active {
+            box-shadow: @active-button-shadow;
+            color: @text-color-white;
+        }
+    }
+}
