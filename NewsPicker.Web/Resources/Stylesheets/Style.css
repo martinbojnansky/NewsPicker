@@ -28,7 +28,6 @@ header {
 header img.logo {
   margin: 3px auto;
   height: 34px;
-  image-rendering: pixelated;
 }
 main {
   position: relative;
