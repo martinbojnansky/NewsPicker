@@ -82,13 +82,6 @@ namespace NewsPicker.Web.ViewModels.Articles
                 return;
             }
 
-            var currentRegionCountry = Countries.FirstOrDefault(c => c.Code == RegionInfo.CurrentRegion.TwoLetterISORegionName.ToLowerInvariant());
-            if (currentRegionCountry != null)
-            {
-                SelectedCountryId = currentRegionCountry.Id;
-                return;
-            }
-
             IsFilterVisible = true;
         }
 
