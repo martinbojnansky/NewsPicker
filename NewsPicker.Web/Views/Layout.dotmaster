@@ -18,7 +18,11 @@
     </main>
     <%-- header --%>
     <header class="center">
-        <img src="~/Resources/Images/NewsPicker.svg" class="logo" />
+        <div class="left"></div>
+        <div class="center">
+            <img src="~/Resources/Images/NewsPicker.svg" />
+        </div>
+        <div class="right"></div>
     </header>
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />

@@ -26,9 +26,10 @@ namespace NewsPicker.Web
         private void ConfigureRoutes(DotvvmConfiguration config, string applicationPath)
         {
             config.RouteTable.Add("Default", "", "Views/Articles/Articles.dothtml");
+            config.RouteTable.Add("Article", "Article", "Views/Article/Article.dothtml");
 
             // auto-register all dothtml files in the Views folder
-            config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));
+            //config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));
         }
 
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)

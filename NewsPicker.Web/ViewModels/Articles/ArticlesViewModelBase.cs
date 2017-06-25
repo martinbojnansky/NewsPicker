@@ -138,6 +138,11 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
         }
 
+        public void UpdateFilter()
+        {
+            LoadCategories();
+        }
+
         public void Filter()
         {
             IsFilterVisible = !IsFilterVisible;
@@ -150,9 +155,10 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
         }
 
-        public void UpdateFilter()
+        public void NavigateToArticle(ArticleDTO article)
         {
-            LoadCategories();
+            Context.RedirectToRoute("Article", null, false, true,
+                $"?{Article.ArticleViewModel.URL_QUERY_KEY}={article.Url}");
         }
     }
 }

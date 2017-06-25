@@ -22,9 +22,9 @@
       "virtualPath": "Views/Articles/Articles.dothtml",
       "defaultValues": {}
     },
-    "Articles_Articles": {
-      "url": "Articles/Articles",
-      "virtualPath": "Views/Articles/Articles.dothtml",
+    "Article": {
+      "url": "Article",
+      "virtualPath": "Views/Article/Article.dothtml",
       "defaultValues": {}
     }
   },

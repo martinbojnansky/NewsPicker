@@ -1,0 +1,13 @@
+﻿@viewModel NewsPicker.Web.ViewModels.Article.ArticleViewModel, NewsPicker.Web
+@masterPage Views/Layout.dotmaster
+
+<dot:Content ContentPlaceHolderID="Styles">
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Content">
+    <iframe src="{{value: Url}}"
+            class="article-iframe" />
+</dot:Content>
+
+<dot:Content ContentPlaceHolderID="Scripts">
+</dot:Content>
