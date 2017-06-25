@@ -82,6 +82,7 @@ namespace NewsPicker.Web.ViewModels.Articles
                 return;
             }
 
+            SelectedCountryId = 1;
             IsFilterVisible = true;
         }
 

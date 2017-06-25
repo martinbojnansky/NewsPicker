@@ -172,7 +172,7 @@
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Images\NewsPicker.png" />
+    <Content Include="Resources\Images\NewsPicker.svg" />
     <Content Include="Resources\Stylesheets\Articles.less" />
     <Content Include="Resources\Stylesheets\ArticlesFilter.less" />
     <Content Include="Resources\Stylesheets\Buttons.less" />
