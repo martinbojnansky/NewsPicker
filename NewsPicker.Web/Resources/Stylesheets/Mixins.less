@@ -1,5 +1,14 @@
 ﻿@import "Variables.less";
 
+.flex(@direction: row) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.flex-size(@grow: 0, @shrink: 1, @basis: auto) {
+    flex: @grow @shrink @basis;
+}
+
 .border-radius(@size: @base-border-radius) {
     -webkit-border-radius: @size;
     -moz-border-radius: @size;
