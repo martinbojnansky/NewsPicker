@@ -6,70 +6,14 @@
     xmlns:viewModel="clr-namespace:XamarinToolkit.ViewModel;assembly=XamarinToolkit"
     x:Name="Root"
     Title="NewsPicker">
-
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <!--  flip view  -->
-        <ListView
-            HasUnevenRows="True"
-            ItemsSource="{Binding Articles}"
-            SeparatorVisibility="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid>
-                            <Grid.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding BindingContext.NavigateToArticleCommand, Source={x:Reference Root}}" CommandParameter="{Binding Url}" />
-                            </Grid.GestureRecognizers>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="25" />
-                            </Grid.RowDefinitions>
-                            <!--  image  -->
-                            <Grid>
-                                <Image
-                                    Aspect="AspectFill"
-                                    HeightRequest="220"
-                                    HorizontalOptions="Fill"
-                                    Source="{Binding Image}"
-                                    VerticalOptions="Fill" />
-                                <!--  sharecount  -->
-                            </Grid>
-                            <StackLayout Grid.Row="1" Padding="{StaticResource PagePadding}">
-                                <!--  title  -->
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="Medium"
-                                    Text="{Binding Title}" />
-                                <StackLayout Orientation="Horizontal">
-                                    <!--  source  -->
-                                    <Label FontAttributes="Italic" Text="{Binding Source.Url}" />
-                                    <!--  date  -->
-                                    <Label FontAttributes="Italic" Text="{Binding CreatedDate}" />
-                                </StackLayout>
-                                <!--  description  -->
-                                <Label Text="{Binding Description}" />
-                            </StackLayout>
-                            <!--  separator  -->
-                            <Grid Grid.Row="2" BackgroundColor="{StaticResource LightGrayColor}" />
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <!--  bottom bar  -->
-        <Grid
-            Grid.Row="1"
-            Padding="{StaticResource PagePadding}"
-            BackgroundColor="{StaticResource LightGrayColor}">
-            <!--  filter button  -->
-            <controls:Button Text="Filter" />
-        </Grid>
+        <!--  webview  -->
+        <WebView
+            x:Name="Browser"
+            Navigated="WebView_Navigated"
+            Navigating="WebView_Navigating"
+            Source="http://newspicker.azurewebsites.net" />
         <!--  progress overlay  -->
-        <controls:ProgressOverlay IsActive="{Binding IsBusy}" />
+        <!--<controls:ProgressOverlay IsVisible="{Binding IsBusy}" />-->
     </Grid>
 </viewModel:ViewModelPage>

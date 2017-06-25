@@ -1,35 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NewsPicker.Mobile.App">
-    
-    <!--Resources-->
+<Application
+    x:Class="NewsPicker.Mobile.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--  Resources  -->
     <Application.Resources>
         <ResourceDictionary>
 
-            <!--Colors-->
-            <Color x:Key="AccentColor">#f62459</Color>
-            <Color x:Key="LightGrayColor">#eeeeee</Color>
+            <!--  Colors  -->
+            <Color x:Key="PrimaryColor">#07B0C5</Color>
+            <Color x:Key="SecondaryColor">#F8AC1B</Color>
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
+            <Color x:Key="BackgroundColorDarken">#F2F2F2</Color>
+            <Color x:Key="TextColor">#222222</Color>
 
-            <!--Base Values-->
+            <!--  Base Values  -->
             <Thickness x:Key="PagePadding">12</Thickness>
 
-            <!--Base Styles-->
+            <!--  Base Styles  -->
             <Style TargetType="ActivityIndicator">
-                <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
             </Style>
-
-            <!--Shared Styles-->
-            <Style x:Key="HeaderStyle" TargetType="Label">
-                <Setter Property="FontSize" Value="Medium"/>
-            </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 
-    <!--Properties-->
-    <Application.Properties>
-    </Application.Properties>
-    
+    <!--  Properties  -->
+    <Application.Properties />
 </Application>

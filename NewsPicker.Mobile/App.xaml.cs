@@ -20,7 +20,7 @@ namespace NewsPicker.Mobile
             var viewModel = resolver.ResolveViewModel<ArticlesViewModel>();
             var view = resolver.ResolveViewModelPage(viewModel);
 
-            MainPage = new NavigationPage(view) { Title = "News Picker" };
+            MainPage = view;
         }
 
         private IoCResolver GetResolver()
