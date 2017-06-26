@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using XamarinToolkit.ViewModel;
 
 namespace NewsPicker.Mobile.Views.Articles
@@ -30,12 +31,12 @@ namespace NewsPicker.Mobile.Views.Articles
 
         protected override bool OnBackButtonPressed()
         {
-            try
+            if (Browser.CanGoBack)
             {
                 Browser.GoBack();
                 return true;
             }
-            catch
+            else
             {
                 return base.OnBackButtonPressed();
             }

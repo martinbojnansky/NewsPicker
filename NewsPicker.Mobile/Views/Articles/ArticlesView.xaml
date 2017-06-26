@@ -14,6 +14,6 @@
             Navigating="WebView_Navigating"
             Source="http://newspicker.azurewebsites.net" />
         <!--  progress overlay  -->
-        <!--<controls:ProgressOverlay IsVisible="{Binding IsBusy}" />-->
+        <controls:ProgressOverlay IsVisible="False" />
     </Grid>
 </viewModel:ViewModelPage>

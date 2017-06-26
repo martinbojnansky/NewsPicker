@@ -6,7 +6,10 @@ using System.Reflection;
 using System.Text;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using XamarinToolkit.IoC;
+
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 namespace NewsPicker.Mobile
 {
