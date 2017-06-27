@@ -111,7 +111,7 @@ header .right {
 .button,
 a.button {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 11px 20px;
   cursor: pointer;
   background: #F2F2F2;
   color: #FFF;
@@ -128,6 +128,11 @@ a.button:hover {
   background: #e5e5e5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.button:focus,
+a.button:focus {
+  background: #F2F2F2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .button:active,
 a.button:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -136,12 +141,20 @@ a.button:active {
 a.primary-button {
   background: #07B0C5;
 }
+.primary-button:focus,
+a.primary-button:focus {
+  background: #07B0C5;
+}
 .primary-button:hover,
 a.primary-button:hover {
   background: #069aac;
 }
 .secondary-button,
 a.secondary-button {
+  background: #F8AC1B;
+}
+.secondary-button:focus,
+a.secondary-button:focus {
   background: #F8AC1B;
 }
 .secondary-button:hover,
@@ -172,7 +185,7 @@ a.secondary-button:hover {
   display: block;
   background: #F2F2F2;
   color: #888;
-  padding: 12px 20px;
+  padding: 11px 20px;
   border-radius: 4px;
 }
 .toggle-button span:hover {
@@ -187,7 +200,7 @@ a.secondary-button:hover {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 30px 20px;
   text-align: center;
   border-bottom: 1px dashed #CCC;
 }
@@ -220,7 +233,6 @@ a.secondary-button:hover {
   border: 1px solid #222;
   border-radius: 4px;
   opacity: 0.9;
-  -webkit-filter: sepia(0.25);
   filter: sepia(0.25);
 }
 .articles .article .thumbnail:hover {

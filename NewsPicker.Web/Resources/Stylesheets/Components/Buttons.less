@@ -19,6 +19,11 @@
         box-shadow: @hover-button-shadow;
     }
 
+    &:focus {
+        background: @button-background-color;
+        box-shadow: @button-shadow;
+    }
+
     &:active {
         box-shadow: @active-button-shadow;
     }
@@ -27,6 +32,10 @@
 .primary-button, a.primary-button {
     background: @primary-color;
 
+    &:focus {
+        background: @primary-color;
+    }
+
     &:hover {
         background: @primary-color-darken;
     }
@@ -34,6 +43,10 @@
 
 .secondary-button, a.secondary-button {
     background: @secondary-color;
+
+    &:focus {
+        background: @secondary-color;
+    }
 
     &:hover {
         background: @secondary-color-darken;
