@@ -116,8 +116,9 @@ a.button {
   background: #F2F2F2;
   color: #FFF;
   font-family: "Open Sans", sans-serif;
-  font-size: .8rem;
-  letter-spacing: .02rem;
+  font-size: .82rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
@@ -265,7 +266,7 @@ a.secondary-button:hover {
 }
 .articles-filter-control-content-wrapper {
   border-top: 1px solid #F2F2F2;
-  max-height: calc(100% -  119px);
+  max-height: calc(100% -  120px);
   background: #FFF;
   overflow-y: auto;
 }
@@ -281,6 +282,7 @@ a.secondary-button:hover {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 60px;
   margin: 0 auto;
   padding: 10px;
   background: #F2F2F2;

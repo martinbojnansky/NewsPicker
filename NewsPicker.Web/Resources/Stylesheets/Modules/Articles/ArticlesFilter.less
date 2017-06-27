@@ -16,7 +16,7 @@
 
     &-content-wrapper {
         border-top: 1px solid @background-color-darken;
-        max-height: calc(~"100% - " 2*@bar-height - 1);
+        max-height: calc(~"100% - " 2*@bar-height);
         background: @background-color;
         overflow-y: auto;
     }
@@ -34,6 +34,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        height: @bar-height;
         margin: 0 auto;
         padding: @base-padding;
         background: @background-color-darken;
