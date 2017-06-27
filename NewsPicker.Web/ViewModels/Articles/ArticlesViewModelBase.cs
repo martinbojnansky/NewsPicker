@@ -154,11 +154,5 @@ namespace NewsPicker.Web.ViewModels.Articles
                     $"?{COUNTRY_QUERY_KEY}={SelectedCountryId}&{CATEGORY_QUERY_KEY}={SelectedCategoryId}&{TIME_PERIOD_QUERY_KEY}={SelectedTimePeriodId}");
             }
         }
-
-        public void NavigateToArticle(ArticleDTO article)
-        {
-            Context.RedirectToRoute("Article", null, false, true,
-                $"?{Article.ArticleViewModel.URL_QUERY_KEY}={article.Url}");
-        }
     }
 }

@@ -169,7 +169,6 @@
     <Compile Include="DotvvmStartup.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModel.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModelBase.cs" />
-    <Compile Include="ViewModels\Article\ArticleViewModel.cs" />
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,7 +202,6 @@
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
     <Content Include="Resources\Stylesheets\Style.less" />
     <Content Include="Resources\Stylesheets\Components\Fonts.less" />
-    <Content Include="Views\Article\Article.dothtml" />
     <Content Include="Resources\Stylesheets\Components\Header.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

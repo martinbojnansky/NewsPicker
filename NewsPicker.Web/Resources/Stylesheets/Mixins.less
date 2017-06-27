@@ -9,6 +9,11 @@
     flex: @grow @shrink @basis;
 }
 
+.image-effect() {
+    -webkit-filter: sepia(0.25);
+    filter: sepia(0.25);
+}
+
 .border-radius(@size: @base-border-radius) {
     -webkit-border-radius: @size;
     -moz-border-radius: @size;
