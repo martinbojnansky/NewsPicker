@@ -17,8 +17,8 @@ namespace NewsPicker.Robot
             var host = new JobHost();
             // The following code will invoke a function called ManualTrigger and
             // pass in data (value in this case) to the function
-            host.Call(typeof(Functions).GetMethod(nameof(Functions.UpdateArticles)));
-            host.Call(typeof(Functions).GetMethod(nameof(Functions.DeleteOldArticles)));
+            //host.Call(typeof(Functions).GetMethod(nameof(Functions.UpdateArticles)));
+            //host.Call(typeof(Functions).GetMethod(nameof(Functions.DeleteOldArticles)));
             host.Call(typeof(Functions).GetMethod(nameof(Functions.UpdateEngagementCount)));
         }
     }

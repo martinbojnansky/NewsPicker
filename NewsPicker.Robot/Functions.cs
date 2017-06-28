@@ -19,17 +19,17 @@ namespace NewsPicker.Robot
         }
 
         [NoAutomaticTrigger]
-        public static void UpdateArticles()
+        public async static Task UpdateArticles()
         {
             ArticlesClient articles = new ArticlesClient();
-            articles.UpdateAsync().Wait();
+            await articles.UpdateAsync();
         }
 
         [NoAutomaticTrigger]
-        public static void UpdateEngagementCount()
+        public async static Task UpdateEngagementCount()
         {
             EngagementCountClient engagements = new EngagementCountClient();
-            engagements.UpdateAsync().Wait();
+            await engagements.UpdateAsync();
         }
     }
 }
