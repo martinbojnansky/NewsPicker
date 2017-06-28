@@ -6,8 +6,9 @@
 
 <dot:Content ContentPlaceHolderID="Content">
     <%-- articles --%>
-    <dot:Repeater class="{value: "articles " + (IsFilterVisible ? "" : "visible")}"
-                  DataSource="{value: Articles}">
+    <dot:Repeater class="articles"
+                  DataSource="{value: Articles}"
+                  Visible="{value: !IsFilterVisible}">
         <ItemTemplate>
             <div class="article">
                 <%-- thumbnail --%>
