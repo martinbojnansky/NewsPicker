@@ -162,7 +162,6 @@
     <Compile Include="Facades\CountriesFacade.cs" />
     <Compile Include="Controls\ArticlesFilter.cs" />
     <Compile Include="Models\ArticlesFilter\TimePeriod.cs" />
-    <Compile Include="Models\ArticlesFilter\TimePeriods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Http\Cookies.cs" />
     <Compile Include="Startup.cs" />

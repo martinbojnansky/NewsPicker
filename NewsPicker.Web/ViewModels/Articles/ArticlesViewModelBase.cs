@@ -40,7 +40,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public List<ArticleDTO> Articles { get; set; }
 
-        public List<TimePeriod> TimePeriods { get; set; } = Models.ArticlesFilter.TimePeriods.GetDefault();
+        public List<TimePeriod> TimePeriods { get; set; } = TimePeriod.All();
 
         public override Task PreRender()
         {
@@ -148,7 +148,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
             if (SelectedCountryId != 0)
             {
-                var countryName = Countries?.FirstOrDefault(c => c.Id == SelectedCountryId).Name;
+                var countryName = Countries?.FirstOrDefault(c => c.Id == SelectedCountryId).Code.ToUpper();
                 var categoryName = Categories?.FirstOrDefault(c => c.Id == SelectedCategoryId).Name;
                 var timePeriodName = TimePeriods?.FirstOrDefault(t => t.Id == SelectedTimePeriodId).Name;
 

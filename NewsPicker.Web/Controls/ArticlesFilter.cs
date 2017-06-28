@@ -61,7 +61,7 @@ namespace NewsPicker.Web.Controls
         }
 
         public static readonly DotvvmProperty TimePeriodsProperty
-            = DotvvmProperty.Register<List<TimePeriod>, ArticlesFilter>(c => c.TimePeriods, Models.ArticlesFilter.TimePeriods.GetDefault());
+            = DotvvmProperty.Register<List<TimePeriod>, ArticlesFilter>(c => c.TimePeriods);
 
         [MarkupOptions(Required = true)]
         public int SelectedCountryId
