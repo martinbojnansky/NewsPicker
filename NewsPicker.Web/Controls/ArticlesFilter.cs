@@ -24,8 +24,18 @@ namespace NewsPicker.Web.Controls
         public static readonly DotvvmProperty IsVisibleProperty
             = DotvvmProperty.Register<bool, ArticlesFilter>(c => c.IsVisible);
 
+        public string ButtonText
+        {
+            get { return (string)GetValue(ButtonTextProperty); }
+            set { SetValue(ButtonTextProperty, value); }
+        }
+
+        public static readonly DotvvmProperty ButtonTextProperty
+            = DotvvmProperty.Register<string, ArticlesFilter>(c => c.ButtonText);
+
         [MarkupOptions(Required = true)]
         public List<CountryDTO> Countries
+
         {
             get { return (List<CountryDTO>)GetValue(CountriesProperty); }
             set { SetValue(CountriesProperty, value); }

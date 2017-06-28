@@ -12,6 +12,7 @@ using NewsPicker.Shared.Models;
 using System.Web;
 using NewsPicker.Web.Controls;
 using NewsPicker.Web.Services.Http;
+using NewsPicker.Web.Models.ArticlesFilter;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
@@ -27,9 +28,11 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public int SelectedCategoryId { get; set; }
 
-        public int SelectedTimePeriodId { get; set; }
+        public int SelectedTimePeriodId { get; set; } = (int)TimePeriodValue.DAY;
 
         public bool IsFilterVisible { get; set; }
+
+        public string FilterButtonText { get; set; }
 
         public List<CountryDTO> Countries { get; set; }
 
@@ -37,12 +40,15 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public List<ArticleDTO> Articles { get; set; }
 
+        public List<TimePeriod> TimePeriods { get; set; } = Models.ArticlesFilter.TimePeriods.GetDefault();
+
         public override Task PreRender()
         {
             if (!Context.IsPostBack)
             {
                 LoadFilterValues();
                 LoadData();
+                UpdateFilterButtonText();
             }
 
             return base.PreRender();
@@ -51,8 +57,6 @@ namespace NewsPicker.Web.ViewModels.Articles
         private void LoadFilterValues()
         {
             LoadSelectedCountry();
-            LoadSelectedCategory();
-            LoadSelectedTimePeriod();
         }
 
         public void LoadData()
@@ -75,22 +79,13 @@ namespace NewsPicker.Web.ViewModels.Articles
             IsFilterVisible = true;
         }
 
-        private void LoadSelectedCategory()
-        {
-        }
-
-        private void LoadSelectedTimePeriod()
-        {
-            SelectedTimePeriodId = (int)TimePeriodValue.DAY;
-        }
-
-        public void LoadCountries()
+        private void LoadCountries()
         {
             Countries = _countriesFacade.GetCountries();
             LoadSelectedCountry();
         }
 
-        public void LoadCategories()
+        private void LoadCategories()
         {
             if (SelectedCountryId != 0)
             {
@@ -103,7 +98,7 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
         }
 
-        public void LoadArticles()
+        private void LoadArticles()
         {
             if (SelectedCategoryId != 0)
             {
@@ -138,6 +133,30 @@ namespace NewsPicker.Web.ViewModels.Articles
             {
                 IsFilterVisible = true;
                 Context.ResultIdFragment = "bottom";
+            }
+
+            UpdateFilterButtonText();
+        }
+
+        private void UpdateFilterButtonText()
+        {
+            if (IsFilterVisible)
+            {
+                FilterButtonText = "Apply";
+                return;
+            }
+
+            if (SelectedCountryId != 0)
+            {
+                var countryName = Countries?.FirstOrDefault(c => c.Id == SelectedCountryId).Name;
+                var categoryName = Categories?.FirstOrDefault(c => c.Id == SelectedCategoryId).Name;
+                var timePeriodName = TimePeriods?.FirstOrDefault(t => t.Id == SelectedTimePeriodId).Name;
+
+                FilterButtonText = $"{countryName} • {categoryName} • {timePeriodName}";
+            }
+            else
+            {
+                FilterButtonText = "Filter";
             }
         }
     }

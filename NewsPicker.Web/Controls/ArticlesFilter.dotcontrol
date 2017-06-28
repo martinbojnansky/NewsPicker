@@ -45,7 +45,7 @@
 <div class="articles-filter-control-button">
     <a class="button primary-button"
        Events.Click="{controlCommand: ShowHideFilterCommand}"
-       InnerText="{controlProperty: !IsVisible ? "Filter" : "Apply"}">
+       InnerText="{controlProperty: ButtonText}">
         Filter
     </a>
 </div>
