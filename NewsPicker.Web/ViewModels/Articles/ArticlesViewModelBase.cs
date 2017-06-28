@@ -17,9 +17,9 @@ namespace NewsPicker.Web.ViewModels.Articles
 {
     public class ArticlesViewModelBase : NewsPicker.Web.ViewModels.LayoutViewModel
     {
-        private const string COUNTRY_QUERY_KEY = "co";
-        private const string CATEGORY_QUERY_KEY = "ca";
-        private const string TIME_PERIOD_QUERY_KEY = "tp";
+        //private const string COUNTRY_QUERY_KEY = "co";
+        //private const string CATEGORY_QUERY_KEY = "ca";
+        //private const string TIME_PERIOD_QUERY_KEY = "tp";
 
         private readonly CountriesFacade _countriesFacade = new CountriesFacade();
 
@@ -68,14 +68,14 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadSelectedCountry()
         {
-            var selectedCountryId = Convert.ToInt32(Context.Query[COUNTRY_QUERY_KEY]);
-            if (selectedCountryId != 0)
-            {
-                SelectedCountryId = selectedCountryId;
-                return;
-            }
+            //var selectedCountryId = Convert.ToInt32(Context.Query[COUNTRY_QUERY_KEY]);
+            //if (selectedCountryId != 0)
+            //{
+            //    SelectedCountryId = selectedCountryId;
+            //    return;
+            //}
 
-            selectedCountryId = Convert.ToInt32(Cookies.Get(nameof(ArticlesFilter), nameof(SelectedCountryId)));
+            var selectedCountryId = Convert.ToInt32(Cookies.Get(nameof(ArticlesFilter), nameof(SelectedCountryId)));
             if (selectedCountryId != 0)
             {
                 SelectedCountryId = selectedCountryId;
@@ -88,17 +88,17 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadSelectedCategory()
         {
-            SelectedCategoryId = Convert.ToInt32(Context.Query[CATEGORY_QUERY_KEY]);
+            //SelectedCategoryId = Convert.ToInt32(Context.Query[CATEGORY_QUERY_KEY]);
         }
 
         private void LoadSelectedTimePeriod()
         {
-            var selectedTimePeriodId = Convert.ToInt32(Context.Query[TIME_PERIOD_QUERY_KEY]);
-            if (selectedTimePeriodId != 0)
-            {
-                SelectedTimePeriodId = selectedTimePeriodId;
-                return;
-            }
+            //var selectedTimePeriodId = Convert.ToInt32(Context.Query[TIME_PERIOD_QUERY_KEY]);
+            //if (selectedTimePeriodId != 0)
+            //{
+            //    SelectedTimePeriodId = selectedTimePeriodId;
+            //    return;
+            //}
 
             SelectedTimePeriodId = (int)TimePeriodValue.DAY;
         }
@@ -150,8 +150,9 @@ namespace NewsPicker.Web.ViewModels.Articles
             if (!IsFilterVisible)
             {
                 Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
-                Context.RedirectToRoute("Default", null, false, true,
-                    $"?{COUNTRY_QUERY_KEY}={SelectedCountryId}&{CATEGORY_QUERY_KEY}={SelectedCategoryId}&{TIME_PERIOD_QUERY_KEY}={SelectedTimePeriodId}");
+                //Context.RedirectToRoute("Default", null, true, true,
+                //    $"?{COUNTRY_QUERY_KEY}={SelectedCountryId}&{CATEGORY_QUERY_KEY}={SelectedCategoryId}&{TIME_PERIOD_QUERY_KEY}={SelectedTimePeriodId}");
+                LoadArticles();
             }
         }
     }

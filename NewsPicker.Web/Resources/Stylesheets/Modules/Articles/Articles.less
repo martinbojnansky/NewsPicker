@@ -26,6 +26,10 @@
                     color: @text-color-darken;
                     cursor: pointer;
                 }
+
+                &:active {
+                    transform: @active-transform;
+                }
             }
         }
 
@@ -55,6 +59,7 @@
             }
 
             &:active {
+                transform: @active-transform;
             }
 
             &:before {

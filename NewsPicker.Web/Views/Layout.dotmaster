@@ -14,7 +14,7 @@
 <body>
     <%-- content --%>
     <main>
-        <dot:ContentPlaceHolder ID="Content" />
+        <dot:SpaContentPlaceHolder ID="Content" />
     </main>
     <%-- header --%>
     <header>

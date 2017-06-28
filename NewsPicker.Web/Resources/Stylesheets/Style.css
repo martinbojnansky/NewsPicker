@@ -3,6 +3,8 @@
   transition: 0.4s ease;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 html,
 body {
@@ -86,6 +88,9 @@ a:visited {
 a:hover {
   color: #222;
 }
+a:active {
+  transform: translateY(2px);
+}
 header {
   position: fixed;
   top: 0;
@@ -141,6 +146,7 @@ a.button:focus {
 .button:active,
 a.button:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
 }
 .primary-button,
 a.primary-button {
@@ -200,6 +206,7 @@ a.secondary-button:hover {
 .toggle-button span:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #FFF;
+  transform: translateY(2px);
 }
 .articles {
   flex: 1 1 auto;
@@ -224,6 +231,9 @@ a.secondary-button:hover {
   color: #000;
   cursor: pointer;
 }
+.articles .article a h1:active {
+  transform: translateY(2px);
+}
 .articles .article hr {
   width: 20%;
   margin: 20px auto;
@@ -246,6 +256,9 @@ a.secondary-button:hover {
 .articles .article .thumbnail:hover {
   opacity: 1;
   cursor: pointer;
+}
+.articles .article .thumbnail:active {
+  transform: translateY(2px);
 }
 .articles .article .thumbnail:before {
   content: '';
@@ -293,4 +306,5 @@ a.secondary-button:hover {
   width: 100%;
   max-width: 750px;
   text-align: center;
+  height: 40px;
 }
