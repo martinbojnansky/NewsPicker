@@ -17,12 +17,14 @@
         <dot:ContentPlaceHolder ID="Content" />
     </main>
     <%-- header --%>
-    <header class="center">
-        <div class="left"></div>
-        <div class="center">
-            <img src="~/Resources/Images/NewsPicker.svg" />
-        </div>
-        <div class="right"></div>
+    <header>
+        <dot:ContentPlaceHolder ID="Header">
+            <div class="left"></div>
+            <div class="center">
+                <img src="~/Resources/Images/NewsPicker.svg" />
+            </div>
+            <div class="right"></div>
+        </dot:ContentPlaceHolder>
     </header>
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />

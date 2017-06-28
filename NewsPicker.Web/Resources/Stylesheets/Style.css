@@ -18,7 +18,10 @@ body {
 }
 main {
   position: relative;
-  display: block;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding: 60px 0;
 }
 img {
@@ -91,6 +94,7 @@ header {
   height: 60px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding: 10px 20px;
   background: #FFF;
   border-bottom: 1px solid #F2F2F2;
@@ -197,6 +201,9 @@ a.secondary-button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #FFF;
 }
+.articles {
+  flex: 1 1 auto;
+}
 .articles .article {
   width: 100%;
   max-width: 750px;
@@ -252,32 +259,24 @@ a.secondary-button:hover {
   background-repeat: repeat;
   border-radius: 4px;
 }
-.articles-filter-control-content-wrapper,
-.articles-filter-control-background {
-  position: fixed;
-  bottom: 60px;
-  left: 0;
-  right: 0;
-  display: block;
-}
-.articles-filter-control-background {
-  height: calc(100% -  120px);
-  background: rgba(255, 255, 255, 0.8);
-}
-.articles-filter-control-content-wrapper {
-  border-top: 1px solid #F2F2F2;
-  max-height: calc(100% -  120px);
-  background: #FFF;
-  overflow-y: auto;
+.articles-filter-control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+  height: 100%;
 }
 .articles-filter-control-content {
-  position: relative;
-  bottom: 0;
+  flex: 0 1 auto;
   max-width: 750px;
   margin: 0 auto;
   padding: 10px 10px 20px 10px;
 }
-.articles-filter-control-command-wrapper {
+.articles-filter-control::before {
+  content: "";
+  flex: 1 1 auto;
+}
+.articles-filter-control-button {
   position: fixed;
   left: 0;
   right: 0;
@@ -286,8 +285,10 @@ a.secondary-button:hover {
   margin: 0 auto;
   padding: 10px;
   background: #F2F2F2;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.articles-filter-control-command-wrapper .button {
+.articles-filter-control-button .button {
   position: relative;
   display: block;
   margin: 0 auto;

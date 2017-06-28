@@ -1,8 +1,9 @@
 ﻿@import "Variables.less";
 
-.flex(@direction: row) {
+.flex(@direction: row, @wrap: nowrap) {
     display: flex;
     flex-direction: @direction;
+    flex-wrap: @wrap;
 }
 
 .flex-size(@grow: 0, @shrink: 1, @basis: auto) {

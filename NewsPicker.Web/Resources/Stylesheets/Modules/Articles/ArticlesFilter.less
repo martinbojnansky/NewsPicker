@@ -1,35 +1,24 @@
 ﻿@import "../../Variables.less";
+@import "../../Mixins.less";
 
 .articles-filter-control {
-    &-content-wrapper, &-background {
-        position: fixed;
-        bottom: @bar-height;
-        left: 0;
-        right: 0;
-        display: block;
-    }
-
-    &-background {
-        height: calc(~"100% - " 2*@bar-height);
-        background: fade(@background-color, 4*@base-overlay-opacity);
-    }
-
-    &-content-wrapper {
-        border-top: 1px solid @background-color-darken;
-        max-height: calc(~"100% - " 2*@bar-height);
-        background: @background-color;
-        overflow-y: auto;
-    }
+    .flex(column);
+    .flex-size(1,1,auto);
+    height: 100%;
 
     &-content {
-        position: relative;
-        bottom: 0;
+        .flex-size(0,1,auto);
         max-width: @max-content-width;
         margin: 0 auto;
         padding: @base-padding @base-padding 2*@base-padding @base-padding;
     }
 
-    &-command-wrapper {
+    &::before {
+        content: "";
+        .flex-size(1,1,auto);
+    }
+
+    &-button {
         position: fixed;
         left: 0;
         right: 0;
@@ -38,6 +27,8 @@
         margin: 0 auto;
         padding: @base-padding;
         background: @background-color-darken;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
 
         .button {
             position: relative;
