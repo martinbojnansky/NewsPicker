@@ -29,11 +29,12 @@
                    class="button secondary-button">Read More</a>
             </div>
         </ItemTemplate>
-        <EmptyDataTemplate>
-            <p><strong>Nothing here yet...</strong></p>
-            <p>Please change filter values or try again later.</p>
-        </EmptyDataTemplate>
     </dot:Repeater>
+    <%-- empty data template --%>
+    <div Visible="{value: Articles.Count == 0 && !IsFilterVisible}">
+        <p><strong>Nothing here yet...</strong></p>
+        <p>Please change filter values or try again later.</p>
+    </div>
     <%-- filter --%>
     <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
                              Countries="{value: Countries}"

@@ -45,8 +45,6 @@ namespace NewsPicker.Web.ViewModels.Articles
                 LoadData();
             }
 
-            IsLoading = false;
-
             return base.PreRender();
         }
 
