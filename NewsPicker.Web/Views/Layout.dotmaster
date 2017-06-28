@@ -13,9 +13,7 @@
 </head>
 <body>
     <%-- content --%>
-    <main>
-        <dot:SpaContentPlaceHolder ID="Content" />
-    </main>
+    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
     <%-- header --%>
     <header>
         <dot:ContentPlaceHolder ID="Header">
