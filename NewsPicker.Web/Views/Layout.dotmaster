@@ -14,7 +14,7 @@
 <body>
     <dot:Literal ID="top" />
     <%-- content --%>
-    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" class="{value: (IsLoading ? "" : "visible")}" />
+    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
     <%-- header --%>
     <header>
         <dot:ContentPlaceHolder ID="Header">
