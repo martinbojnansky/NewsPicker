@@ -83,23 +83,23 @@ namespace NewsPicker.Web.Controls
             = DotvvmProperty.Register<int, ArticlesFilter>(c => c.SelectedTimePeriodId);
 
         [MarkupOptions(Required = true)]
-        public Command LoadCategoriesCommand
+        public Command UpdateFilterCommand
         {
-            get { return (Command)GetValue(LoadCategoriesCommandProperty); }
-            set { SetValue(LoadCategoriesCommandProperty, value); }
+            get { return (Command)GetValue(UpdateFilterCommandProperty); }
+            set { SetValue(UpdateFilterCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty LoadCategoriesCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.LoadCategoriesCommand);
+        public static readonly DotvvmProperty UpdateFilterCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.UpdateFilterCommand);
 
         [MarkupOptions(Required = true)]
-        public Command FilterButtonCommand
+        public Command ShowHideFilterCommand
         {
-            get { return (Command)GetValue(FilterButtonCommandProperty); }
-            set { SetValue(FilterButtonCommandProperty, value); }
+            get { return (Command)GetValue(ShowHideFilterCommandProperty); }
+            set { SetValue(ShowHideFilterCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty FilterButtonCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.FilterButtonCommand);
+        public static readonly DotvvmProperty ShowHideFilterCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ShowHideFilterCommand);
     }
 }

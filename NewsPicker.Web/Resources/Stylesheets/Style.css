@@ -25,18 +25,20 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 60px 0;
+  opacity: 0;
+  visibility: hidden;
 }
 img {
   max-width: 100%;
   max-height: 100%;
 }
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .collapsed {
   opacity: 0;
   visibility: hidden;
-}
-.visible {
-  opacity: 1;
-  visibility: visible;
 }
 .center {
   display: flex;
@@ -210,6 +212,8 @@ a.secondary-button:hover {
 }
 .articles {
   flex: 1 1 auto;
+  opacity: 0;
+  visibility: hidden;
 }
 .articles .article {
   width: 100%;
@@ -284,6 +288,8 @@ a.secondary-button:hover {
   max-width: 750px;
   margin: 0 auto;
   padding: 10px 10px 20px 10px;
+  opacity: 0;
+  visibility: hidden;
 }
 .articles-filter-control::before {
   content: "";

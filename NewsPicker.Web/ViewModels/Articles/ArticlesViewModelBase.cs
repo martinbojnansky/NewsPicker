@@ -17,10 +17,6 @@ namespace NewsPicker.Web.ViewModels.Articles
 {
     public class ArticlesViewModelBase : NewsPicker.Web.ViewModels.LayoutViewModel
     {
-        //private const string COUNTRY_QUERY_KEY = "co";
-        //private const string CATEGORY_QUERY_KEY = "ca";
-        //private const string TIME_PERIOD_QUERY_KEY = "tp";
-
         private readonly CountriesFacade _countriesFacade = new CountriesFacade();
 
         private readonly CategoriesFacade _categoriesFacade = new CategoriesFacade();
@@ -49,6 +45,8 @@ namespace NewsPicker.Web.ViewModels.Articles
                 LoadData();
             }
 
+            IsLoading = false;
+
             return base.PreRender();
         }
 
@@ -68,13 +66,6 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadSelectedCountry()
         {
-            //var selectedCountryId = Convert.ToInt32(Context.Query[COUNTRY_QUERY_KEY]);
-            //if (selectedCountryId != 0)
-            //{
-            //    SelectedCountryId = selectedCountryId;
-            //    return;
-            //}
-
             var selectedCountryId = Convert.ToInt32(Cookies.Get(nameof(ArticlesFilter), nameof(SelectedCountryId)));
             if (selectedCountryId != 0)
             {
@@ -88,18 +79,10 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadSelectedCategory()
         {
-            //SelectedCategoryId = Convert.ToInt32(Context.Query[CATEGORY_QUERY_KEY]);
         }
 
         private void LoadSelectedTimePeriod()
         {
-            //var selectedTimePeriodId = Convert.ToInt32(Context.Query[TIME_PERIOD_QUERY_KEY]);
-            //if (selectedTimePeriodId != 0)
-            //{
-            //    SelectedTimePeriodId = selectedTimePeriodId;
-            //    return;
-            //}
-
             SelectedTimePeriodId = (int)TimePeriodValue.DAY;
         }
 
@@ -143,17 +126,15 @@ namespace NewsPicker.Web.ViewModels.Articles
             LoadCategories();
         }
 
-        public void Filter()
+        public void ShowHideFilter()
         {
             if (IsFilterVisible)
             {
                 IsFilterVisible = false;
                 Context.ResultIdFragment = "top";
 
-                Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
                 LoadArticles();
-                //Context.RedirectToRoute("Default", null, true, true,
-                //    $"?{COUNTRY_QUERY_KEY}={SelectedCountryId}&{CATEGORY_QUERY_KEY}={SelectedCategoryId}&{TIME_PERIOD_QUERY_KEY}={SelectedTimePeriodId}");
+                Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
             }
             else
             {

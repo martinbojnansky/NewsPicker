@@ -1,8 +1,7 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
 <%-- filter content --%>
-<div class="articles-filter-control-content"
-     Visible="{controlProperty: IsVisible}">
+<div class="{controlProperty: "articles-filter-control-content " + (IsVisible ? "visible" : "")}">
     <%-- countries --%>
     <h5>Country</h5>
     <dot:Repeater DataSource="{controlProperty: Countries}">
@@ -10,7 +9,7 @@
             <dot:RadioButton GroupName="countries"
                              CheckedItem="{controlProperty: SelectedCountryId}"
                              CheckedValue="{value: Id}"
-                             Changed="{controlCommand: LoadCategoriesCommand}"
+                             Changed="{controlCommand: UpdateFilterCommand}"
                              Text="{value: Name}"
                              class="toggle-button" />
         </ItemTemplate>
@@ -44,7 +43,7 @@
 <%-- filter button --%>
 <div class="articles-filter-control-button">
     <a class="button primary-button"
-       Events.Click="{controlCommand: FilterButtonCommand}"
+       Events.Click="{controlCommand: ShowHideFilterCommand}"
        InnerText="{controlProperty: !IsVisible ? "Filter" : "Apply"}">
         Filter
     </a>

@@ -14,6 +14,16 @@
     filter: sepia(0.25);
 }
 
+.visible() {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.collapsed() {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .border-radius(@size: @base-border-radius) {
     -webkit-border-radius: @size;
     -moz-border-radius: @size;

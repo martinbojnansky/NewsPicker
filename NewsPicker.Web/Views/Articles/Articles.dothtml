@@ -6,9 +6,8 @@
 
 <dot:Content ContentPlaceHolderID="Content">
     <%-- articles --%>
-    <dot:Repeater class="articles"
-                  DataSource="{value: Articles}"
-                  Visible="{value: !IsFilterVisible}">
+    <dot:Repeater class="{value: "articles " + (IsFilterVisible ? "" : "visible")}"
+                  DataSource="{value: Articles}">
         <ItemTemplate>
             <div class="article">
                 <%-- thumbnail --%>
@@ -41,8 +40,8 @@
                              SelectedCountryId="{value: SelectedCountryId}"
                              SelectedCategoryId="{value: SelectedCategoryId}"
                              SelectedTimePeriodId="{value: SelectedTimePeriodId}"
-                             FilterButtonCommand="{command: Filter()}"
-                             LoadCategoriesCommand="{command: LoadCategories()}"
+                             ShowHideFilterCommand="{command: ShowHideFilter()}"
+                             UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
 </dot:Content>
 
