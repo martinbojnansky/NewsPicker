@@ -285,8 +285,6 @@ a.secondary-button:hover {
   margin: 0 auto;
   padding: 10px;
   background: #F2F2F2;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .articles-filter-control-button .button {
   position: relative;
