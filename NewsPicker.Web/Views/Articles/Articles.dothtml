@@ -26,7 +26,7 @@
                 <p>{{value: Description}}</p>
                 <%-- link --%>
                 <a href="{value: Url}" target="_blank"
-                   class="button primary-button">Read More</a>
+                   class="button secondary-button">Read More</a>
             </div>
         </ItemTemplate>
         <EmptyDataTemplate>

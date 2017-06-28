@@ -307,4 +307,5 @@ a.secondary-button:hover {
   max-width: 750px;
   text-align: center;
   height: 40px;
+  line-height: 18px;
 }

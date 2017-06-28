@@ -145,14 +145,20 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public void Filter()
         {
-            IsFilterVisible = !IsFilterVisible;
-
-            if (!IsFilterVisible)
+            if (IsFilterVisible)
             {
+                IsFilterVisible = false;
+                Context.ResultIdFragment = "top";
+
                 Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
+                LoadArticles();
                 //Context.RedirectToRoute("Default", null, true, true,
                 //    $"?{COUNTRY_QUERY_KEY}={SelectedCountryId}&{CATEGORY_QUERY_KEY}={SelectedCategoryId}&{TIME_PERIOD_QUERY_KEY}={SelectedTimePeriodId}");
-                LoadArticles();
+            }
+            else
+            {
+                IsFilterVisible = true;
+                Context.ResultIdFragment = "bottom";
             }
         }
     }

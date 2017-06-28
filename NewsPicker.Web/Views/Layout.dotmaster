@@ -12,6 +12,7 @@
     <dot:ContentPlaceHolder ID="Styles" />
 </head>
 <body>
+    <dot:Literal ID="top" />
     <%-- content --%>
     <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
     <%-- header --%>
@@ -24,6 +25,7 @@
             <div class="right"></div>
         </dot:ContentPlaceHolder>
     </header>
+    <dot:Literal ID="bottom" />
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
     <script>
