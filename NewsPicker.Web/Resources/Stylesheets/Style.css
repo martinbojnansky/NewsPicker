@@ -216,10 +216,9 @@ a.secondary-button:hover {
   justify-content: center;
 }
 .articles .article {
-  flex: 1 1 auto auto;
+  flex: 1 1 auto;
   width: 100%;
   max-width: 750px;
-  margin: 0 auto;
   padding: 30px 20px;
   text-align: center;
   border-bottom: 1px dashed #CCC;
