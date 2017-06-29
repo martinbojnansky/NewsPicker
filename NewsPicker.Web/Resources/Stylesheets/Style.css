@@ -210,8 +210,13 @@ a.secondary-button:hover {
 }
 .articles {
   flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .articles .article {
+  flex: 1 1 auto auto;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
