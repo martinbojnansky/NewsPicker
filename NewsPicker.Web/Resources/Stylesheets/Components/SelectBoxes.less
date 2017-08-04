@@ -1,0 +1,45 @@
+﻿@import "../Variables.less";
+@import "../Mixins.less";
+@import "../Components/Buttons.less";
+
+select {
+    display: inline-block;
+    padding: @button-padding;
+    cursor: pointer;
+    background: @button-background-color;
+    color: @text-color-white;
+    font-family: @secondary-font;
+    font-size: .82rem;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    box-shadow: @button-shadow;
+    .border-radius();
+    min-width: @bar-height;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:hover {
+        background: @hover-button-background-color;
+        box-shadow: @hover-button-shadow;
+    }
+}
+
+.primary-select {
+    background: @primary-color;
+
+    &:hover {
+        background: @primary-color-darken;
+    }
+}
+
+.secondary-select {
+    background: @secondary-color;
+
+    &:hover {
+        background: @secondary-color-darken;
+    }
+}

@@ -1,51 +1,26 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.ArticlesFilter, NewsPicker.Web
 <%-- filter content --%>
-<div class="articles-filter-control-content"
-     Visible="{controlProperty: IsVisible}">
-    <%-- countries --%>
-    <h5>Country</h5>
-    <dot:Repeater DataSource="{controlProperty: Countries}">
-        <ItemTemplate>
-            <dot:RadioButton GroupName="countries"
-                             CheckedItem="{controlProperty: SelectedCountryId}"
-                             CheckedValue="{value: Id}"
-                             Changed="{controlCommand: UpdateFilterCommand}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
-        </ItemTemplate>
-    </dot:Repeater>
+<div class="articles-filter-control-content">
     <%-- categories --%>
-    <h5>Category</h5>
-    <dot:Repeater DataSource="{controlProperty: Categories}">
-        <ItemTemplate>
-            <dot:RadioButton GroupName="categories"
-                             CheckedItem="{controlProperty: SelectedCategoryId}"
-                             CheckedValue="{value: Id}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
-        </ItemTemplate>
-        <EmptyDataTemplate>
-            <p>No country selected.</p>
-        </EmptyDataTemplate>
-    </dot:Repeater>
+    <dot:ComboBox DataSource="{controlProperty: Categories}"
+                  SelectedValue="{controlProperty: SelectedCategoryId}"
+                  DisplayMember="Name"
+                  ValueMember="Id"
+                  SelectionChanged="{controlCommand: ApplyFilterCommand}"
+                  class="secondary-select categories-select" />
     <%-- time periods --%>
-    <h5>Time Period</h5>
-    <dot:Repeater DataSource="{controlProperty: TimePeriods}">
-        <ItemTemplate>
-            <dot:RadioButton GroupName="time-periods"
-                             CheckedItem="{controlProperty: SelectedTimePeriodId}"
-                             CheckedValue="{value: Id}"
-                             Text="{value: Name}"
-                             class="toggle-button" />
-        </ItemTemplate>
-    </dot:Repeater>
-</div>
-<%-- filter button --%>
-<div class="articles-filter-control-button">
-    <a class="button primary-button"
-       Events.Click="{controlCommand: ShowHideFilterCommand}"
-       InnerText="{controlProperty: ButtonText}">
-        Filter
-    </a>
+    <dot:ComboBox DataSource="{controlProperty: TimePeriods}"
+                  SelectedValue="{controlProperty: SelectedTimePeriodId}"
+                  DisplayMember="Name"
+                  ValueMember="Id"
+                  SelectionChanged="{controlCommand: ApplyFilterCommand}"
+                  class="primary-select time-periods-select" />
+    <%-- countries --%>
+    <dot:ComboBox DataSource="{controlProperty: Countries}"
+                  SelectedValue="{controlProperty: SelectedCountryId}"
+                  DisplayMember="Name"
+                  ValueMember="Id"
+                  SelectionChanged="{controlCommand: UpdateFilterCommand}"
+                  class="primary-select countries-select" />
 </div>

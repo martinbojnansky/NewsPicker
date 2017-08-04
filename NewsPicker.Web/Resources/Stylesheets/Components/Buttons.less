@@ -1,4 +1,5 @@
 ﻿@import "../Variables.less";
+@import "../Mixins.less";
 
 .button, a.button {
     display: inline-block;
@@ -8,11 +9,11 @@
     color: @text-color-white;
     font-family: @secondary-font;
     font-size: .82rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.02rem;
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: @base-border-radius;
+    .border-radius();
     box-shadow: @button-shadow;
 
     &:hover {

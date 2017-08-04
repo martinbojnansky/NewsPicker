@@ -25,7 +25,6 @@
             <div class="right"></div>
         </dot:ContentPlaceHolder>
     </header>
-    <dot:Literal ID="bottom" />
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
     <script>

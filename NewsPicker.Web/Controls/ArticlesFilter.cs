@@ -15,25 +15,6 @@ namespace NewsPicker.Web.Controls
     public class ArticlesFilter : DotvvmMarkupControl
     {
         [MarkupOptions(Required = true)]
-        public bool IsVisible
-        {
-            get { return (bool)GetValue(IsVisibleProperty); }
-            set { SetValue(IsVisibleProperty, value); }
-        }
-
-        public static readonly DotvvmProperty IsVisibleProperty
-            = DotvvmProperty.Register<bool, ArticlesFilter>(c => c.IsVisible);
-
-        public string ButtonText
-        {
-            get { return (string)GetValue(ButtonTextProperty); }
-            set { SetValue(ButtonTextProperty, value); }
-        }
-
-        public static readonly DotvvmProperty ButtonTextProperty
-            = DotvvmProperty.Register<string, ArticlesFilter>(c => c.ButtonText);
-
-        [MarkupOptions(Required = true)]
         public List<CountryDTO> Countries
 
         {
@@ -103,13 +84,13 @@ namespace NewsPicker.Web.Controls
             = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.UpdateFilterCommand);
 
         [MarkupOptions(Required = true)]
-        public Command ShowHideFilterCommand
+        public Command ApplyFilterCommand
         {
-            get { return (Command)GetValue(ShowHideFilterCommandProperty); }
-            set { SetValue(ShowHideFilterCommandProperty, value); }
+            get { return (Command)GetValue(ApplyFilterCommandProperty); }
+            set { SetValue(ApplyFilterCommandProperty, value); }
         }
 
-        public static readonly DotvvmProperty ShowHideFilterCommandProperty
-            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ShowHideFilterCommand);
+        public static readonly DotvvmProperty ApplyFilterCommandProperty
+            = DotvvmProperty.Register<Command, ArticlesFilter>(c => c.ApplyFilterCommand);
     }
 }

@@ -30,8 +30,6 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public int SelectedTimePeriodId { get; set; } = (int)TimePeriodValue.DAY;
 
-        public bool IsFilterVisible { get; set; }
-
         public string FilterButtonText { get; set; }
 
         public List<CountryDTO> Countries { get; set; }
@@ -48,7 +46,6 @@ namespace NewsPicker.Web.ViewModels.Articles
             {
                 LoadFilterValues();
                 LoadData();
-                UpdateFilterButtonText();
             }
 
             return base.PreRender();
@@ -76,7 +73,6 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
 
             SelectedCountryId = 1;
-            IsFilterVisible = true;
         }
 
         private void LoadCountries()
@@ -117,47 +113,14 @@ namespace NewsPicker.Web.ViewModels.Articles
         public void UpdateFilter()
         {
             LoadCategories();
+            ApplyFilter();
         }
 
-        public void ShowHideFilter()
+        public void ApplyFilter()
         {
-            if (IsFilterVisible)
-            {
-                IsFilterVisible = false;
-                Context.ResultIdFragment = "top";
-
-                LoadArticles();
-                Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
-            }
-            else
-            {
-                IsFilterVisible = true;
-                Context.ResultIdFragment = "bottom";
-            }
-
-            UpdateFilterButtonText();
-        }
-
-        private void UpdateFilterButtonText()
-        {
-            if (IsFilterVisible)
-            {
-                FilterButtonText = "Apply";
-                return;
-            }
-
-            if (SelectedCountryId != 0)
-            {
-                var countryName = Countries?.FirstOrDefault(c => c.Id == SelectedCountryId).Code.ToUpper();
-                var categoryName = Categories?.FirstOrDefault(c => c.Id == SelectedCategoryId).Name;
-                var timePeriodName = TimePeriods?.FirstOrDefault(t => t.Id == SelectedTimePeriodId).Name;
-
-                FilterButtonText = $"{countryName} • {categoryName} • {timePeriodName}";
-            }
-            else
-            {
-                FilterButtonText = "Filter";
-            }
+            Context.ResultIdFragment = "top";
+            LoadArticles();
+            Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
         }
     }
 }

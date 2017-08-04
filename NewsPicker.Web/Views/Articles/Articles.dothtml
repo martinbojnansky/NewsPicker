@@ -7,8 +7,7 @@
 <dot:Content ContentPlaceHolderID="Content">
     <%-- articles --%>
     <dot:Repeater class="articles"
-                  DataSource="{value: Articles}"
-                  Visible="{value: !IsFilterVisible}">
+                  DataSource="{value: Articles}">
         <ItemTemplate>
             <div class="article">
                 <%-- thumbnail --%>
@@ -31,20 +30,18 @@
         </ItemTemplate>
     </dot:Repeater>
     <%-- empty data template --%>
-    <div Visible="{value: Articles.Count == 0 && !IsFilterVisible}">
+    <div Visible="{value: Articles.Count == 0}">
         <p><strong>Nothing here yet...</strong></p>
         <p>Please change filter values or try again later.</p>
     </div>
     <%-- filter --%>
-    <controls:ArticlesFilter IsVisible="{value: IsFilterVisible}"
-                             ButtonText="{value: FilterButtonText}"
-                             Countries="{value: Countries}"
+    <controls:ArticlesFilter Countries="{value: Countries}"
                              Categories="{value: Categories}"
                              TimePeriods="{value: TimePeriods}"
                              SelectedCountryId="{value: SelectedCountryId}"
                              SelectedCategoryId="{value: SelectedCategoryId}"
                              SelectedTimePeriodId="{value: SelectedTimePeriodId}"
-                             ShowHideFilterCommand="{command: ShowHideFilter()}"
+                             ApplyFilterCommand="{command: ApplyFilter()}"
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
 </dot:Content>
