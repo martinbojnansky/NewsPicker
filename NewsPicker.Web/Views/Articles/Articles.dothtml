@@ -16,9 +16,9 @@
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
     <%--slogan--%>
-    <h5 class="slogan">
-        Explore top 10 most liked news on Facebook!
-    </h5>
+    <p class="slogan">
+        Explore The 10 Most Liked Articles on Facebook!
+    </p>
     <%-- articles --%>
     <dot:Repeater class="articles"
                   DataSource="{value: Articles}">
