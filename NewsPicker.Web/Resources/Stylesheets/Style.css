@@ -20,7 +20,6 @@ body {
 }
 main {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -42,6 +41,15 @@ img {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+.slogan {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #F2F2F2;
 }
 p {
   font-family: "Playfair Display", serif;

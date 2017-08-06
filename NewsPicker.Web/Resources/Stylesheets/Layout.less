@@ -24,7 +24,6 @@ body {
 
 main {
     position: relative;
-    min-height: 100vh;
     .flex(column);
     padding: 2*@bar-height 0 0 0;
 }
@@ -46,4 +45,12 @@ img {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.slogan {
+    .center();
+    font-weight: bold;
+    padding: 2*@base-padding;
+    margin: 0;
+    border-bottom: 1px solid @background-color-darken;
 }

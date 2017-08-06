@@ -24,7 +24,9 @@
         </dot:ContentPlaceHolder>
     </header>
     <%-- content --%>
-    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
+    <main>
+        <dot:SpaContentPlaceHolder ID="Content" />
+    </main>
     <%--footer--%>
     <footer>
         <a href="https://1drv.ms/xs/s!Ah0mj4isVdcUksYe2Ncp-90aU6DOrg"
