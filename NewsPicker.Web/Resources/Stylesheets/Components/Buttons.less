@@ -5,14 +5,14 @@
     display: inline-block;
     padding: @button-padding;
     cursor: pointer;
-    background: @button-background-color;
-    color: @text-color-white;
     font-family: @secondary-font;
     font-size: .82rem;
     font-weight: 500;
     letter-spacing: 0.02rem;
     text-transform: uppercase;
     text-decoration: none;
+    background: @button-background-color;
+    color: @text-color-inverse;
     .border-radius();
     box-shadow: @button-shadow;
 
@@ -33,7 +33,9 @@
 }
 
 .primary-button, a.primary-button {
+    .button();
     background: @primary-color;
+    color: @text-color-inverse;
 
     &:focus {
         background: @primary-color;
@@ -45,7 +47,9 @@
 }
 
 .secondary-button, a.secondary-button {
+    .button();
     background: @secondary-color;
+    color: @text-color-inverse;
 
     &:focus {
         background: @secondary-color;
@@ -71,7 +75,7 @@
 
         &:checked + span {
             background: @secondary-color;
-            color: @text-color-white;
+            color: @text-color-inverse;
 
             &:hover {
                 background: @secondary-color-darken;
@@ -93,7 +97,7 @@
 
         &:active {
             box-shadow: @active-button-shadow;
-            color: @text-color-white;
+            color: @text-color-inverse;
             transform: @active-transform;
         }
     }

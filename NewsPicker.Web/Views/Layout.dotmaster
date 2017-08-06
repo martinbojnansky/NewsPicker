@@ -13,8 +13,6 @@
 </head>
 <body>
     <dot:Literal ID="top" />
-    <%-- content --%>
-    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
     <%-- header --%>
     <header>
         <dot:ContentPlaceHolder ID="Header">
@@ -25,6 +23,15 @@
             <div class="right"></div>
         </dot:ContentPlaceHolder>
     </header>
+    <%-- content --%>
+    <dot:SpaContentPlaceHolder ID="Content" WrapperTagName="main" />
+    <%--footer--%>
+    <footer>
+        <a href="https://1drv.ms/xs/s!Ah0mj4isVdcUksYe2Ncp-90aU6DOrg"
+           target="_blank"
+           class="button">Send Feedback</a>
+        <h5>Copyright 2017 &copy; by Martin Bojnanský.</h5>
+    </footer>
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
     <script>

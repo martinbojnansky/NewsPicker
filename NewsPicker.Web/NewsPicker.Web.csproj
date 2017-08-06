@@ -203,6 +203,7 @@
     <Content Include="Resources\Stylesheets\Components\Fonts.less" />
     <Content Include="Resources\Stylesheets\Components\Header.less" />
     <Content Include="Resources\Stylesheets\Components\SelectBoxes.less" />
+    <Content Include="Resources\Stylesheets\Components\Footer.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -5,6 +5,18 @@
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Content">
+    <%-- filter --%>
+    <controls:ArticlesFilter Countries="{value: Countries}"
+                             Categories="{value: Categories}"
+                             TimePeriods="{value: TimePeriods}"
+                             SelectedCountryId="{value: SelectedCountryId}"
+                             SelectedCategoryId="{value: SelectedCategoryId}"
+                             SelectedTimePeriodId="{value: SelectedTimePeriodId}"
+                             ApplyFilterCommand="{command: ApplyFilter()}"
+                             UpdateFilterCommand="{command: UpdateFilter()}"
+                             class="articles-filter-control" />
+    <%--slogan--%>
+    <%--<h1>Explore TOP 10 Most Liked News on Facebook!</h1>--%>
     <%-- articles --%>
     <dot:Repeater class="articles"
                   DataSource="{value: Articles}">
@@ -25,7 +37,7 @@
                 <p>{{value: Description}}</p>
                 <%-- link --%>
                 <a href="{value: Url}" target="_blank"
-                   class="button secondary-button">Read More</a>
+                   class="secondary-button">Read More</a>
             </div>
         </ItemTemplate>
     </dot:Repeater>
@@ -34,16 +46,6 @@
         <p><strong>Nothing here yet...</strong></p>
         <p>Please change filter values or try again later.</p>
     </div>
-    <%-- filter --%>
-    <controls:ArticlesFilter Countries="{value: Countries}"
-                             Categories="{value: Categories}"
-                             TimePeriods="{value: TimePeriods}"
-                             SelectedCountryId="{value: SelectedCountryId}"
-                             SelectedCategoryId="{value: SelectedCategoryId}"
-                             SelectedTimePeriodId="{value: SelectedTimePeriodId}"
-                             ApplyFilterCommand="{command: ApplyFilter()}"
-                             UpdateFilterCommand="{command: UpdateFilter()}"
-                             class="articles-filter-control" />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

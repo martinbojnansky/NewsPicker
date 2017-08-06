@@ -103,6 +103,7 @@ header {
   padding: 10px 20px;
   background: #FFF;
   border-bottom: 1px solid #F2F2F2;
+  z-index: 1000;
 }
 header .left {
   flex: 0 1 auto;
@@ -117,19 +118,28 @@ header .center img {
 header .right {
   flex: 0 1 auto;
 }
+footer {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
 .button,
 a.button {
   display: inline-block;
   padding: 11px 20px;
   cursor: pointer;
-  background: #F2F2F2;
-  color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: .82rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
   text-decoration: none;
+  background: #999;
+  color: #FFF;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -137,12 +147,12 @@ a.button {
 }
 .button:hover,
 a.button:hover {
-  background: #e5e5e5;
+  background: #8c8c8c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .button:focus,
 a.button:focus {
-  background: #F2F2F2;
+  background: #999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .button:active,
@@ -152,7 +162,37 @@ a.button:active {
 }
 .primary-button,
 a.primary-button {
+  display: inline-block;
+  padding: 11px 20px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #07B0C5;
+  color: #FFF;
+}
+.primary-button:hover,
+a.primary-button:hover {
+  background: #8c8c8c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.primary-button:focus,
+a.primary-button:focus {
+  background: #999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.primary-button:active,
+a.primary-button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
 }
 .primary-button:focus,
 a.primary-button:focus {
@@ -164,7 +204,37 @@ a.primary-button:hover {
 }
 .secondary-button,
 a.secondary-button {
+  display: inline-block;
+  padding: 11px 20px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #F8AC1B;
+  color: #FFF;
+}
+.secondary-button:hover,
+a.secondary-button:hover {
+  background: #8c8c8c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.secondary-button:focus,
+a.secondary-button:focus {
+  background: #999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.secondary-button:active,
+a.secondary-button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
 }
 .secondary-button:focus,
 a.secondary-button:focus {
@@ -196,13 +266,13 @@ a.secondary-button:hover {
 }
 .toggle-button span {
   display: block;
-  background: #F2F2F2;
+  background: #999;
   color: #888;
   padding: 11px 20px;
   border-radius: 4px;
 }
 .toggle-button span:hover {
-  background: #e5e5e5;
+  background: #8c8c8c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .toggle-button span:active {
@@ -214,7 +284,7 @@ select {
   display: inline-block;
   padding: 11px 20px;
   cursor: pointer;
-  background: #F2F2F2;
+  background: #999;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: .82rem;
@@ -233,7 +303,7 @@ select {
   -moz-appearance: none;
 }
 select:hover {
-  background: #e5e5e5;
+  background: #8c8c8c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .primary-select {
@@ -318,6 +388,7 @@ select:hover {
 }
 .articles-filter-control {
   position: fixed;
+  z-index: 1000;
   left: 0;
   right: 0;
   top: 60px;
@@ -346,7 +417,7 @@ select:hover {
   flex: 1 0 auto;
 }
 .articles-filter-control .categories-select {
-  flex: 2 0 auto;
+  flex: 1 0 auto;
 }
 .articles-filter-control .time-periods-select {
   flex: 1 0 auto;
