@@ -16,7 +16,8 @@
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
     <%--slogan--%>
-    <p Visible="{value: SelectedCategoryId == 0 && !IsEmpty}">
+    <p class="slogan"
+       Visible="{value: SelectedCategoryId == 0 && !IsEmpty}">
         Explore the 10 most liked articles on Facebook!
     </p>
     <%-- articles --%>

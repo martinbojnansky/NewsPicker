@@ -34,6 +34,8 @@
            class="button">Send Feedback</a>
         <h5>Copyright 2017 &copy; by Martin Bojnanský.</h5>
     </footer>
+    <div class="{value: IsLoading ? "visible" : "collapsed"}"
+         style="position:fixed;left:0;top:0;width:100%;height:100%;background:red;">Loading...</div>
     <%-- scripts --%>
     <dot:ContentPlaceHolder ID="Scripts" />
     <script>
