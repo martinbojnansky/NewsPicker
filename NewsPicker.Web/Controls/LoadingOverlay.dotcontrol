@@ -2,4 +2,9 @@
 @baseType NewsPicker.Web.Controls.LoadingOverlay, NewsPicker.Web
 
 <dot:UpdateProgress class="loading-overlay">
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </dot:UpdateProgress>
