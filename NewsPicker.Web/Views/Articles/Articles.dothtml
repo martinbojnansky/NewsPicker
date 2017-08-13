@@ -15,7 +15,7 @@
                              ApplyFilterCommand="{command: ApplyFilter()}"
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
-    <%--slogan--%>
+    <%-- slogan --%>
     <p class="slogan"
        Visible="{value: SelectedCategoryId == 0 && !IsEmpty}">
         Explore the 10 most liked articles on Facebook!
@@ -45,7 +45,8 @@
         </ItemTemplate>
     </dot:Repeater>
     <%-- empty data template --%>
-    <controls:EmptyDataTemplate Description="Please change filter values or try again later." />
+    <controls:EmptyDataTemplate Description="Please change filter values or try again later."
+                                Visible="{value: IsEmpty}" />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

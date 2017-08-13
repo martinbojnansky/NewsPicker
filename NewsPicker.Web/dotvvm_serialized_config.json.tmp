@@ -15,6 +15,11 @@
         "tagPrefix": "controls",
         "tagName": "EmptyDataTemplate",
         "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\EmptyDataTemplate.dotcontrol"
+      },
+      {
+        "tagPrefix": "controls",
+        "tagName": "LoadingOverlay",
+        "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\LoadingOverlay.dotcontrol"
       }
     ],
     "assemblies": [],

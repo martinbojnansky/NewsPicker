@@ -1,0 +1,5 @@
+﻿@viewModel System.Object, mscorlib
+@baseType NewsPicker.Web.Controls.LoadingOverlay, NewsPicker.Web
+
+<dot:UpdateProgress class="loading-overlay">
+</dot:UpdateProgress>

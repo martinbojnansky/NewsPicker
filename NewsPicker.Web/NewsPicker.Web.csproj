@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\EmptyDataTemplate.cs" />
+    <Compile Include="Controls\LoadingOverlay.cs" />
     <Compile Include="Facades\ArticlesFacade.cs" />
     <Compile Include="Facades\CategoriesFacade.cs" />
     <Compile Include="Facades\CountriesFacade.cs" />
@@ -200,6 +201,7 @@
     </None>
     <Content Include="Controls\ArticlesFilter.dotcontrol" />
     <Content Include="Controls\EmptyDataTemplate.dotcontrol" />
+    <Content Include="Controls\LoadingOverlay.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
     <Content Include="Resources\Stylesheets\Style.less" />
@@ -208,6 +210,7 @@
     <Content Include="Resources\Stylesheets\Components\SelectBoxes.less" />
     <Content Include="Resources\Stylesheets\Components\Footer.less" />
     <Content Include="Resources\Stylesheets\Components\EmptyDataTemplate.less" />
+    <Content Include="Resources\Stylesheets\Components\LoadingOverlay.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
