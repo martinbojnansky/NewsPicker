@@ -326,6 +326,18 @@ select:hover {
 .secondary-select:hover {
   background: #f2a107;
 }
+.empty-data-template {
+  text-align: center;
+}
+.empty-data-template p:first-of-type {
+  font-weight: bold;
+}
+.empty-data-template img {
+  width: 200px;
+}
+.empty-data-template img path {
+  fill: #222;
+}
 .articles {
   flex: 1 1 auto;
   display: flex;

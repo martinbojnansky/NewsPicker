@@ -10,6 +10,11 @@
         "tagPrefix": "controls",
         "tagName": "ArticlesFilter",
         "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\ArticlesFilter.dotcontrol"
+      },
+      {
+        "tagPrefix": "controls",
+        "tagName": "EmptyDataTemplate",
+        "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\EmptyDataTemplate.dotcontrol"
       }
     ],
     "assemblies": [],

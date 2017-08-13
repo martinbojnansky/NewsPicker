@@ -157,6 +157,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EmptyDataTemplate.cs" />
     <Compile Include="Facades\ArticlesFacade.cs" />
     <Compile Include="Facades\CategoriesFacade.cs" />
     <Compile Include="Facades\CountriesFacade.cs" />
@@ -171,6 +172,7 @@
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Images\Empty.svg" />
     <Content Include="Resources\Images\NewsPicker.svg" />
     <Content Include="Resources\Stylesheets\Modules\Articles\Articles.less" />
     <Content Include="Resources\Stylesheets\Modules\Articles\ArticlesFilter.less" />
@@ -197,6 +199,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Controls\ArticlesFilter.dotcontrol" />
+    <Content Include="Controls\EmptyDataTemplate.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
     <Content Include="Resources\Stylesheets\Style.less" />
@@ -204,6 +207,7 @@
     <Content Include="Resources\Stylesheets\Components\Header.less" />
     <Content Include="Resources\Stylesheets\Components\SelectBoxes.less" />
     <Content Include="Resources\Stylesheets\Components\Footer.less" />
+    <Content Include="Resources\Stylesheets\Components\EmptyDataTemplate.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

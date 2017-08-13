@@ -16,8 +16,8 @@
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
     <%--slogan--%>
-    <p class="slogan">
-        Explore The 10 Most Liked Articles on Facebook!
+    <p Visible="{value: SelectedCategoryId == 0 && !IsEmpty}">
+        Explore the 10 most liked articles on Facebook!
     </p>
     <%-- articles --%>
     <dot:Repeater class="articles"
@@ -44,10 +44,7 @@
         </ItemTemplate>
     </dot:Repeater>
     <%-- empty data template --%>
-    <div Visible="{value: Articles.Count == 0}">
-        <p><strong>Nothing here yet...</strong></p>
-        <p>Please change filter values or try again later.</p>
-    </div>
+    <controls:EmptyDataTemplate Description="Please change filter values or try again later." />
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">

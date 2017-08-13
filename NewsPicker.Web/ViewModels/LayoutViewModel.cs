@@ -8,5 +8,6 @@ namespace NewsPicker.Web.ViewModels
 {
     public class LayoutViewModel : DotvvmViewModelBase
     {
+        public bool IsLoading { get; set; }
     }
 }
