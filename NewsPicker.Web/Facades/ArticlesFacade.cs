@@ -46,8 +46,8 @@ namespace NewsPicker.Web.Facades
             articles = articles.Where(a => startDate <= a.CreatedDate && a.EngagementCount >= 1);
             // Order by engagement count
             articles = articles.OrderByDescending(a => a.EngagementCount);
-            // Take top 10
-            articles = articles.Take(10);
+            // Filter out duplicates & Take top 10
+            articles = articles.GroupBy(a => a.Url).Take(10).Select(g => g.FirstOrDefault());
 
             return articles;
         }

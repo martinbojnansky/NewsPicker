@@ -29,10 +29,12 @@
     </main>
     <%-- footer --%>
     <footer>
-        <a href="https://1drv.ms/xs/s!Ah0mj4isVdcUksYe2Ncp-90aU6DOrg"
-           target="_blank"
-           class="button">Send Feedback</a>
-        <h5>Copyright 2017 &copy; by Martin Bojnanský.</h5>
+        <dot:ContentPlaceHolder ID="Footer">
+            <a href="https://1drv.ms/xs/s!Ah0mj4isVdcUksYe2Ncp-90aU6DOrg"
+               target="_blank"
+               class="button">Send Feedback</a>
+            <h5>Copyright 2017 &copy; by Martin Bojnanský.</h5>
+        </dot:ContentPlaceHolder>
     </footer>
     <%-- progress overlay --%>
     <controls:LoadingOverlay />
