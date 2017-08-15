@@ -15,11 +15,8 @@
                              ApplyFilterCommand="{command: ApplyFilter()}"
                              UpdateFilterCommand="{command: UpdateFilter()}"
                              class="articles-filter-control" />
-    <%-- slogan --%>
-    <p class="slogan"
-       Visible="{value: SelectedCategoryId == 0 && !IsEmpty}">
-        Explore the 10 most liked articles on Facebook!
-    </p>
+    <%-- about --%>
+    <controls:About Visible="{value: SelectedCategoryId == 0 && !IsEmpty}" />
     <%-- articles --%>
     <dot:Repeater class="articles"
                   DataSource="{value: Articles}">

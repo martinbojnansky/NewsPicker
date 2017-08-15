@@ -1,0 +1,19 @@
+﻿@import (reference) "../Style.less";
+
+.relative() {
+    position: relative;
+}
+
+.absolute(@top, @left, @bottom, @right) {
+    position: absolute;
+    top: @top;
+    left: @left;
+    bottom: @bottom;
+    right: @right;
+}
+
+.center {
+    .flex(column);
+    align-content: center;
+    justify-content: space-around;
+}

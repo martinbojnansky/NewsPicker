@@ -1,5 +1,4 @@
-﻿@import "../../Variables.less";
-@import "../../Mixins.less";
+﻿@import (reference) "../../Style.less";
 
 .articles {
     .flex-size(1,1,auto);
@@ -53,7 +52,7 @@
             border: 1px solid @text-color;
             border-radius: @base-border-radius;
             opacity: 0.9;
-            .image-effect();
+            filter: sepia(0.25);
 
             &:hover {
                 opacity: 1;

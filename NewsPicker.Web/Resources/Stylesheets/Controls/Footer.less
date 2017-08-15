@@ -1,10 +1,12 @@
-﻿@import "../Variables.less";
-@import "../Mixins.less";
-@import "../Layout.less";
+﻿@import (reference) "../Style.less";
 
 footer {
-    .center();
     .flex(column, wrap);
     text-align: center;
     padding: 4*@base-padding 2*@base-padding 2*@base-padding 2*@base-padding;
+
+    > div {
+        .flex-size(0);
+        .wrapper();
+    }
 }

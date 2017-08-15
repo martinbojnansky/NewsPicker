@@ -1,5 +1,4 @@
-﻿@import "Variables.less";
-@import "Mixins.less";
+﻿@import (reference) "Style.less";
 
 * {
     transition: @base-transition;
@@ -28,29 +27,7 @@ main {
     padding: 2*@bar-height 0 0 0;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.visible {
-    .visible();
-}
-
-.collapsed {
-    .collapsed();
-}
-
-.center {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.slogan {
-    .center();
-    font-weight: bold;
-    padding: 2*@base-padding;
-    margin: 0;
-    border-bottom: 1px solid @background-color-darken;
+.wrapper {
+    max-width: @max-content-width;
+    margin: 0 auto;
 }

@@ -1,0 +1,14 @@
+﻿@viewModel System.Object, mscorlib
+
+<div class="about">
+    <div>
+        <div class="animation">
+            <img class="news" src="~/Resources/Images/News.svg" />
+            <img class="likes likes-1" src="~/Resources/Images/Likes.svg">
+            <img class="comments" src="~/Resources/Images/Comments.svg">
+            <img class="likes likes-2" src="~/Resources/Images/Likes.svg">
+            <img class="medal" src="~/Resources/Images/Medal.svg">
+        </div>
+        <p>Explore the 10 most liked articles on Facebook!</p>
+    </div>
+</div>

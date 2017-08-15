@@ -8,6 +8,11 @@
       },
       {
         "tagPrefix": "controls",
+        "tagName": "About",
+        "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\About.dotcontrol"
+      },
+      {
+        "tagPrefix": "controls",
         "tagName": "ArticlesFilter",
         "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\ArticlesFilter.dotcontrol"
       },

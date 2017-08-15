@@ -1,5 +1,4 @@
-﻿@import "../Variables.less";
-@import "../Mixins.less";
+﻿@import (reference) "../Style.less";
 
 header {
     position: fixed;
@@ -8,10 +7,11 @@ header {
     right: 0;
     height: @bar-height;
     .flex();
+    .wrapper();
     padding: @base-padding 2*@base-padding;
     background: @background-color;
     border-bottom: 1px solid @background-color-darken;
-    .fixed-index();
+    .top-layer();
 
     .left {
         .flex-size(0);

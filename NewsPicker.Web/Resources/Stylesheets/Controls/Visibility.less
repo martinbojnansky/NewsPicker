@@ -1,0 +1,23 @@
+﻿@import (reference) "../Style.less";
+
+.visible() {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.visible {
+    .visible();
+}
+
+.collapsed() {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.collapsed {
+    .collapsed();
+}
+
+.top-layer() {
+    z-index: 1000;
+}

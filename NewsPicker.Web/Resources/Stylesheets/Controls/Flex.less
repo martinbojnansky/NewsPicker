@@ -1,0 +1,75 @@
+﻿@import (reference) "../Style.less";
+
+.flex() {
+    display: flex;
+}
+
+.flex(@direction: row, @wrap: nowrap) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+
+.flex-size(@grow: 0, @shrink: 1, @basis: auto) {
+    flex: @grow @shrink @basis;
+}
+
+.flex-orientation(@direction) {
+    flex-direction: @direction;
+}
+
+.flex-wrap(@wrap: nowrap) {
+    flex-wrap: @wrap;
+}
+
+.generate-flex-sizes(@i: 1) when (@i =< 20) {
+    @size: @i * 5;
+
+    .flex-@{size} {
+        flex-basis: @size * 1%;
+    }
+
+    .generate-flex-sizes(@i + 1);
+}
+
+.flex {
+    &-row {
+        .flex();
+        .flex-orientation(row);
+
+        > div {
+            margin-right: @base-padding;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-column {
+        .flex();
+        .flex-orientation(column);
+
+        > div {
+            margin-bottom: @base-padding;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-wrap {
+        .flex-wrap(wrap);
+    }
+
+    &-auto {
+        .flex-size(0);
+    }
+
+    &-star {
+        .flex-size(1);
+    }
+}
+
+.generate-flex-sizes();

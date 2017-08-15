@@ -1,9 +1,8 @@
-﻿@import "../../Variables.less";
-@import "../../Mixins.less";
+﻿@import (reference) "../../Style.less";
 
 .articles-filter-control {
     position: fixed;
-    .fixed-index();
+    .top-layer();
     left: 0;
     right: 0;
     top: @bar-height;
@@ -16,9 +15,8 @@
     &-content {
         .flex-size(1,1,auto);
         .flex();
-        max-width: @max-content-width;
-        margin: 0 auto;
-        padding: @base-padding 2*@base-padding 0 2*@base-padding;
+        .wrapper();
+        padding: @base-padding @base-padding 0 @base-padding;
         overflow-x: auto;
     }
 

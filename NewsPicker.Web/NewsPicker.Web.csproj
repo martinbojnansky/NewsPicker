@@ -173,13 +173,16 @@
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Images\Comments.svg" />
     <Content Include="Resources\Images\Empty.svg" />
+    <Content Include="Resources\Images\Likes.svg" />
+    <Content Include="Resources\Images\Medal.svg" />
+    <Content Include="Resources\Images\News.svg" />
     <Content Include="Resources\Images\NewsPicker.svg" />
     <Content Include="Resources\Stylesheets\Modules\Articles\Articles.less" />
     <Content Include="Resources\Stylesheets\Modules\Articles\ArticlesFilter.less" />
-    <Content Include="Resources\Stylesheets\Components\Buttons.less" />
+    <Content Include="Resources\Stylesheets\Controls\Button.less" />
     <Content Include="Resources\Stylesheets\Layout.less" />
-    <Content Include="Resources\Stylesheets\Mixins.less" />
     <Content Include="Resources\Stylesheets\Style.css">
       <DependentUpon>Style.less</DependentUpon>
     </Content>
@@ -202,15 +205,22 @@
     <Content Include="Controls\ArticlesFilter.dotcontrol" />
     <Content Include="Controls\EmptyDataTemplate.dotcontrol" />
     <Content Include="Controls\LoadingOverlay.dotcontrol" />
+    <Content Include="Controls\About.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
     <Content Include="Resources\Stylesheets\Style.less" />
-    <Content Include="Resources\Stylesheets\Components\Fonts.less" />
-    <Content Include="Resources\Stylesheets\Components\Header.less" />
-    <Content Include="Resources\Stylesheets\Components\SelectBoxes.less" />
-    <Content Include="Resources\Stylesheets\Components\Footer.less" />
-    <Content Include="Resources\Stylesheets\Components\EmptyDataTemplate.less" />
-    <Content Include="Resources\Stylesheets\Components\LoadingOverlay.less" />
+    <Content Include="Resources\Stylesheets\Controls\Font.less" />
+    <Content Include="Resources\Stylesheets\Controls\Header.less" />
+    <Content Include="Resources\Stylesheets\Controls\SelectBox.less" />
+    <Content Include="Resources\Stylesheets\Controls\Footer.less" />
+    <Content Include="Resources\Stylesheets\Controls\EmptyDataTemplate.less" />
+    <Content Include="Resources\Stylesheets\Controls\LoadingOverlay.less" />
+    <Content Include="Resources\Stylesheets\Modules\About\About.less" />
+    <Content Include="Resources\Stylesheets\Controls\Flex.less" />
+    <Content Include="Resources\Stylesheets\Controls\Image.less" />
+    <Content Include="Resources\Stylesheets\Controls\Position.less" />
+    <Content Include="Resources\Stylesheets\Controls\Visibility.less" />
+    <Content Include="Resources\Stylesheets\Controls\Border.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
