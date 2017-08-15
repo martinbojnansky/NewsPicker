@@ -57,8 +57,8 @@ namespace NewsPicker.Api.Controllers
             articles = articles.Where(a => startDate <= a.CreatedDate && a.EngagementCount >= 1);
             // Order by share count
             articles = articles.OrderByDescending(a => a.EngagementCount);
-            // Take top 10
-            articles = articles.GroupBy(a => a.Url).Select(g => g.FirstOrDefault()).Take(10);
+            // Filter out duplicates & Take top 10
+            articles = articles.GroupBy(a => a.Url).Take(10).Select(g => g.FirstOrDefault());
 
             return articles;
         }
