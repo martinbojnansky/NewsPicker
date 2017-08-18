@@ -33,8 +33,8 @@ namespace NewsPicker.Robot.Services.Automation
                 IList<RssItem> items = await GetItems(source);
                 IEnumerable<Article> articles = GetArticles(items, source);
 
-                SaveArticles(articles);
-                UpdateDate(source.Id);
+                SaveArticles(articles, source);
+                UpdateDate(source);
             }
         }
 
@@ -83,16 +83,16 @@ namespace NewsPicker.Robot.Services.Automation
                     Title = item.Title,
                     Description = item.Description,
                     Url = item.Link,
+                    UrlHash = item.Link.GetHashCode(),
                     CreatedDate = item.PubDate,
-                    Image = item.Image,
-                    SourceId = source.Id
+                    Image = item.Image
                 };
             });
 
             return article;
         }
 
-        private void SaveArticles(IEnumerable<Article> articles)
+        private void SaveArticles(IEnumerable<Article> articles, Source source)
         {
             if (articles == null)
             {
@@ -101,15 +101,15 @@ namespace NewsPicker.Robot.Services.Automation
 
             _errors.Log($"{nameof(ArticlesClient)}.{nameof(SaveArticles)}()", () =>
             {
-                _articles.AddRange(articles);
+                _articles.AddRange(articles, source.Id);
             });
         }
 
-        public void UpdateDate(int sourceId)
+        public void UpdateDate(Source source)
         {
-            _errors.Log($"{nameof(ArticlesClient)}.{nameof(UpdateDate)}({nameof(sourceId)} = {sourceId})", () =>
+            _errors.Log($"{nameof(ArticlesClient)}.{nameof(UpdateDate)}({nameof(source)} = {source})", () =>
             {
-                _sources.UpdateDate(sourceId);
+                _sources.UpdateDate(source.Id);
             });
         }
     }

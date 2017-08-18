@@ -17,7 +17,7 @@ namespace NewsPicker.Shared.DTO.Article
         public string Url { get; set; }
         public DateTime? CreatedDate { get; set; }
         public int EngagementCount { get; set; }
-        public virtual SourceDTO Source { get; set; }
+        public virtual ICollection<SourceDTO> Sources { get; set; }
 
         public string ElapsedTimeString => CreatedDate?.ToElapsedTimeString();
     }

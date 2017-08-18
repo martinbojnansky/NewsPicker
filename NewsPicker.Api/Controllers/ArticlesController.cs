@@ -26,26 +26,23 @@ namespace NewsPicker.Api.Controllers
         [ResponseType(typeof(List<ArticleDTO>))]
         public List<ArticleDTO> GetTopArticlesByCategoryId(int categoryId, TimePeriodValue timePeriodValue = TimePeriodValue.DAY)
         {
-            IQueryable<Article> articles;
+            var categorySources = db.Categories.FirstOrDefault(c => c.Id == categoryId).Sources.Select(s => s.Id);
+            var categoryArticles = db.Articles.Where(a => a.Sources.Any(s => categorySources.Contains(s.Id)));
 
-            // Filter by category
-            articles = db.Articles.Where(a => a.Source.Categories.FirstOrDefault(c => c.Id == categoryId) != null);
-            articles = GetTopArticles(articles, timePeriodValue);
-
-            return articles.ProjectTo<ArticleDTO>().ToList();
+            categoryArticles = GetTopArticles(categoryArticles, timePeriodValue);
+            return categoryArticles.ProjectTo<ArticleDTO>().ToList();
         }
 
         [HttpGet]
         [ResponseType(typeof(List<ArticleDTO>))]
         public List<ArticleDTO> GetTopArticlesByCountryId(int countryId, TimePeriodValue timePeriodValue = TimePeriodValue.DAY)
         {
-            IQueryable<Article> articles;
+            var countryCategories = db.Categories.Where(c => c.CountryId == countryId).Select(c => c.Id);
+            var countrySources = db.Sources.Where(s => s.Categories.Any(c => countryCategories.Contains(c.Id))).Select(s => s.Id);
+            var countryArticles = db.Articles.Where(a => a.Sources.Any(s => countrySources.Contains(s.Id)));
 
-            // Filter by country
-            articles = db.Articles.Where(a => a.Source.Categories.FirstOrDefault(c => c.CountryId == countryId) != null);
-            articles = GetTopArticles(articles, timePeriodValue);
-
-            return articles.ProjectTo<ArticleDTO>().ToList();
+            countryArticles = GetTopArticles(countryArticles, timePeriodValue);
+            return countryArticles.ProjectTo<ArticleDTO>().ToList();
         }
 
         [NonAction]
@@ -57,8 +54,8 @@ namespace NewsPicker.Api.Controllers
             articles = articles.Where(a => startDate <= a.CreatedDate && a.EngagementCount >= 1);
             // Order by share count
             articles = articles.OrderByDescending(a => a.EngagementCount);
-            // Filter out duplicates & Take top 10
-            articles = articles.GroupBy(a => a.Url).Take(10).Select(g => g.FirstOrDefault());
+            // Get top 10 distinct articles
+            articles = articles.Take(10);
 
             return articles;
         }

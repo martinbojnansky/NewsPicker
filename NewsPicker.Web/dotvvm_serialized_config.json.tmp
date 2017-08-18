@@ -157,7 +157,6 @@
   "runtime": {},
   "defaultCulture": "sk-SK",
   "clientSideValidation": true,
-  "debug": true,
   "AllowBindingDebugging": false,
   "compiledViewsAssemblies": [
     "CompiledViews.dll"

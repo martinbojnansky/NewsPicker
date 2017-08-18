@@ -25,13 +25,14 @@ namespace NewsPicker.Database.Models
         public string Url { get; set; }
 
         [Required]
+        [Index]
+        public int UrlHash { get; set; }
+
+        [Required]
         public DateTime? CreatedDate { get; set; }
 
         public int EngagementCount { get; set; }
 
-        [Index]
-        public int SourceId { get; set; }
-
-        public virtual Source Source { get; set; }
+        public virtual ICollection<Source> Sources { get; set; }
     }
 }

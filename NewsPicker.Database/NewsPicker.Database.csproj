@@ -63,37 +63,9 @@
     <Compile Include="Mappings\CountryMapping.cs" />
     <Compile Include="AutoMapper\IMapping.cs" />
     <Compile Include="Mappings\SourceMapping.cs" />
-    <Compile Include="Migrations\201704132245336_Initial.cs" />
-    <Compile Include="Migrations\201704132245336_Initial.Designer.cs">
-      <DependentUpon>201704132245336_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704151524037_Errors.cs" />
-    <Compile Include="Migrations\201704151524037_Errors.Designer.cs">
-      <DependentUpon>201704151524037_Errors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705111021006_Infrastructure.cs" />
-    <Compile Include="Migrations\201705111021006_Infrastructure.Designer.cs">
-      <DependentUpon>201705111021006_Infrastructure.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705111030324_Infrastructure2.cs" />
-    <Compile Include="Migrations\201705111030324_Infrastructure2.Designer.cs">
-      <DependentUpon>201705111030324_Infrastructure2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706092206013_Optimalization.cs" />
-    <Compile Include="Migrations\201706092206013_Optimalization.Designer.cs">
-      <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706111007397_FacebookApiUpdate.cs" />
-    <Compile Include="Migrations\201706111007397_FacebookApiUpdate.Designer.cs">
-      <DependentUpon>201706111007397_FacebookApiUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706111028458_LongArticleId.cs" />
-    <Compile Include="Migrations\201706111028458_LongArticleId.Designer.cs">
-      <DependentUpon>201706111028458_LongArticleId.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706181248545_ActivableFlag.cs" />
-    <Compile Include="Migrations\201706181248545_ActivableFlag.Designer.cs">
-      <DependentUpon>201706181248545_ActivableFlag.cs</DependentUpon>
+    <Compile Include="Migrations\201708182244214_Initial.cs" />
+    <Compile Include="Migrations\201708182244214_Initial.Designer.cs">
+      <DependentUpon>201708182244214_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
@@ -120,32 +92,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704132245336_Initial.resx">
-      <DependentUpon>201704132245336_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704151524037_Errors.resx">
-      <DependentUpon>201704151524037_Errors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705111021006_Infrastructure.resx">
-      <DependentUpon>201705111021006_Infrastructure.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705111030324_Infrastructure2.resx">
-      <DependentUpon>201705111030324_Infrastructure2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706092206013_Optimalization.resx">
-      <DependentUpon>201706092206013_Optimalization.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706111007397_FacebookApiUpdate.resx">
-      <DependentUpon>201706111007397_FacebookApiUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706111028458_LongArticleId.resx">
-      <DependentUpon>201706111028458_LongArticleId.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706181248545_ActivableFlag.resx">
-      <DependentUpon>201706181248545_ActivableFlag.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708182244214_Initial.resx">
+      <DependentUpon>201708182244214_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NewsPicker.Shared.Models;
+using NewsPicker.Database.Controllers;
 
 namespace NewsPicker.Database.Controllers
 {
@@ -17,13 +18,21 @@ namespace NewsPicker.Database.Controllers
             return _db.Articles.ToList();
         }
 
-        public void AddRange(IEnumerable<Article> articles)
+        public void AddRange(IEnumerable<Article> articles, int sourceId)
         {
+            var source = _db.Sources.FirstOrDefault(s => s.Id == sourceId);
+
             foreach (var article in articles)
             {
-                if (_db.Articles.Count(a => a.Url == article.Url && a.SourceId == article.SourceId) == 0)
+                var existingArticle = _db.Articles.FirstOrDefault(a => a.UrlHash == article.UrlHash && a.Url == article.Url);
+
+                if (existingArticle == null)
                 {
-                    _db.Articles.Add(article);
+                    source.Articles.Add(article);
+                }
+                else if (!existingArticle.Sources.Contains(source))
+                {
+                    existingArticle.Sources.Add(source);
                 }
             }
 
@@ -44,7 +53,7 @@ namespace NewsPicker.Database.Controllers
         public void DeleteOld()
         {
             DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriodValue.WEEK);
-            IQueryable<Article> articles = _db.Articles.Where(a => startDate > a.CreatedDate);
+            var articles = _db.Articles.Where(a => startDate > a.CreatedDate);
 
             if (articles.Count() > 0)
             {

@@ -29,7 +29,7 @@
                          style="{value: "background-image: url(" + Image + ");"}"></div>
                 </a>
                 <%-- source & date --%>
-                <h5>{{value: Source.Name}} - {{value: ElapsedTimeString}} - ♥ {{value: EngagementCount}}</h5>
+                <h5>xxx - {{value: ElapsedTimeString}} - ♥ {{value: EngagementCount}}</h5>
                 <%-- title --%>
                 <a href="{value: Url}" target="_blank"><h1><span data-bind="text: '#' + ($index() + 1)">#</span> {{value: Title}}</h1></a>
                 <hr />
