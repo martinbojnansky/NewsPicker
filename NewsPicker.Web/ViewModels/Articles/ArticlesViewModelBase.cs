@@ -24,7 +24,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private readonly ArticlesFacade _articlesFacade = new ArticlesFacade();
 
-        public bool IsEmpty => Articles.Count == 0;
+        public bool IsEmpty => Articles?.Count == 0;
 
         public int SelectedCountryId { get; set; }
 
@@ -89,6 +89,7 @@ namespace NewsPicker.Web.ViewModels.Articles
             {
                 Categories = _categoriesFacade.GetCategoriesByCountryId(SelectedCountryId);
                 Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All Categories" });
+                SelectedCategoryId = 0;
             }
             else
             {
