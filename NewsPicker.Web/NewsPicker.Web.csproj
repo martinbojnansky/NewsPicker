@@ -165,7 +165,23 @@
     <Compile Include="Controls\ArticlesFilter.cs" />
     <Compile Include="Models\ArticlesFilter\TimePeriod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Localization\LocalizedStringResources.cs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedStringResources.cs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Localization\LocalizedStringResources.sk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedStringResources.sk.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Localization\LocalizedStringResources.Designer.cs">
+      <DependentUpon>LocalizedStringResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Services\Http\Cookies.cs" />
+    <Compile Include="Services\Localization\CultureExtensions.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="DotvvmStartup.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModel.cs" />
@@ -248,6 +264,20 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Localization\LocalizedStringResources.cs.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStringResources.cs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Localization\LocalizedStringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Localization\LocalizedStringResources.sk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStringResources.sk.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -272,7 +302,9 @@
         </WebProjectProperties>
       </FlavorProperties>
       <FlavorProperties GUID="{94EE71E2-EE2A-480B-8704-AF46D2E58D94}" Configuration="Debug|Any CPU">
-        <DotvvmPropertyPageProjectFlavorCfg />
+        <DotvvmPropertyPageProjectFlavorCfg>
+          <DotvvmPrecompileViews>False</DotvvmPrecompileViews>
+        </DotvvmPropertyPageProjectFlavorCfg>
       </FlavorProperties>
       <FlavorProperties GUID="{94EE71E2-EE2A-480B-8704-AF46D2E58D94}" Configuration="Release|Any CPU">
         <DotvvmPropertyPageProjectFlavorCfg />

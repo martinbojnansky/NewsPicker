@@ -7,20 +7,20 @@
                   SelectedValue="{controlProperty: SelectedCategoryId}"
                   DisplayMember="Name"
                   ValueMember="Id"
-                  SelectionChanged="{controlCommand: ApplyFilterCommand}"
+                  SelectionChanged="{controlCommand: SelectedCategoryChangedCommand}"
                   class="secondary-select categories-select" />
     <%-- time periods --%>
     <dot:ComboBox DataSource="{controlProperty: TimePeriods}"
                   SelectedValue="{controlProperty: SelectedTimePeriodId}"
                   DisplayMember="Name"
                   ValueMember="Id"
-                  SelectionChanged="{controlCommand: ApplyFilterCommand}"
+                  SelectionChanged="{controlCommand: SelectedTimePeriodChangedCommand}"
                   class="primary-select time-periods-select" />
     <%-- countries --%>
     <dot:ComboBox DataSource="{controlProperty: Countries}"
                   SelectedValue="{controlProperty: SelectedCountryId}"
                   DisplayMember="Name"
                   ValueMember="Id"
-                  SelectionChanged="{controlCommand: UpdateFilterCommand}"
+                  SelectionChanged="{controlCommand: SelectedCountryChangedCommand}"
                   class="primary-select countries-select" />
 </div>

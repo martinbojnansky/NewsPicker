@@ -32,14 +32,9 @@
     "importedNamespaces": []
   },
   "routes": {
-    "Default": {
+    "Articles": {
       "url": "",
       "virtualPath": "Views/Articles/Articles.dothtml",
-      "defaultValues": {}
-    },
-    "Article": {
-      "url": "Article",
-      "virtualPath": "Views/Article/Article.dothtml",
       "defaultValues": {}
     }
   },
@@ -157,6 +152,7 @@
   "runtime": {},
   "defaultCulture": "sk-SK",
   "clientSideValidation": true,
+  "debug": true,
   "AllowBindingDebugging": false,
   "compiledViewsAssemblies": [
     "CompiledViews.dll"

@@ -13,6 +13,8 @@ using System.Web;
 using NewsPicker.Web.Controls;
 using NewsPicker.Web.Services.Http;
 using NewsPicker.Web.Models.ArticlesFilter;
+using NewsPicker.Web.Resources.Localization;
+using NewsPicker.Web.Services.Localization;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {
@@ -42,20 +44,14 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public List<TimePeriod> TimePeriods { get; set; } = TimePeriod.All();
 
-        public override Task PreRender()
+        public override Task Load()
         {
             if (!Context.IsPostBack)
             {
-                LoadFilterValues();
                 LoadData();
             }
 
-            return base.PreRender();
-        }
-
-        private void LoadFilterValues()
-        {
-            LoadSelectedCountry();
+            return base.Load();
         }
 
         public void LoadData()
@@ -71,10 +67,12 @@ namespace NewsPicker.Web.ViewModels.Articles
             if (selectedCountryId != 0)
             {
                 SelectedCountryId = selectedCountryId;
-                return;
             }
-
-            SelectedCountryId = 1;
+            else
+            {
+                SelectedCountryId = 1;
+                SelectedCountryChanged();
+            }
         }
 
         private void LoadCountries()
@@ -88,7 +86,7 @@ namespace NewsPicker.Web.ViewModels.Articles
             if (SelectedCountryId != 0)
             {
                 Categories = _categoriesFacade.GetCategoriesByCountryId(SelectedCountryId);
-                Categories.Insert(0, new CategoryDTO() { Id = 0, Name = "All Categories" });
+                Categories.Insert(0, new CategoryDTO() { Id = 0, Name = LocalizedStringResources.AllCategoriesOptionText });
                 SelectedCategoryId = 0;
             }
             else
@@ -99,6 +97,8 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadArticles()
         {
+            Context.ResultIdFragment = "top";
+
             if (SelectedCategoryId != 0)
             {
                 Articles = _articlesFacade.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);
@@ -113,17 +113,14 @@ namespace NewsPicker.Web.ViewModels.Articles
             }
         }
 
-        public void UpdateFilter()
+        public void SelectedCountryChanged()
         {
-            LoadCategories();
-            ApplyFilter();
+            Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
+            Context.ChangeCulture(Countries?.FirstOrDefault(c => c.Id == SelectedCountryId)?.Code);
         }
 
-        public void ApplyFilter()
-        {
-            Context.ResultIdFragment = "top";
-            LoadArticles();
-            Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
-        }
+        public void SelectedCategoryChanged() => LoadArticles();
+
+        public void SelectedTimePeriodChanged() => LoadArticles();
     }
 }

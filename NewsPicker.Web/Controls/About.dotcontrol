@@ -1,5 +1,7 @@
 ﻿@viewModel System.Object, mscorlib
 
+@import NewsPicker.Web.Resources.Localization
+
 <div class="about">
     <div>
         <div class="animation">
@@ -9,6 +11,6 @@
             <img class="likes likes-2" src="~/Resources/Images/Likes.svg">
             <img class="medal" src="~/Resources/Images/Medal.svg">
         </div>
-        <p>Explore the 10 most liked articles on Facebook!</p>
+        <p>{{resource: LocalizedStringResources.AboutAnimationText}}</p>
     </div>
 </div>

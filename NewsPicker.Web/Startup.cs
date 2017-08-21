@@ -9,6 +9,7 @@ using DotVVM.Framework.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: OwinStartup(typeof(NewsPicker.Web.Startup))]
+
 namespace NewsPicker.Web
 {
     public class Startup

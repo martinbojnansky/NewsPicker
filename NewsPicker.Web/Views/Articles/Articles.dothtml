@@ -1,6 +1,8 @@
 ﻿@viewModel NewsPicker.Web.ViewModels.Articles.ArticlesViewModel, NewsPicker.Web
 @masterPage Views/Layout.dotmaster
 
+@import NewsPicker.Web.Resources.Localization
+
 <dot:Content ContentPlaceHolderID="Styles">
 </dot:Content>
 
@@ -12,8 +14,9 @@
                              SelectedCountryId="{value: SelectedCountryId}"
                              SelectedCategoryId="{value: SelectedCategoryId}"
                              SelectedTimePeriodId="{value: SelectedTimePeriodId}"
-                             ApplyFilterCommand="{command: ApplyFilter()}"
-                             UpdateFilterCommand="{command: UpdateFilter()}"
+                             SelectedCountryChangedCommand="{command: SelectedCountryChanged()}"
+                             SelectedCategoryChangedCommand="{command: SelectedCategoryChanged()}"
+                             SelectedTimePeriodChangedCommand="{command: SelectedTimePeriodChanged()}"
                              class="articles-filter-control" />
     <%-- about --%>
     <controls:About Visible="{value: SelectedCategoryId == 0 && !IsEmpty}" />
@@ -37,7 +40,7 @@
                 <p>{{value: Description}}</p>
                 <%-- link --%>
                 <a href="{value: Url}" target="_blank"
-                   class="secondary-button">Read More</a>
+                   class="secondary-button">{{resource: LocalizedStringResources.ReadArticleButtonText}}</a>
             </div>
         </ItemTemplate>
     </dot:Repeater>
