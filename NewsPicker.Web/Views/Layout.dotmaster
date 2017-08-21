@@ -9,6 +9,16 @@
     <meta charset="utf-8" />
     <title>NewsPicker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <%-- meta --%>
+    <%-- favicon --%>
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Resources/Images/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Resources/Images/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Resources/Images/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="~/Resources/Images/Favicons/manifest.json">
+    <link rel="mask-icon" href="~/Resources/Images/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="~/Resources/Images/Favicons/favicon.ico">
+    <meta name="msapplication-config" content="~/Resources/Images/Favicons/browserconfig.xml">
+    <meta name="theme-color" content="#07B0C5">
     <%-- styles --%>
     <link rel="stylesheet" href="~/Resources/Stylesheets/Style.css">
     <dot:ContentPlaceHolder ID="Styles" />
@@ -20,7 +30,7 @@
         <dot:ContentPlaceHolder ID="Header">
             <div class="left"></div>
             <div class="center">
-                <img src="~/Resources/Images/NewsPicker.svg" />
+                <img src="~/Resources/Images/Logos/NewsPicker.svg" />
             </div>
             <div class="right"></div>
         </dot:ContentPlaceHolder>

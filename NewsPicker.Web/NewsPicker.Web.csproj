@@ -189,12 +189,25 @@
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Images\Comments.svg" />
-    <Content Include="Resources\Images\Empty.svg" />
-    <Content Include="Resources\Images\Likes.svg" />
-    <Content Include="Resources\Images\Medal.svg" />
-    <Content Include="Resources\Images\News.svg" />
-    <Content Include="Resources\Images\NewsPicker.svg" />
+    <Content Include="Resources\Images\About\Comments.svg" />
+    <Content Include="Resources\Images\Favicons\android-chrome-192x192.png" />
+    <Content Include="Resources\Images\Favicons\android-chrome-512x512.png" />
+    <Content Include="Resources\Images\Favicons\apple-touch-icon.png" />
+    <Content Include="Resources\Images\Favicons\browserconfig.xml" />
+    <Content Include="Resources\Images\Favicons\favicon-16x16.png" />
+    <Content Include="Resources\Images\Favicons\favicon-32x32.png" />
+    <Content Include="Resources\Images\Favicons\favicon.ico" />
+    <Content Include="Resources\Images\Favicons\mstile-144x144.png" />
+    <Content Include="Resources\Images\Favicons\mstile-150x150.png" />
+    <Content Include="Resources\Images\Favicons\mstile-310x150.png" />
+    <Content Include="Resources\Images\Favicons\mstile-310x310.png" />
+    <Content Include="Resources\Images\Favicons\mstile-70x70.png" />
+    <Content Include="Resources\Images\Favicons\safari-pinned-tab.svg" />
+    <Content Include="Resources\Images\Icons\Empty.svg" />
+    <Content Include="Resources\Images\About\Likes.svg" />
+    <Content Include="Resources\Images\About\Medal.svg" />
+    <Content Include="Resources\Images\About\News.svg" />
+    <Content Include="Resources\Images\Logos\NewsPicker.svg" />
     <Content Include="Resources\Stylesheets\Modules\Articles\Articles.less" />
     <Content Include="Resources\Stylesheets\Modules\Articles\ArticlesFilter.less" />
     <Content Include="Resources\Stylesheets\Controls\Button.less" />
@@ -237,6 +250,7 @@
     <Content Include="Resources\Stylesheets\Controls\Position.less" />
     <Content Include="Resources\Stylesheets\Controls\Visibility.less" />
     <Content Include="Resources\Stylesheets\Controls\Border.less" />
+    <Content Include="Resources\Images\Favicons\manifest.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

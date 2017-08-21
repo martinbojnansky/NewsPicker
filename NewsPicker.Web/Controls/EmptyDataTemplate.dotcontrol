@@ -2,7 +2,7 @@
 @baseType NewsPicker.Web.Controls.EmptyDataTemplate, NewsPicker.Web
 
 <div class="empty-data-template">
-    <img src="~/Resources/Images/Empty.svg" />
+    <img src="~/Resources/Images/Icons/Empty.svg" />
     <p>{{controlProperty: Title}}</p>
     <p>{{controlProperty: Description}}</p>
 </div>
