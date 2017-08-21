@@ -6,10 +6,17 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>NewsPicker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <%-- meta --%>
+    <title>NewsPicker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="{{resource: LocalizedStringResources.MetaDescriptionText}}">
+    <meta content="NewsPicker" property="og:title">
+    <meta content="{{resource: LocalizedStringResources.MetaDescriptionText}}" property="og:description">
+    <%--<meta content="" property="og:image">--%>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Martin Bojnanský | martin.bojnansky@outlook.com">
+    <meta name="copyright" content="© 2017 by Martin Bojnanský">
     <%-- favicon --%>
     <link rel="apple-touch-icon" sizes="180x180" href="~/Resources/Images/Favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="~/Resources/Images/Favicons/favicon-32x32.png">
