@@ -79,6 +79,15 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please change filter values or try again later..
+        /// </summary>
+        public static string ArticlesEmptyDataTemplateDescription {
+            get {
+                return ResourceManager.GetString("ArticlesEmptyDataTemplateDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to day.
         /// </summary>
         public static string DayOptionText {
@@ -93,6 +102,24 @@ namespace NewsPicker.Web.Resources.Localization {
         public static string DaysOptionText {
             get {
                 return ResourceManager.GetString("DaysOptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string EmptyDataTemplateDescription {
+            get {
+                return ResourceManager.GetString("EmptyDataTemplateDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nothing here yet....
+        /// </summary>
+        public static string EmptyDataTemplateTitle {
+            get {
+                return ResourceManager.GetString("EmptyDataTemplateTitle", resourceCulture);
             }
         }
         

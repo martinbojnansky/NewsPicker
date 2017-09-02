@@ -11,6 +11,8 @@
             <img class="likes likes-2" src="~/Resources/Images/About/Likes.svg">
             <img class="medal" src="~/Resources/Images/About/Medal.svg">
         </div>
-        <p>{{resource: LocalizedStringResources.AboutAnimationText}}</p>
+        <div class="description">
+            <p>{{resource: LocalizedStringResources.AboutAnimationText}}</p>
+        </div>
     </div>
 </div>

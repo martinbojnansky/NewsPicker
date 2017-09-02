@@ -1,6 +1,8 @@
 ﻿@viewModel System.Object, mscorlib
 @baseType NewsPicker.Web.Controls.EmptyDataTemplate, NewsPicker.Web
 
+@import NewsPicker.Web.Resources.Localization
+
 <div class="empty-data-template">
     <img src="~/Resources/Images/Icons/Empty.svg" />
     <p>{{controlProperty: Title}}</p>

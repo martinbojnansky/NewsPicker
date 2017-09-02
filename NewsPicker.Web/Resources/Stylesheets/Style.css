@@ -230,22 +230,13 @@ header-auto {
 header-star {
   flex: 1 1 auto;
 }
-header .left {
-  flex: 0 1 auto;
-}
-header .center {
-  flex: 1 1 auto;
-}
-header .center img {
+header img {
   margin: 6px auto;
   height: 28px;
 }
-header .right {
-  flex: 0 1 auto;
-}
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
   padding: 40px 20px 20px 20px;
@@ -725,18 +716,9 @@ select:hover {
 .articles-filter-control select {
   margin: 0 10px 10px 10px;
 }
-.articles-filter-control .countries-select {
-  flex: 1 0 auto;
-}
-.articles-filter-control .categories-select {
-  flex: 1 0 auto;
-}
-.articles-filter-control .time-periods-select {
-  flex: 1 0 auto;
-}
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
   padding: 10px 20px;
@@ -750,18 +732,21 @@ select:hover {
   max-width: 750px;
   margin: 0 auto;
 }
-.about p {
-  flex: 0 1 auto;
+.about .description {
+  flex: 1 1 auto;
+  width: calc(100% -  130px );
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-around;
+  padding: 0 20px;
+}
+.about .description p {
   font-weight: bold;
-  margin: 0 20px;
 }
 .about .animation {
-  flex: 0 0 auto;
+  flex: 0 0 130px;
   position: relative;
   width: 130px;
   height: 130px;

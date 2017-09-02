@@ -123,11 +123,20 @@
   <data name="AllCategoriesOptionText" xml:space="preserve">
     <value>Všetky kategórie</value>
   </data>
+  <data name="ArticlesEmptyDataTemplateDescription" xml:space="preserve">
+    <value>Prosím zmeňte hodnoty filtra alebo to skúste neskôr.</value>
+  </data>
   <data name="DayOptionText" xml:space="preserve">
     <value>deň</value>
   </data>
   <data name="DaysOptionText" xml:space="preserve">
     <value>dni</value>
+  </data>
+  <data name="EmptyDataTemplateDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmptyDataTemplateTitle" xml:space="preserve">
+    <value>Zatiaľ tu nič nie je...</value>
   </data>
   <data name="FeedbackButtonText" xml:space="preserve">
     <value>Odoslať spätnú väzbu</value>

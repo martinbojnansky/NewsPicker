@@ -35,11 +35,7 @@
     <%-- header --%>
     <header>
         <dot:ContentPlaceHolder ID="Header">
-            <div class="left"></div>
-            <div class="center">
-                <img src="~/Resources/Images/Logos/NewsPicker.svg" />
-            </div>
-            <div class="right"></div>
+            <img src="~/Resources/Images/Logos/NewsPicker.svg" />
         </dot:ContentPlaceHolder>
     </header>
     <%-- content --%>
