@@ -18,6 +18,11 @@
       },
       {
         "tagPrefix": "controls",
+        "tagName": "ComboBox",
+        "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\ComboBox.dotcontrol"
+      },
+      {
+        "tagPrefix": "controls",
         "tagName": "EmptyDataTemplate",
         "src": "D:\\Projects\\NewsPicker\\NewsPicker.Web\\Controls\\EmptyDataTemplate.dotcontrol"
       },

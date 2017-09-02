@@ -2,34 +2,39 @@
 
 .articles-filter-control {
     position: fixed;
-    .top-layer();
+    top: @bar-height;
     left: 0;
     right: 0;
-    top: @bar-height;
-    margin: 0 auto;
+    .top-layer();
     .flex();
     .flex-size(1,1,auto);
+    margin: 0 auto;
     background: @background-color;
     border-bottom: 1px solid @background-color-darken;
+    overflow-x: auto;
 
     &-content {
-        .flex-size(1,1,auto);
+        .flex-size(0,0,auto);
         .flex();
-        .wrapper();
+        margin: 0 auto;
+        justify-content: center;
         padding: @base-padding @base-padding 0 @base-padding;
-        overflow-x: auto;
     }
 
     select {
+        display: inline-block;
         margin: 0 @base-padding @base-padding @base-padding;
     }
 
     .countries-select {
+        .flex-size(0,0);
     }
 
     .categories-select {
+        .flex-size(0,0);
     }
 
     .time-periods-select {
+        .flex-size(0,0);
     }
 }

@@ -405,29 +405,37 @@ img {
 }
 select {
   display: inline-block;
+  min-width: 60px;
   padding: 11px 20px;
   cursor: pointer;
   background: #999;
   color: #FFF;
+  border: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
   font-size: .82rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
   text-decoration: none;
-  border: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  min-width: 60px;
   text-overflow: ellipsis;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: radio-container;
 }
 select:hover {
   background: #8c8c8c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+select::-ms-expand {
+  display: none;
 }
 .primary-select {
   background: #07B0C5;
@@ -627,17 +635,18 @@ select:hover {
 }
 .articles-filter-control {
   position: fixed;
-  z-index: 1000;
+  top: 60px;
   left: 0;
   right: 0;
-  top: 60px;
-  margin: 0 auto;
+  z-index: 1000;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   flex: 1 1 auto;
+  margin: 0 auto;
   background: #FFF;
   border-bottom: 1px solid #F2F2F2;
+  overflow-x: auto;
 }
 .articles-filter-control-row {
   display: flex;
@@ -672,14 +681,13 @@ select:hover {
   flex: 1 1 auto;
 }
 .articles-filter-control-content {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-width: 750px;
   margin: 0 auto;
+  justify-content: center;
   padding: 10px 10px 0 10px;
-  overflow-x: auto;
 }
 .articles-filter-control-content-row {
   display: flex;
@@ -714,7 +722,17 @@ select:hover {
   flex: 1 1 auto;
 }
 .articles-filter-control select {
+  display: inline-block;
   margin: 0 10px 10px 10px;
+}
+.articles-filter-control .countries-select {
+  flex: 0 0 auto;
+}
+.articles-filter-control .categories-select {
+  flex: 0 0 auto;
+}
+.articles-filter-control .time-periods-select {
+  flex: 0 0 auto;
 }
 .about {
   display: flex;

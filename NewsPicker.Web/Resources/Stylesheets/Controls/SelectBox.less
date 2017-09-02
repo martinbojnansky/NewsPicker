@@ -2,27 +2,36 @@
 
 select {
     display: inline-block;
+    min-width: @bar-height;
     padding: @button-padding;
     cursor: pointer;
     background: @button-background-color;
     color: @text-color-inverse;
+    border: 0;
+    .border-radius();
+    box-shadow: @button-shadow;
     font-family: @secondary-font;
     font-size: .82rem;
     font-weight: 500;
     letter-spacing: 0.02rem;
     text-transform: uppercase;
     text-decoration: none;
-    border: 0;
-    box-shadow: @button-shadow;
-    .border-radius();
-    min-width: @bar-height;
     text-overflow: ellipsis;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: radio-container;
 
     &:hover {
         background: @hover-button-background-color;
         box-shadow: @hover-button-shadow;
+    }
+
+    &::-ms-expand {
+        display: none;
     }
 }
 
