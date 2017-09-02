@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -9,8 +10,9 @@ namespace NewsPicker.Robot.Extensions
 {
     public static class HtmlExtensions
     {
-        public static string IgnoreHtml(this string value)
+        public static string IgnoreHtmlCharacters(this string value)
         {
+            value = WebUtility.HtmlDecode(value);
             value = Regex.Replace(value, "<.*?>", string.Empty);
             value = Regex.Replace(value, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
             value = value.Replace("&nbsp;", " ");
@@ -19,6 +21,5 @@ namespace NewsPicker.Robot.Extensions
 
             return value;
         }
-
     }
 }

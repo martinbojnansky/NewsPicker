@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using XamarinToolkit.Http;
 using NewsPicker.Robot.Extensions;
+using System.Net;
 
 namespace NewsPicker.Robot.Services.Rss
 {
@@ -49,13 +50,13 @@ namespace NewsPicker.Robot.Services.Rss
         {
             IList<RssItem> items = new List<RssItem>();
 
-            foreach(var i in feed.Descendants("item"))
+            foreach (var i in feed.Descendants("item"))
             {
                 RssItem item = new RssItem()
                 {
-                    Title = i.Element("title").Value.IgnoreHtml(),
-                    Description = i.Element("description").Value.IgnoreHtml(),
-                    Link = i.Element("link").Value,
+                    Title = i.Element("title")?.Value.IgnoreHtmlCharacters(),
+                    Description = i.Element("description")?.Value.IgnoreHtmlCharacters(),
+                    Link = i.Element("link")?.Value,
                     PubDate = i.Element("pubDate").Value.ToDateTime(),
                     Image = GetImageUrl(i)
                 };
