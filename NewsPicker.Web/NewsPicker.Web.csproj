@@ -157,7 +157,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\ComboBox.cs" />
     <Compile Include="Controls\EmptyDataTemplate.cs" />
     <Compile Include="Controls\LoadingOverlay.cs" />
     <Compile Include="Facades\ArticlesFacade.cs" />
@@ -236,7 +235,6 @@
     <Content Include="Controls\EmptyDataTemplate.dotcontrol" />
     <Content Include="Controls\LoadingOverlay.dotcontrol" />
     <Content Include="Controls\About.dotcontrol" />
-    <Content Include="Controls\ComboBox.dotcontrol" />
     <None Include="Properties\PublishProfiles\NewsPicker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\NewsPickerApi - Web Deploy.pubxml" />
     <Content Include="Resources\Stylesheets\Style.less" />

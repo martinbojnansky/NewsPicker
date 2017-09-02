@@ -50,4 +50,8 @@
 </dot:Content>
 
 <dot:Content ContentPlaceHolderID="Scripts">
+    <%-- scroll position reset --%>
+    <dot:InlineScript>
+        dotvvm.events.afterPostback.subscribe(function () { window.scrollTo(0, 0); });
+    </dot:InlineScript>
 </dot:Content>

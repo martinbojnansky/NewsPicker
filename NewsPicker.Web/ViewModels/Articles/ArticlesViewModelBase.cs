@@ -97,8 +97,6 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadArticles()
         {
-            Context.ResultIdFragment = "top";
-
             if (SelectedCategoryId != 0)
             {
                 Articles = _articlesFacade.GetTopArticlesByCategoryId(SelectedCategoryId, SelectedTimePeriodId);

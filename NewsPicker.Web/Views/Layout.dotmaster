@@ -31,7 +31,6 @@
     <dot:ContentPlaceHolder ID="Styles" />
 </head>
 <body>
-    <dot:Literal ID="top" />
     <%-- header --%>
     <header>
         <dot:ContentPlaceHolder ID="Header">
