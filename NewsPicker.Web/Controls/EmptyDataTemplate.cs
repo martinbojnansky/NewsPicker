@@ -26,6 +26,6 @@ namespace NewsPicker.Web.Controls
         }
 
         public static readonly DotvvmProperty DescriptionProperty
-            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Description, LocalizedStringResources.EmptyDataTemplateDescription, true);
+            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Description, LocalizedStringResources.EmptyDataTemplateDescription);
     }
 }
