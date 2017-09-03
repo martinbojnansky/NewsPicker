@@ -208,6 +208,8 @@
     <Content Include="Resources\Images\About\Medal.svg" />
     <Content Include="Resources\Images\About\News.svg" />
     <Content Include="Resources\Images\Logos\NewsPicker.svg" />
+    <Content Include="Resources\Images\Logos\OpenGraphImage.jpg" />
+    <Content Include="Resources\Images\Logos\Square.png" />
     <Content Include="Resources\Stylesheets\Modules\Articles\Articles.less" />
     <Content Include="Resources\Stylesheets\Modules\Articles\ArticlesFilter.less" />
     <Content Include="Resources\Stylesheets\Controls\Button.less" />

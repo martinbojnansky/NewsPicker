@@ -142,15 +142,6 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Explore the 10 most liked news on Facebook!.
-        /// </summary>
-        public static string MetaDescriptionText {
-            get {
-                return ResourceManager.GetString("MetaDescriptionText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Read more.
         /// </summary>
         public static string ReadArticleButtonText {
