@@ -144,6 +144,9 @@
   <data name="HoursOptionText" xml:space="preserve">
     <value>hodin</value>
   </data>
+  <data name="MetaDescription" xml:space="preserve">
+    <value>Objevte 10 nejoblíbenejších zpráv na Facebooku!</value>
+  </data>
   <data name="ReadArticleButtonText" xml:space="preserve">
     <value>Číst celý članek</value>
   </data>

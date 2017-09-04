@@ -33,7 +33,7 @@
   },
   "routes": {
     "Articles": {
-      "url": "",
+      "url": "{CultureName?}",
       "virtualPath": "Views/Articles/Articles.dothtml",
       "defaultValues": {}
     }

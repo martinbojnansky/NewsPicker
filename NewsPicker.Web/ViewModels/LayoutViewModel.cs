@@ -11,14 +11,15 @@ namespace NewsPicker.Web.ViewModels
     public class LayoutViewModel : DotvvmViewModelBase
     {
         public bool IsLoading { get; set; }
+        public string CultureName { get; set; }
 
-        public override Task Load()
+        public override Task Init()
         {
             if (!Context.IsPostBack)
             {
-                Context.LoadCulture();
+                CultureName = Context.LoadCulture();
             }
-            return base.Load();
+            return base.Init();
         }
     }
 }

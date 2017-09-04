@@ -63,15 +63,14 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         private void LoadSelectedCountry()
         {
-            var selectedCountryId = Convert.ToInt32(Cookies.Get(nameof(ArticlesFilter), nameof(SelectedCountryId)));
-            if (selectedCountryId != 0)
+            var selectedCountry = Countries.FirstOrDefault(c => c.Code == CultureName);
+            if (selectedCountry != null)
             {
-                SelectedCountryId = selectedCountryId;
+                SelectedCountryId = selectedCountry.Id;
             }
             else
             {
-                SelectedCountryId = 1;
-                SelectedCountryChanged();
+                Context.ChangeCulture(Constants.DefaultCultureName);
             }
         }
 
@@ -113,7 +112,6 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public void SelectedCountryChanged()
         {
-            Cookies.Set(nameof(ArticlesFilter), nameof(SelectedCountryId), SelectedCountryId);
             Context.ChangeCulture(Countries?.FirstOrDefault(c => c.Id == SelectedCountryId)?.Code);
         }
 

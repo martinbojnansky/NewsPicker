@@ -7,17 +7,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#"  xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
     <%-- meta --%>
-    <title>NewsPicker</title>
+    <title>{{resource: LocalizedStringResources.MetaTitle}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="Explore the 10 most liked news on Facebook!">
+    <meta name="description" content="{resource: LocalizedStringResources.MetaTitle}">
     <%-- facebook --%>
     <meta property="fb:app_id" content="1352477358177558" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://newspicker.net/" />
-    <meta property="og:title" content="NewsPicker" />
-    <meta property="og:description" content="Explore the 10 most liked news on Facebook!" />
-    <meta property="og:image" content="http://newspicker.net/Resources/Images/Logos/OpenGraphImage.jpg" />
+    <meta property="og:title" content="{resource: LocalizedStringResources.MetaTitle}" />
+    <meta property="og:description" content="{resource: LocalizedStringResources.MetaDescription}" />
+    <meta property="og:image" content="{resource: LocalizedStringResources.MetaUrl + "/Resources/Images/Logos/OpenGraphImage.jpg"}" />
     <%-- others --%>
     <meta name="author" content="Martin Bojnanský | martin.bojnansky@outlook.com">
     <meta name="copyright" content="© 2017 by Martin Bojnanský">

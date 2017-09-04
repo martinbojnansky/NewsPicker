@@ -142,6 +142,33 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Explore the 10 most liked news on Facebook!.
+        /// </summary>
+        public static string MetaDescription {
+            get {
+                return ResourceManager.GetString("MetaDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NewsPicker.
+        /// </summary>
+        public static string MetaTitle {
+            get {
+                return ResourceManager.GetString("MetaTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://newspicker.net.
+        /// </summary>
+        public static string MetaUrl {
+            get {
+                return ResourceManager.GetString("MetaUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Read more.
         /// </summary>
         public static string ReadArticleButtonText {

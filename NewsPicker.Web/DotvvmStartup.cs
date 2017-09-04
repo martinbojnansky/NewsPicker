@@ -9,6 +9,10 @@ using DotVVM.Framework.Routing;
 using AutoMapper;
 using NewsPicker.Database.AutoMapper;
 using DotVVM.Framework.ResourceManagement;
+using DotVVM.Framework.Hosting;
+using System;
+using System.Collections.Generic;
+using NewsPicker.Web;
 
 namespace NewsPicker.Web
 {
@@ -25,10 +29,16 @@ namespace NewsPicker.Web
 
         private void ConfigureRoutes(DotvvmConfiguration config, string applicationPath)
         {
-            config.RouteTable.Add("Articles", "", "Views/Articles/Articles.dothtml");
+            AddLocalizedRoute(config, "Articles", "", "Views/Articles/Articles.dothtml");
 
             // auto-register all dothtml files in the Views folder
             //config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));
+        }
+
+        private void AddLocalizedRoute(DotvvmConfiguration config, string routeName, string url, string virtualPath, object defaultValues = null, Func<IDotvvmPresenter> presenterFactory = null)
+        {
+            url = $"{{{Constants.CultureRouteParameterName}?}}" + (string.IsNullOrWhiteSpace(url) ? "" : "/") + url;
+            config.RouteTable.Add(routeName, url, virtualPath, defaultValues, presenterFactory);
         }
 
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)
