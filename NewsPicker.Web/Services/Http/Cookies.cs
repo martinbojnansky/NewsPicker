@@ -18,14 +18,5 @@ namespace NewsPicker.Web.Services.Http
             cookie.Expires = expires.HasValue ? expires.Value : DateTime.MaxValue;
             cookie[key] = value.ToString();
         }
-
-        public static bool Enabled
-        {
-            get
-            {
-                Set(nameof(Cookies), nameof(Enabled), true);
-                return Get(nameof(Cookies), nameof(Enabled)) == "true";
-            }
-        }
     }
 }

@@ -126,9 +126,6 @@
   <data name="ArticlesEmptyDataTemplateDescription" xml:space="preserve">
     <value>Please change filter values or try again later.</value>
   </data>
-  <data name="BaseUrl" xml:space="preserve">
-    <value>http://newspicker.net</value>
-  </data>
   <data name="DayOptionText" xml:space="preserve">
     <value>day</value>
   </data>
@@ -146,12 +143,6 @@
   </data>
   <data name="HoursOptionText" xml:space="preserve">
     <value>hours</value>
-  </data>
-  <data name="MetaDescription" xml:space="preserve">
-    <value>Explore the 10 most liked news on Facebook!</value>
-  </data>
-  <data name="MetaTitle" xml:space="preserve">
-    <value>NewsPicker</value>
   </data>
   <data name="ReadArticleButtonText" xml:space="preserve">
     <value>Read more</value>
