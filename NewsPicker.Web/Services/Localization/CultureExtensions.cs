@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 
 namespace NewsPicker.Web.Services.Localization
 {
@@ -12,7 +13,9 @@ namespace NewsPicker.Web.Services.Localization
     {
         public static void LoadCulture(this IDotvvmRequestContext context)
         {
-            var cultureName = Cookies.Get(nameof(CultureInfo), "Name");
+            if (!Cookies.Enabled) return;
+
+            var cultureName = Cookies.Get(nameof(CultureInfo), nameof(CultureInfo.Name));
 
             if (!string.IsNullOrEmpty(cultureName))
             {
@@ -22,9 +25,11 @@ namespace NewsPicker.Web.Services.Localization
 
         public static void ChangeCulture(this IDotvvmRequestContext context, string cultureName)
         {
-            Cookies.Set(nameof(CultureInfo), "Name", cultureName);
+            if (!Cookies.Enabled) return;
+
+            Cookies.Set(nameof(CultureInfo), nameof(CultureInfo.Name), cultureName);
             context.Configuration.DefaultCulture = cultureName;
-            context.RedirectToRoute(context.Route.RouteName);
+            context.RedirectToRoutePermanent(context.Route.RouteName);
         }
     }
 }

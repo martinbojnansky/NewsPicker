@@ -88,6 +88,15 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://newspicker.net.
+        /// </summary>
+        public static string BaseUrl {
+            get {
+                return ResourceManager.GetString("BaseUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to day.
         /// </summary>
         public static string DayOptionText {
@@ -138,6 +147,24 @@ namespace NewsPicker.Web.Resources.Localization {
         public static string HoursOptionText {
             get {
                 return ResourceManager.GetString("HoursOptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explore the 10 most liked news on Facebook!.
+        /// </summary>
+        public static string MetaDescription {
+            get {
+                return ResourceManager.GetString("MetaDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NewsPicker.
+        /// </summary>
+        public static string MetaTitle {
+            get {
+                return ResourceManager.GetString("MetaTitle", resourceCulture);
             }
         }
         
