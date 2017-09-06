@@ -8,6 +8,7 @@ using NewsPicker.Database.Models;
 using NewsPicker.Database.Controllers;
 using NewsPicker.Robot.Services.Rss;
 using NewsPicker.Robot.Models.Rss;
+using NewsPicker.Shared.Constants;
 
 namespace NewsPicker.Robot.Services.Automation
 {
@@ -63,7 +64,7 @@ namespace NewsPicker.Robot.Services.Automation
             {
                 Article article = GetArticle(item, source);
 
-                if (article != null)
+                if (article != null && ArticleConstants.MinArticleCreatedDate < article.CreatedDate)
                 {
                     articles.Add(article);
                 }

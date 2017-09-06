@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NewsPicker.Shared.Models;
 using NewsPicker.Database.Controllers;
+using NewsPicker.Shared.Constants;
 
 namespace NewsPicker.Database.Controllers
 {
@@ -52,7 +53,7 @@ namespace NewsPicker.Database.Controllers
 
         public void DeleteOld()
         {
-            DateTime? startDate = DateTime.UtcNow.AddHours(-(int)TimePeriodValue.WEEK);
+            DateTime? startDate = ArticleConstants.MinArticleCreatedDate;
             var articles = _db.Articles.Where(a => startDate > a.CreatedDate);
 
             if (articles.Count() > 0)

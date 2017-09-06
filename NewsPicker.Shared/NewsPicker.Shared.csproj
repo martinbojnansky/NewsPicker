@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\ApiConstants.cs" />
+    <Compile Include="Constants\ArticleConstants.cs" />
     <Compile Include="DTO\Article\ArticleDTO.cs" />
     <Compile Include="DTO\Category\CategoryDTO.cs" />
     <Compile Include="DTO\Country\CountryDTO.cs" />
