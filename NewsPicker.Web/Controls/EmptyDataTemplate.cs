@@ -16,8 +16,9 @@ namespace NewsPicker.Web.Controls
             set { SetValue(TitleProperty, value); }
         }
 
+        [MarkupOptions(AllowAttributeWithoutValue = false)]
         public static readonly DotvvmProperty TitleProperty
-            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Title, LocalizedStringResources.EmptyDataTemplateTitle);
+            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Title);
 
         public string Description
         {
@@ -26,6 +27,6 @@ namespace NewsPicker.Web.Controls
         }
 
         public static readonly DotvvmProperty DescriptionProperty
-            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Description, LocalizedStringResources.EmptyDataTemplateDescription);
+            = DotvvmProperty.Register<string, EmptyDataTemplate>(c => c.Description);
     }
 }

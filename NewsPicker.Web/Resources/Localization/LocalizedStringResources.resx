@@ -126,17 +126,14 @@
   <data name="ArticlesEmptyDataTemplateDescription" xml:space="preserve">
     <value>Please change filter values or try again later.</value>
   </data>
+  <data name="ArticlesEmptyDataTemplateTitle" xml:space="preserve">
+    <value>Nothing here yet...</value>
+  </data>
   <data name="DayOptionText" xml:space="preserve">
     <value>day</value>
   </data>
   <data name="DaysOptionText" xml:space="preserve">
     <value>days</value>
-  </data>
-  <data name="EmptyDataTemplateDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="EmptyDataTemplateTitle" xml:space="preserve">
-    <value>Nothing here yet...</value>
   </data>
   <data name="FeedbackButtonText" xml:space="preserve">
     <value>Send feedback</value>

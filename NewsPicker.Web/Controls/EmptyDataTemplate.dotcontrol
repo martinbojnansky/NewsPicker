@@ -3,7 +3,7 @@
 
 @import NewsPicker.Web.Resources.Localization
 
-<div class="empty-data-template">
+<div class="empty-data-template" RenderSettings.Mode="Server">
     <img src="~/Resources/Images/Icons/Empty.svg" />
     <p>{{controlProperty: Title}}</p>
     <p>{{controlProperty: Description}}</p>

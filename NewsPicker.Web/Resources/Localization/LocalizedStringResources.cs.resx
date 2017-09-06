@@ -126,17 +126,14 @@
   <data name="ArticlesEmptyDataTemplateDescription" xml:space="preserve">
     <value>Změňte prosím hodnoty filtrů anebo to zkuste znovu později.</value>
   </data>
+  <data name="ArticlesEmptyDataTemplateTitle" xml:space="preserve">
+    <value>Zatím tady nic není...</value>
+  </data>
   <data name="DayOptionText" xml:space="preserve">
     <value>den</value>
   </data>
   <data name="DaysOptionText" xml:space="preserve">
     <value>dny</value>
-  </data>
-  <data name="EmptyDataTemplateDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="EmptyDataTemplateTitle" xml:space="preserve">
-    <value>Zatím tady nic není...</value>
   </data>
   <data name="FeedbackButtonText" xml:space="preserve">
     <value>Odeslat spätnou vazbu</value>

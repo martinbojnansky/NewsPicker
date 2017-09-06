@@ -45,7 +45,8 @@
         </ItemTemplate>
     </dot:Repeater>
     <%-- empty data template --%>
-    <controls:EmptyDataTemplate Description="{value: LocalizedStringResources.ArticlesEmptyDataTemplateDescription}"
+    <controls:EmptyDataTemplate Title="{resource: LocalizedStringResources.ArticlesEmptyDataTemplateTitle}"
+                                Description="{resource: LocalizedStringResources.ArticlesEmptyDataTemplateDescription}"
                                 Visible="{value: IsEmpty}" />
 </dot:Content>
 
