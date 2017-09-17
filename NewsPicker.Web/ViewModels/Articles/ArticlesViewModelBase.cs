@@ -42,7 +42,7 @@ namespace NewsPicker.Web.ViewModels.Articles
 
         public List<ArticleDTO> Articles { get; set; }
 
-        public List<TimePeriod> TimePeriods { get; set; } = TimePeriod.All();
+        public List<TimePeriod> TimePeriods { get; set; }
 
         public override Task Load()
         {
@@ -58,6 +58,7 @@ namespace NewsPicker.Web.ViewModels.Articles
         {
             LoadCountries();
             LoadCategories();
+            LoadTimePeriods();
             LoadArticles();
         }
 
@@ -92,6 +93,17 @@ namespace NewsPicker.Web.ViewModels.Articles
             {
                 Categories = null;
             }
+        }
+
+        private void LoadTimePeriods()
+        {
+            TimePeriods = new List<TimePeriod>()
+            {
+                new TimePeriod(TimePeriodValue.TWELVE_HOURS, $"12 {LocalizedStringResources.HoursOptionText}"),
+                new TimePeriod(TimePeriodValue.DAY, $"1 {LocalizedStringResources.DayOptionText}"),
+                new TimePeriod(TimePeriodValue.THREE_DAYS, $"3 {LocalizedStringResources.DaysOptionText}"),
+                new TimePeriod(TimePeriodValue.WEEK, $"1 {LocalizedStringResources.WeekOptionText}")
+            };
         }
 
         private void LoadArticles()

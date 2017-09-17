@@ -18,11 +18,6 @@ namespace NewsPicker.Web.Services.Localization
                 context.LoadCultureNameCookie();
             }
 
-            if (context.Configuration.DefaultCulture != cultureName)
-            {
-                context.ChangeCulture(cultureName);
-            }
-
             context.ChangeCurrentCulture(cultureName);
 
             return cultureName;
@@ -44,7 +39,6 @@ namespace NewsPicker.Web.Services.Localization
         public static void ChangeCulture(this IDotvvmRequestContext context, string cultureName)
         {
             Cookies.Set(nameof(CultureInfo), nameof(CultureInfo.Name), cultureName);
-            context.Configuration.DefaultCulture = cultureName;
             context.RedirectToRoute(context.Route.RouteName, new { CultureName = cultureName });
         }
     }
