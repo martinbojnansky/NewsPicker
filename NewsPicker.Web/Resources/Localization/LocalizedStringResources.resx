@@ -144,6 +144,9 @@
   <data name="MetaDescription" xml:space="preserve">
     <value>Explore the 10 most liked news on Facebook!</value>
   </data>
+  <data name="MetaImage" xml:space="preserve">
+    <value>http://newspicker.net/Resources/Images/Logos/OpenGraphImage.jpg</value>
+  </data>
   <data name="MetaTitle" xml:space="preserve">
     <value>NewsPicker</value>
   </data>

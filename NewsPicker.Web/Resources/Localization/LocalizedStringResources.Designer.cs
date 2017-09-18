@@ -142,6 +142,15 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://newspicker.net/Resources/Images/Logos/OpenGraphImage.jpg.
+        /// </summary>
+        public static string MetaImage {
+            get {
+                return ResourceManager.GetString("MetaImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to NewsPicker.
         /// </summary>
         public static string MetaTitle {

@@ -11,12 +11,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="{resource: LocalizedStringResources.MetaTitle}">
+    <%-- google --%>
+    <meta name="title" content="{resource: LocalizedStringResources.MetaTitle}" />
+    <meta name="description" content="{resource: LocalizedStringResources.MetaDescription}" />
+    <meta name="image" content="{resource: LocalizedStringResources.MetaImage}" />
+    <%-- google+ --%>
+    <meta itemprop="name" content="{resource: LocalizedStringResources.MetaTitle}" />
+    <meta itemprop="description" content="{resource: LocalizedStringResources.MetaDescription}" />
+    <meta itemprop="image" content="{resource: LocalizedStringResources.MetaImage}" />
     <%-- facebook --%>
     <meta property="fb:app_id" content="1352477358177558" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{resource: LocalizedStringResources.MetaTitle}" />
     <meta property="og:description" content="{resource: LocalizedStringResources.MetaDescription}" />
-    <meta property="og:image" content="{resource: LocalizedStringResources.MetaUrl + "/Resources/Images/Logos/OpenGraphImage.jpg"}" />
+    <meta property="og:image" content="{resource: LocalizedStringResources.MetaImage}" />
+    <%-- twitter --%>
+    <meta name="twitter:title" content="{resource: LocalizedStringResources.MetaTitle}" />
+    <meta name="twitter:description" content="{resource: LocalizedStringResources.MetaDescription}" />
+    <meta name="twitter:image" content="{resource: LocalizedStringResources.MetaImage}" />
     <%-- others --%>
     <meta name="author" content="Martin Bojnanský | martin.bojnansky@outlook.com">
     <meta name="copyright" content="© 2017 by Martin Bojnanský">
