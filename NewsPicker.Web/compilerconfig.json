@@ -1,6 +1,7 @@
 ﻿[
   {
     "outputFile": "Resources/Stylesheets/Style.css",
-    "inputFile": "Resources/Stylesheets/Style.less"
+    "inputFile": "Resources/Stylesheets/Style.less",
+    "minify": { "enabled": true }
   }
 ]

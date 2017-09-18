@@ -23,7 +23,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 120px 0 0 0;
+  padding: 60px 0 0 0;
 }
 .wrapper {
   max-width: 750px;
@@ -679,6 +679,9 @@ select::-ms-expand {
 }
 .articles-filter-control-star {
   flex: 1 1 auto;
+}
+.articles-filter-control + * {
+  margin: 60px 0 0 0;
 }
 .articles-filter-control-content {
   flex: 0 0 auto;
