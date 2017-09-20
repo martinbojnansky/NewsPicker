@@ -3,14 +3,6 @@
 
 @import NewsPicker.Web.Resources.Localization
 
-<dot:Content ContentPlaceHolderID="Styles">
-</dot:Content>
-<dot:Content ContentPlaceHolderID="Header">
-</dot:Content>
 <dot:Content ContentPlaceHolderID="Content">
     <controls:EmptyDataTemplate Title="{resource: LocalizedStringResources.ErrorViewTitle}" Description="{resource: LocalizedStringResources.ErrorViewDescription}" />
-</dot:Content>
-<dot:Content ContentPlaceHolderID="Footer">
-</dot:Content>
-<dot:Content ContentPlaceHolderID="Scripts">
 </dot:Content>
