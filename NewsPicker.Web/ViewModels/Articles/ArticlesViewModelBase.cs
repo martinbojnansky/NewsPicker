@@ -7,14 +7,11 @@ using NewsPicker.Shared.DTO.Article;
 using NewsPicker.Web.Facades;
 using NewsPicker.Shared.DTO.Country;
 using NewsPicker.Shared.DTO.Category;
-using System.Globalization;
 using NewsPicker.Shared.Models;
 using System.Web;
-using NewsPicker.Web.Controls;
-using NewsPicker.Web.Services.Http;
 using NewsPicker.Web.Models.ArticlesFilter;
 using NewsPicker.Web.Resources.Localization;
-using NewsPicker.Web.Services.Localization;
+using NewsPicker.Web.Helpers.Localization;
 
 namespace NewsPicker.Web.ViewModels.Articles
 {

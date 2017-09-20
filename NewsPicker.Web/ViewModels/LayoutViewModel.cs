@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using NewsPicker.Web.Services.Localization;
+using NewsPicker.Web.Helpers.Localization;
 
 namespace NewsPicker.Web.ViewModels
 {

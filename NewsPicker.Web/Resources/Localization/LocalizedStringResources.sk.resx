@@ -135,6 +135,12 @@
   <data name="DaysOptionText" xml:space="preserve">
     <value>dni</value>
   </data>
+  <data name="ErrorViewDescription" xml:space="preserve">
+    <value>Niečo nie je v poriadku, musíme to opraviť.</value>
+  </data>
+  <data name="ErrorViewTitle" xml:space="preserve">
+    <value>Oops... ľutujeme!</value>
+  </data>
   <data name="FeedbackButtonText" xml:space="preserve">
     <value>Odoslať spätnú väzbu</value>
   </data>

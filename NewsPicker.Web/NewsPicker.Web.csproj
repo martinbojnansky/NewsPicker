@@ -181,12 +181,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Services\Http\Cookies.cs" />
-    <Compile Include="Services\Localization\CultureExtensions.cs" />
+    <Compile Include="Helpers\Http\Cookies.cs" />
+    <Compile Include="Helpers\Localization\CultureExtensions.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="DotvvmStartup.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModel.cs" />
     <Compile Include="ViewModels\Articles\ArticlesViewModelBase.cs" />
+    <Compile Include="ViewModels\Errors\ErrorViewModel.cs" />
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +255,7 @@
     <Content Include="Resources\Stylesheets\Controls\Visibility.less" />
     <Content Include="Resources\Stylesheets\Controls\Border.less" />
     <Content Include="Resources\Images\Favicons\manifest.json" />
+    <Content Include="Views\Errors\Error.dothtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -275,7 +277,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Filters\" />
     <Folder Include="Resources\Scripts\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

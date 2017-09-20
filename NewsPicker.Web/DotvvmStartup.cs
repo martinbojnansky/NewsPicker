@@ -13,6 +13,11 @@ using DotVVM.Framework.Hosting;
 using System;
 using System.Collections.Generic;
 using NewsPicker.Web;
+using System.Globalization;
+using System.Linq;
+using NewsPicker.Web.Helpers.Localization;
+using NewsPicker.Web.ViewModels.Errors;
+using NewsPicker.Web.ViewModels.Articles;
 
 namespace NewsPicker.Web
 {
@@ -29,16 +34,12 @@ namespace NewsPicker.Web
 
         private void ConfigureRoutes(DotvvmConfiguration config, string applicationPath)
         {
-            AddLocalizedRoute(config, "Articles", "", "Views/Articles/Articles.dothtml");
-
             // auto-register all dothtml files in the Views folder
             //config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));
-        }
 
-        private void AddLocalizedRoute(DotvvmConfiguration config, string routeName, string url, string virtualPath, object defaultValues = null, Func<IDotvvmPresenter> presenterFactory = null)
-        {
-            url = $"{{{Constants.CultureRouteParameterName}?}}" + (string.IsNullOrWhiteSpace(url) ? "" : "/") + url;
-            config.RouteTable.Add(routeName, url, virtualPath, defaultValues, presenterFactory);
+            config.RouteConstraints.AddCultureRouteParameterConstraint();
+            config.RouteTable.AddLocalizedRoute(nameof(ArticlesViewModel), "", "Views/Articles/Articles.dothtml");
+            config.RouteTable.AddLocalizedRoute(nameof(ErrorViewModel), "oops", "Views/Errors/Error.dothtml");
         }
 
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)

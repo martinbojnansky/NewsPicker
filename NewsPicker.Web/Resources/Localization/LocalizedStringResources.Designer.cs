@@ -115,6 +115,24 @@ namespace NewsPicker.Web.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something went wrong, we have to fix it..
+        /// </summary>
+        public static string ErrorViewDescription {
+            get {
+                return ResourceManager.GetString("ErrorViewDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oops... we&apos;re sorry!.
+        /// </summary>
+        public static string ErrorViewTitle {
+            get {
+                return ResourceManager.GetString("ErrorViewTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Send feedback.
         /// </summary>
         public static string FeedbackButtonText {

@@ -135,6 +135,12 @@
   <data name="DaysOptionText" xml:space="preserve">
     <value>days</value>
   </data>
+  <data name="ErrorViewDescription" xml:space="preserve">
+    <value>Something went wrong, we have to fix it.</value>
+  </data>
+  <data name="ErrorViewTitle" xml:space="preserve">
+    <value>Oops... we're sorry!</value>
+  </data>
   <data name="FeedbackButtonText" xml:space="preserve">
     <value>Send feedback</value>
   </data>
